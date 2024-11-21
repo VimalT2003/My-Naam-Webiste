@@ -1,0 +1,73 @@
+/* FooterMenu.css */
+
+.footer-container {
+    font-family: Arial, sans-serif;
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .nav-menu {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1rem;
+  }
+  
+  .nav-menu a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bolder;
+    margin: 0 10px;
+  }
+  
+  .nav-menu a:hover {
+    text-decoration: underline;
+  }
+  
+  .menu-section {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 20px 0;
+  }
+  
+  .menu-column {
+    max-width: 300px;
+    text-align: left;
+  }
+  
+  .menu-heading {
+    color: #e74c3c;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #e74c3c;
+    padding-bottom: 5px;
+  }
+  
+  .menu-list {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .menu-list li {
+    color: #333;
+    margin: 5px 0;
+    font-size: 0.9rem;
+  }
+  
+  @media (max-width: 768px) {
+    .menu-section {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .menu-column {
+      max-width: 100%;
+      text-align: center;
+    }
+  
+    .nav-menu {
+      font-size: 0.9rem;
+    }
+  }
+  

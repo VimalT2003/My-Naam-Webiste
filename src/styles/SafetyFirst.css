@@ -1,0 +1,178 @@
+/* SafetyFirst.css */
+
+.safety-first-container {
+    width: 100%;
+    min-height: 100vh;
+    background-color: #fff;
+  }
+  
+  /* Hero Banner Styles */
+  .hero-banner {
+    /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('/assets/safety-banner.jpg') center/cover; */
+    height: 150px;
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+  .banner-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    color: white;
+    width: 100%;
+  }
+  
+  .banner-content h1 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+  
+  .breadcrumb {
+    font-size: 14px;
+  }
+  
+  .breadcrumb a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .breadcrumb a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Content Section Styles */
+  .content-section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+  }
+  
+  .introduction {
+    margin-bottom: 30px;
+  }
+  
+  .intro-text {
+    font-size: 18px;
+    color: #ff0000;
+    line-height: 1.6;
+    max-width: 1110px;
+  }
+  
+  /* Equipment List Styles */
+  .equipment-list {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .list-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    padding: 10px 0;
+    line-height: 28px;
+    border-bottom: 1px solid #f0f0f0;
+  }
+  
+  .bullet {
+    color: #ff0000;
+    font-size: 20px;
+    line-height: 1;
+    flex-shrink: 0;
+  }
+  
+  .list-item p {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  .list-item strong {
+    color: #000;
+    font-weight: 600;
+  }
+  
+  .multiline-item {
+    text-align: justify;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .hero-banner {
+      height: 200px;
+    }
+  
+    .banner-content h1 {
+      font-size: 28px;
+    }
+  
+    .content-section {
+      padding: 30px 15px;
+    }
+  
+    .intro-text {
+      font-size: 15px;
+    }
+  
+    .list-item {
+      gap: 10px;
+    }
+  
+    .list-item p {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .hero-banner {
+      height: 150px;
+    }
+  
+    .banner-content h1 {
+      font-size: 24px;
+    }
+  
+    .breadcrumb {
+      font-size: 12px;
+    }
+  
+    .bullet {
+      font-size: 16px;
+    }
+  
+    .list-item p {
+      font-size: 13px;
+    }
+  }
+  
+  /* Animation Styles */
+  .list-item {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.5s ease forwards;
+  }
+  
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Stagger animation for list items */
+  .list-item:nth-child(1) { animation-delay: 0.1s; }
+  .list-item:nth-child(2) { animation-delay: 0.2s; }
+  .list-item:nth-child(3) { animation-delay: 0.3s; }
+  .list-item:nth-child(4) { animation-delay: 0.4s; }
+  .list-item:nth-child(5) { animation-delay: 0.5s; }
+  .list-item:nth-child(6) { animation-delay: 0.6s; }
+  .list-item:nth-child(7) { animation-delay: 0.7s; }
+  .list-item:nth-child(8) { animation-delay: 0.8s; }

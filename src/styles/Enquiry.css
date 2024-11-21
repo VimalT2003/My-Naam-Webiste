@@ -1,0 +1,42 @@
+.safety-banner {
+  position: relative;
+  background-image: url('https://png.pngtree.com/background/20210710/original/pngtree-site-safety-slogan-banner-picture-image_1048661.jpg'); 
+  background-size: cover;
+  background-position: center;
+  height: 200px; /* Adjust the height as needed */
+  display: flex;
+  align-items: center;
+  color: #333;
+  overflow: hidden;
+}
+
+.safety-banner::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.6) 40%, transparent 95%);
+  z-index: -1;
+}
+
+.overlay {
+  position: relative;
+  padding: 20px;
+  max-width: 400px;
+  color: #333;
+}
+
+.overlay h1 {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+}
+
+.overlay p {
+  margin: 10px 0 0;
+  font-size: 14px;
+  color: #666;
+}
+

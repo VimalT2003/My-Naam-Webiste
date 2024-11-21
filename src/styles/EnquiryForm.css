@@ -1,0 +1,175 @@
+/* Main container styles */
+.enquiry-page {
+    min-height: 100vh;
+    background-image: url('https://www.shutterstock.com/image-photo/fire-extinguishers-available-emergencies-260nw-788649655.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+  }
+  
+  .gradient-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.8), transparent);
+  }
+  
+  .page-content {
+    position: relative;
+    z-index: 1;
+    padding: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .page-header {
+    margin-bottom: 2rem;
+  }
+  
+  .page-header h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin: 0;
+    font-weight: bold;
+  }
+  
+  .page-header p {
+    color: #666;
+    margin: 0.5rem 0 0;
+  }
+  
+  /* Form container styles */
+  .form-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .form-header {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .form-header h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-header p {
+    color: #666;
+    font-size: 0.9rem;
+  }
+  
+  /* Form styles */
+  .enquiry-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+  }
+  
+  @media (max-width: 768px) {
+    .form-row {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  .form-group {
+    flex: 1;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-control:focus {
+    outline: none;
+    border-color: #bdb096;
+    box-shadow: 0 0 0 2px rgba(189, 176, 150, 0.2);
+  }
+  
+  .form-control::placeholder {
+    color: #999;
+  }
+  
+  /* File input styles */
+  .file-input-container {
+    position: relative;
+  }
+  
+  .file-input {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .file-input::file-selector-button {
+    background-color: #e0e0e0;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    margin-right: 1rem;
+    cursor: pointer;
+  }
+  
+  /* Select styles */
+  .form-select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  /* Button styles */
+  .form-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  
+  .btn {
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn-submit {
+    background-color: #bdb096;
+    color: white;
+  }
+  
+  .btn-submit:hover {
+    background-color: #a89b82;
+  }
+  
+  .btn-reset {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+  
+  .btn-reset:hover {
+    background-color: #d0d0d0;
+  }

@@ -1,0 +1,90 @@
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    color: #333;
+  }
+  
+  .intro-text {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+  }
+  
+  .image-container {
+    max-width: 400px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px 0px;
+  }
+  
+  .image-container img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .description {
+    max-width: 600px;
+    font-size: 18px;
+    line-height: 1.6;
+  }
+  
+
+  .safety-banner {
+    position: relative;
+    /* background-image: url('https://png.pngtree.com/background/20210710/original/pngtree-site-safety-slogan-banner-picture-image_1048661.jpg');  */
+    background-image: url('https://media.istockphoto.com/id/1327086620/photo/using-a-fire-extinguisher.jpg?s=612x612&w=0&k=20&c=7LU5Ipmj7qVwLicLpr7UyM-YdIez73myebjnNhn-USs=');     
+    background-size: cover !important;
+    background-position: center;
+    height: 250px; /* Adjust the height as needed */
+    display: flex;
+    align-items: center;
+    color: #333;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    width: 100%;
+  }
+  
+  .safety-banner::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(255, 255, 255, 0.9) 0%, rgba(255, 255, 255, 0.6) 40%, transparent 95%);
+    z-index: -1;
+  }
+  
+  .overlay {
+    position: relative;
+    padding: 20px;
+    max-width: 400px;
+    color: #333;
+  }
+  
+  .overlay h1 {
+    font-size: 26px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .overlay p {
+    margin: 10px 0 0;
+    font-size: 20px;
+    color: #666;
+  }
+  
+  
