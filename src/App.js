@@ -13,6 +13,8 @@ import ContactUs from './components/ContactUs';
 import Aboutus from './components/Aboutus';
 // import MyCarousel from './components/MyCarousel';
 import SiteMap from './components/SiteMap';
+import ProductCatalog from './components/ProductCatalog';
+import ProductDetail from './components/ProductDetail';
 
 function App() {
   return (
@@ -26,6 +28,8 @@ function App() {
                 <Route path="/enquiry" element={<EnquiryForm />} />
                 <Route path="/safety" element={<SafetyFirst />} />
                 <Route path="/sitemap" element={<SiteMap />} />
+                <Route path="/product" element={<ProductCatalog />} />
+                <Route path="/product/:id" element={<ProductDetail />} />
             </Routes>
      
       {/* <Home/> */}

@@ -14,15 +14,6 @@ const ContactInfo = () => {
     </div>
 
  <div className="contact-info-container">
-      <div className="contact-card">
-        <div className="icon">
-          <i className="fas fa-map-marker-alt"></i>
-        </div>
-        <h3>Address</h3>
-        <p>123 Main St, Downtown,</p>
-        <p>Springfield, IL 62701</p>
-        <p>United States</p>
-      </div>
       
       <div className="contact-card">
         <div className="icon">
@@ -30,8 +21,7 @@ const ContactInfo = () => {
         </div>
         <h3>Phone</h3>
         <p>Customer Support:</p>
-        <p>(+1) 555-123-4567</p>
-        <p>Office: (+1) 555-987-6543</p>
+        <p>9566888290</p>
       </div>
       
       <div className="contact-card">
@@ -39,9 +29,8 @@ const ContactInfo = () => {
           <i className="fas fa-envelope"></i>
         </div>
         <h3>Email</h3>
-        <p>Support: support@example.com</p>
-        <p>Sales: sales@example.com</p>
-        <p>General Inquiries: info@example.com</p>
+        <p>Support: Naamuser21@gmail.com,,</p>
+        <p>naamsales1@gmail.com</p>
       </div>
     </div>
     </div>

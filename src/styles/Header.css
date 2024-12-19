@@ -78,9 +78,6 @@
   letter-spacing: 2px;
 }
 
-
-
-
 .navigation {
   display: flex;
   gap: 20px;
@@ -171,7 +168,7 @@
 }
 
 .dropdown-item:hover {
-  background-color: #f8f8f8;
+  /* background-color: #f8f8f8; */
   color: #ff0000;
   padding-left: 20px;
 }

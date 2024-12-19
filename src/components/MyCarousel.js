@@ -12,27 +12,24 @@ const MyCarousel = () => {
 
       <div className="carousel-inner">
         <div className="carousel-item active">
-          <img src="https://kanexfire.com/blog/wp-content/uploads/2023/05/Fire-Safety-Training-for-employee.jpg" className="d-block w-100 carousel-image" alt="Slide 1" />
-          <div className="carousel-caption d-none d-md-block">
-            <h5>Prevent Fires Before They Start</h5>
-            <p className="text-white">Identify and eliminate fire hazards in your workplace and home. Regular inspections and safe practices can prevent fires before they happene.</p>
+          <img src="https://www.shutterstock.com/image-photo/instructor-demonstrate-used-fire-extinguisher-260nw-1328655671.jpg" className="d-block w-100 carousel-image" alt="Slide 1" />
+          <div className="carousel-caption d-none d-md-block" style={{position: "absolute",top: "155px",left: "465px"}}>
+            <h2 style={{fontSize:'5rem'}}>NAAM</h2>
           </div>
         </div>
 
         <div className="carousel-item">
-          <img src="https://t3.ftcdn.net/jpg/09/53/72/96/360_F_953729664_fu7i3MeZW9deLQk7pL1xRQMHgF9pF2Ap.jpg" className="d-block w-100 carousel-image" alt="Slide 2" />
-          <div className="carousel-caption d-none d-md-block">
-            <h5>Equip Yourself with the Right Tool</h5>
-            <p className="text-white">Fire extinguishers, alarms, and protective gear are essential for immediate response. Make sure your fire safety equipment is accessible and in working order.</p>
+          <img src="https://media.licdn.com/dms/image/D4D12AQE-_31sP8pMrg/article-cover_image-shrink_600_2000/0/1660907348876?e=2147483647&v=beta&t=vLi_GEN-Pg2dY2i_Sr9QQyBUZbcpN5roThGgz1r-00U" className="d-block w-100 carousel-image" alt="Slide 2" />
+          <div className="carousel-caption d-none d-md-block" style={{position: "absolute",top: "-10px",left: "0px"}}>
+          <h2>NAAM</h2>
           </div>
         </div>
 
         <div className="carousel-item">
-          <img src="https://www.shutterstock.com/image-photo/fire-extinguisher-has-hand-engineer-260nw-2302759673.jpg" className="d-block w-100 carousel-image" alt="Slide 3" />
-          <div className="carousel-caption d-none d-md-block">
-            <h5>Know the Emergency Exits</h5>
-            <p className="text-white">In case of a fire, every second counts. Familiarize yourself with emergency exits and evacuation routes to ensure a quick, safe escape.</p>
-          </div>
+          <img src="https://5.imimg.com/data5/SELLER/Default/2024/11/467114283/SW/ZL/AL/234876236/fire-system-and-fire-safety-equipment-in-india.jpg" className="d-block w-100 carousel-image" alt="Slide 3" />
+          {/* <div className="carousel-caption d-none d-md-block" style={{position: "absolute",top: "0px",left: "-178px"}}>
+          <h2>NAAM</h2>
+          </div> */}
         </div>
       </div>
 

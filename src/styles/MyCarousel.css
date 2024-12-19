@@ -1,8 +1,9 @@
 .carousel-image {
     width: 100%;
-    height: 400px; /* Set the default height */
+    height: 480px; /* Set the default height */
     object-fit: cover; /* Ensures the image fills the space without distortion */
   }
+  
   
   @media (max-width: 768px) {
     .carousel-image {

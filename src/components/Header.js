@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Header = () => {
   const productItems = [
-    'Fire Safety / Protection Equipments, Systems',
+    'Hygiene',
     'Road Construction Safety Equipments',
     'Fire Safety Personal Protective Equipments',
     'Fire Safety Training Services',
@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <div className="header-container">
       {/* Top Email Bar */}
-      <div className="email-bar">
+      {/* <div className="email-bar">
         <div className="email-content">
           <div className="mail-icon"></div>
           <a href="mailto:response@saifiresafety.com">
@@ -23,7 +23,7 @@ const Header = () => {
 </svg> response@xyz.com
           </a>
         </div>
-      </div>
+      </div> */}
 
       {/* Main Header */}
       <div className="main-header">
@@ -38,9 +38,9 @@ const Header = () => {
           <nav className="navigation">
             <Link to="/" className="nav-link">Home</Link>
             <Link to="/about" className="nav-link">About Us</Link>
-
+            <Link to="/product" className="nav-link">All Products</Link>
             {/* Products Dropdown */}
-            <div className="dropdown">
+            {/* <div className="dropdown">
               <button className="nav-link dropdown-button">
                 Products
                 <div className="chevron-icon"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-down" viewBox="0 0 16 16">
@@ -58,13 +58,13 @@ const Header = () => {
                   </Link>
                 ))}
               </div>
-            </div>
+            </div> */}
 
             <Link to="/safety" className="nav-link">Safety First</Link>
-            <Link to="/gallery" className="nav-link">Gallery</Link>
+            {/* <Link to="/gallery" className="nav-link">Gallery</Link> */}
             <Link to="/contact" className="nav-link">Contact Us</Link>
             <Link to="/enquiry" className="nav-link">Enquiry</Link>
-            <Link to="/sitemap" className="nav-link">Sitemap</Link>
+            {/* <Link to="/sitemap" className="nav-link">Sitemap</Link> */}
           </nav>
         </div>
       </div>
