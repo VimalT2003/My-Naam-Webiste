@@ -21,7 +21,7 @@ function App() {
     <div className="App">
        <Header/>  
             <Routes>
-                <Route path="*" element={<h1 className='text-center my-5'>404 - Page Not Found</h1>} />
+                <Route path="*" element={<Home />} />
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<Aboutus />} />
                 <Route path="/contact" element={<ContactUs />} />
