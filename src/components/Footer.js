@@ -36,7 +36,7 @@ const Footer = () => {
           </ul>
         </div>
 
-        <div className="footer-section ms-5">
+        <div className="footer-section ms-md-5">
           <h3>Contact Info</h3>
           <ul>
             <li>📍 123 Business Street</li>
@@ -61,7 +61,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
+        <p className='text-white'>&copy; 2024 Your Company. All rights reserved.</p>
       </div>
     </footer>
   );

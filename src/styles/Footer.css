@@ -192,7 +192,9 @@
   }
 
   .ulsection ul{
-    display: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
   }
 
   .footer-section {

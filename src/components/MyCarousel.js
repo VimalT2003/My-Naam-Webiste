@@ -16,7 +16,7 @@ const MyCarousel = () => {
       buttonText: "Shop Now"
     },
     {
-      image: "https://files.oaiusercontent.com/file-KF7LQEAobS5qnjPibHA8b1?se=2024-12-24T07%3A18%3A42Z&sp=r&sv=2024-08-04&sr=b&rscc=max-age%3D604800%2C%20immutable%2C%20private&rscd=attachment%3B%20filename%3D231ab3b4-4522-429b-b8e9-1b6306616a5d.webp&sig=UpVBIAryZZXUm6oKHF2M7GcAJPioYxM3CfV4%2BhRs/FU%3D",
+      image:barrierNaam,
       title: "NAAM Parking Barrier System",
       description: "Secure and efficient access control with a sleek, durable design, perfect for modern parking solutions.",
       buttonText: "Learn More"
