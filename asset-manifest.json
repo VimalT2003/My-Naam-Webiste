@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/My-Naam-Webiste/static/css/main.00407c4b.css",
-    "main.js": "/My-Naam-Webiste/static/js/main.34a07125.js",
+    "main.css": "/My-Naam-Webiste/static/css/main.514438f2.css",
+    "main.js": "/My-Naam-Webiste/static/js/main.8fcc2f3b.js",
     "static/media/matnaam.webp": "/My-Naam-Webiste/static/media/matnaam.d5ca4fd37bbc0f24b08a.webp",
     "static/media/Naam.png": "/My-Naam-Webiste/static/media/Naam.f0336d7d1e2f3da0e739.png",
     "static/media/barrier.webp": "/My-Naam-Webiste/static/media/barrier.3fbd0e182d810d534ceb.webp",
     "static/media/naamlogo.jfif": "/My-Naam-Webiste/static/media/naamlogo.014ba3dc877304a3480c.jfif",
     "index.html": "/My-Naam-Webiste/index.html",
-    "main.00407c4b.css.map": "/My-Naam-Webiste/static/css/main.00407c4b.css.map",
-    "main.34a07125.js.map": "/My-Naam-Webiste/static/js/main.34a07125.js.map"
+    "main.514438f2.css.map": "/My-Naam-Webiste/static/css/main.514438f2.css.map",
+    "main.8fcc2f3b.js.map": "/My-Naam-Webiste/static/js/main.8fcc2f3b.js.map"
   },
   "entrypoints": [
-    "static/css/main.00407c4b.css",
-    "static/js/main.34a07125.js"
+    "static/css/main.514438f2.css",
+    "static/js/main.8fcc2f3b.js"
   ]
 }
