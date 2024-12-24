@@ -1,0 +1,165 @@
+.testimonial-section {
+  width: 100%;
+  background-color: #f9fafb;
+  padding: 4rem 1rem;
+}
+
+.testimonial-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.testimonial-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.testimonial-header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-header h2:hover {
+  transform: scale(1.05);
+}
+
+.testimonial-header p {
+  color: #4b5563;
+  max-width: 36rem;
+  margin: 0 auto;
+}
+
+.testimonial-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* Responsive grid */
+@media (min-width: 768px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .testimonial-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.testimonial-card {
+  position: relative;
+  background-color: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+
+.testimonial-card:hover {
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Background gradient animation */
+.card-background {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top right, #2563eb, #7c3aed);
+  opacity: 0;
+  transform: translateY(100%) rotate(45deg) scale(2);
+  transform-origin: bottom left;
+  transition: all 0.5s ease;
+}
+
+.testimonial-card:hover .card-background {
+  opacity: 0.1;
+  transform: translateY(0) rotate(45deg) scale(2);
+}
+
+.card-content {
+  position: relative;
+  z-index: 1;
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover .card-content {
+  transform: scale(1.05);
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 3rem;
+  height: 3rem;
+  background-color: #f3f4f6;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  transition: transform 0.5s ease;
+}
+
+.avatar svg {
+  color: #6b7280;
+  transition: color 0.3s ease;
+}
+
+.testimonial-card:hover .avatar {
+  transform: rotate(12deg);
+}
+
+.testimonial-card:hover .avatar svg {
+  color: #2563eb;
+}
+
+.testimonial-text {
+  transform: translateY(0);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover .testimonial-text {
+  transform: translateY(-4px);
+}
+
+.testimonial-text > p {
+  color: #4b5563;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.testimonial-card:hover .testimonial-text > p {
+  color: #1f2937;
+}
+
+.author-info {
+  transform: translateX(0);
+  transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover .author-info {
+  transform: translateX(8px);
+}
+
+.author-info h4 {
+  font-weight: 600;
+  color: #111827;
+  transition: color 0.3s ease;
+}
+
+.testimonial-card:hover .author-info h4 {
+  color: #2563eb;
+}
+
+.author-info p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  transition: color 0.3s ease;
+}
+
+.testimonial-card:hover .author-info p {
+  color: #4b5563;
+}

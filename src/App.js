@@ -10,26 +10,32 @@ import EnquiryForm from './components/EnquiryForm';
 // import Enquiry from './components/Enquiry';
 import ContactUs from './components/ContactUs';
 // import AccordionItem from './components/AccordionItem';
-import Aboutus from './components/Aboutus';
+import AboutUs from './components/AboutUs';
 // import MyCarousel from './components/MyCarousel';
 import SiteMap from './components/SiteMap';
 import ProductCatalog from './components/ProductCatalog';
 import ProductDetail from './components/ProductDetail';
+import Navbar from './components/Navbar';
+import ModernNavbar from './components/ModernNavbar';
+import ContactPage from './components/ContactPage';
 
 function App() {
   return (
     <div className="App">
-       <Header/>  
+       <ModernNavbar/>  
             <Routes>
-                <Route path="*" element={<h1 className='text-center my-5'>404 - Page Not Found</h1>} />
+            <Route path="/" element={<Home />} />
+                {/* <Route path="*" element={<h1 className='text-center my-5'>404 - Page Not Found</h1>} />
                 <Route path="/" element={<Home />} />
                 <Route path="/about" element={<Aboutus />} />
-                <Route path="/contact" element={<ContactUs />} />
-                <Route path="/enquiry" element={<EnquiryForm />} />
+                <Route path="/contact" element={<ContactUs />} /> */}
+                {/* <Route path="/enquiry" element={<EnquiryForm />} />
                 <Route path="/safety" element={<SafetyFirst />} />
-                <Route path="/sitemap" element={<SiteMap />} />
+                <Route path="/sitemap" element={<SiteMap />} /> */}
+                <Route path="/about" element={<AboutUs />} />
                 <Route path="/product" element={<ProductCatalog />} />
                 <Route path="/product/:id" element={<ProductDetail />} />
+                <Route path="/contact" element={<ContactPage/>} />
             </Routes>
      
       {/* <Home/> */}

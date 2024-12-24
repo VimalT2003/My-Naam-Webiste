@@ -9,7 +9,7 @@ const ProductCatalog = () => {
     navigate(`/product/${productId}`);
   };
 
-  const [products] = useState([
+  const [productss] = useState([
     {
       id: 1,
       name: "NAAM-DL-Ramp MAT",
@@ -339,7 +339,7 @@ const ProductCatalog = () => {
     },
     {
       id: 22,
-      name: "AC AUTOMATIC BOOM BARRIER",
+      name: "Examination Table",
       price: 1499.99,
       description:
         "AC Automatic Boom Barrier is a motorized gate system designed to control vehicle access with automated opening and closing functionality.",
@@ -489,81 +489,80 @@ const ProductCatalog = () => {
         "Meets industrial safety and quality standards",
       ],
     },
-    {
-      id: 31,
-      name: "Safety SS 03",
-      price: 1499.99,
-      description:
-        "Safety SS 03 is a high-performance industrial safety designed to provide superior eye protection and comfort in challenging work environments.",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzKIu35U7Uf1UpJBS8p9tXSZbLDiQ-G-y26g&s",
-      category: "Emergency Lighting System",
-      rating: 4.6,
-      features: [
-        "Superior eye protection with impact resistance",
-        "Ergonomic design for all-day comfort",
-        "Adjustable straps for a secure and customized fit",
-        "Complies with industry safety and quality standards",
-      ],
-    },
-    {
-      id: 32,
-      name: "Safety SS 04",
-      price: 1499.99,
-      description:
-        "Safety SS 04 is a safety signage designed to indicate the location of an emergency telephone for quick communication during critical situations.",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSYfn0y4X1AnDpL_QFJ5If-fYwmiO5E83azw&s",
-      category: "Emergency Lighting System",
-      rating: 4.6,
-      features: [
-        "Indicates the presence of an emergency telephone",
-        "Clear and recognizable symbol",
-        "Available in multiple sizes (150x150mm, 200x200mm)",
-        "Made with durable and weather-resistant materials",
-      ],
-    },
-    {
-      id: 33,
-      name: "Safety SS 05",
-      price: 1499.99,
-      description:
-        "Safety SS 05 is a safety signage designed to indicate the location or availability of foot protection measures in industrial and workplace settings.",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM_YMyjfwB0dcmV-kj1zr_rZEt7PZIyvsYjw&s",
-      category: "Emergency Lighting System",
-      rating: 4.6,
-      features: [
-        "Clear and easy-to-read safety signage",
-        "Indicates foot protection requirements",
-        "Available in multiple sizes (150x150mm, 200x200mm)",
-        "Durable and weather-resistant material",
-      ],
-    },
-    {
-      id: 34,
-      name: "Safety SS 06",
-      price: 1499.99,
-      description:
-        "Safety SS 06 is a safety signage designed to indicate the availability of Thermal Protection Aid (TPA) for use in environments requiring heat resistance and protection.",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXMnmaAcfoXgiErCX9KjN_R19GVdT9-Aup-w&s",
-      category: "Emergency Lighting System",
-      rating: 4.6,
-      features: [
-        "Highlights the presence of Thermal Protection Aid",
-        "Clear and easy-to-read design",
-        "Available in multiple sizes (150x150mm, 200x200mm)",
-        "Durable and weather-resistant material",
-      ],
-    },
+    // {
+    //   id: 31,
+    //   name: "Safety SS 03",
+    //   price: 1499.99,
+    //   description:
+    //     "Safety SS 03 is a high-performance industrial safety designed to provide superior eye protection and comfort in challenging work environments.",
+    //   image:
+    //     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzKIu35U7Uf1UpJBS8p9tXSZbLDiQ-G-y26g&s",
+    //   category: "Emergency Lighting System",
+    //   rating: 4.6,
+    //   features: [
+    //     "Superior eye protection with impact resistance",
+    //     "Ergonomic design for all-day comfort",
+    //     "Adjustable straps for a secure and customized fit",
+    //     "Complies with industry safety and quality standards",
+    //   ],
+    // },
+    // {
+    //   id: 32,
+    //   name: "Safety SS 04",
+    //   price: 1499.99,
+    //   description:
+    //     "Safety SS 04 is a safety signage designed to indicate the location of an emergency telephone for quick communication during critical situations.",
+    //   image:
+    //     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSYfn0y4X1AnDpL_QFJ5If-fYwmiO5E83azw&s",
+    //   category: "Emergency Lighting System",
+    //   rating: 4.6,
+    //   features: [
+    //     "Indicates the presence of an emergency telephone",
+    //     "Clear and recognizable symbol",
+    //     "Available in multiple sizes (150x150mm, 200x200mm)",
+    //     "Made with durable and weather-resistant materials",
+    //   ],
+    // },
+    // {
+    //   id: 33,
+    //   name: "Safety SS 05",
+    //   price: 1499.99,
+    //   description:
+    //     "Safety SS 05 is a safety signage designed to indicate the location or availability of foot protection measures in industrial and workplace settings.",
+    //   image:
+    //     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM_YMyjfwB0dcmV-kj1zr_rZEt7PZIyvsYjw&s",
+    //   category: "Emergency Lighting System",
+    //   rating: 4.6,
+    //   features: [
+    //     "Clear and easy-to-read safety signage",
+    //     "Indicates foot protection requirements",
+    //     "Available in multiple sizes (150x150mm, 200x200mm)",
+    //     "Durable and weather-resistant material",
+    //   ],
+    // },
+    // {
+    //   id: 34,
+    //   name: "Safety SS 06",
+    //   price: 1499.99,
+    //   description:
+    //     "Safety SS 06 is a safety signage designed to indicate the availability of Thermal Protection Aid (TPA) for use in environments requiring heat resistance and protection.",
+    //   image:
+    //     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXMnmaAcfoXgiErCX9KjN_R19GVdT9-Aup-w&s",
+    //   category: "Emergency Lighting System",
+    //   rating: 4.6,
+    //   features: [
+    //     "Highlights the presence of Thermal Protection Aid",
+    //     "Clear and easy-to-read design",
+    //     "Available in multiple sizes (150x150mm, 200x200mm)",
+    //     "Durable and weather-resistant material",
+    //   ],
+    // },
   ]);
   const scrollContainerRef = useRef(null);
   const [showLeftArrow, setShowLeftArrow] = useState(false);
   const [showRightArrow, setShowRightArrow] = useState(true);
-  const [filter, setFilter] = useState("All");
+  const [filter, setFilter] = useState("MAT");
   const categories = [
-    "All",
     "MAT",
     "Hygiene",
     "Fire Safety Products",
@@ -587,66 +586,50 @@ const ProductCatalog = () => {
     }
   };
 
+  const scroll = (direction) => {
+    const container = scrollContainerRef.current;
+    const scrollAmount = 200;
 
-const scroll = (direction) => {
-  const container = scrollContainerRef.current;
-  const scrollAmount = 200;
-  
-  if (container) {
-    const newScrollPosition = direction === 'left'
-      ? container.scrollLeft - scrollAmount
-      : container.scrollLeft + scrollAmount;
-      
-    container.scrollTo({
-      left: newScrollPosition,
-      behavior: 'smooth'
-    });
-  }
-};
+    if (container) {
+      const newScrollPosition =
+        direction === "left"
+          ? container.scrollLeft - scrollAmount
+          : container.scrollLeft + scrollAmount;
+
+      container.scrollTo({
+        left: newScrollPosition,
+        behavior: "smooth",
+      });
+    }
+  };
 
   const filteredProducts =
     filter === "All"
-      ? products
-      : products.filter((product) => product.category === filter);
+      ? productss
+      : productss.filter((product) => product.category === filter);
 
   return (
     <div className="product-catalog my-5">
       <div className="catalog-header">
         <h1 className="mb-4">Product Catalog</h1>
         <div className="filter-wrapper">
-      {showLeftArrow && (
-        <button className="arrow-button left-arrow" onClick={() => scroll('left')}>
-          ←
+  <div className="filter-container">
+    <div className="filter-buttons">
+      {categories.map((category) => (
+        <button
+          key={category}
+          className={`filter-btn ${filter === category ? 'active' : ''}`}
+          onClick={() => setFilter(category)}
+        >
+          {category}
         </button>
-      )}
-
-      <div 
-        className="filter-container" 
-        ref={scrollContainerRef}
-        onScroll={handleScroll}
-      >
-        <div className="filter-buttons">
-          {categories.map((category) => (
-            <button
-              key={category}
-              className={`filter-btn ${filter === category ? 'active' : ''}`}
-              onClick={() => setFilter(category)}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
-      </div>
-
-      {showRightArrow && (
-        <button className="arrow-button right-arrow" onClick={() => scroll('right')}>
-          →
-        </button>
-      )}
+      ))}
     </div>
+  </div>
+</div>
       </div>
 
-      <div className="product-grid">
+      <div className="product-grids">
         {filteredProducts.map((product) => (
           <div
             key={product.id}
@@ -714,12 +697,12 @@ const scroll = (direction) => {
                   ))}
                 </div>
               </div>
-              <div className="product-price-section">
+              {/* <div className="product-price-section">
                 <span className="product-price">
                   ${product.price.toFixed(2)}
                 </span>
                 <button className="buy-now-btn">Buy Now</button>
-              </div>
+              </div> */}
             </div>
           </div>
         ))}

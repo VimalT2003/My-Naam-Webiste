@@ -1,45 +1,64 @@
-.content {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    gap: 20px;
-    max-width: 1100px;
-    margin: 0 auto;
+.home {
+  min-height: 100vh;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 3rem;
+}
+
+.products-section {
+  padding: 4rem 0;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+}
+
+.testimonials-section {
+  padding: 4rem 0;
+  background: #f8f9fa;
+}
+
+.testimonials-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 1024px) {
+  .products-grid {
+    grid-template-columns: repeat(3, 1fr);
   }
-  
-  .image-container {
-    max-width: 400px;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    margin: 20px 0px;
+}
+
+@media (max-width: 768px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .buttonClass{
-    font-weight: 600;
-    font-size: 18px;
-    letter-spacing: 1px;
-    background: #f51123;
-    height: 50px;
-    line-height: 48px;
-    padding: 0 40px;
-    display: inline-block;
-    overflow: hidden;
-    position: relative;
-    color: #ffffff;
-    border: 1px solid #f51123;
-    z-index: 1;
-    vertical-align: middle;
+  .testimonials-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
-  
-  .image-container img {
-    width: 100%;
-    height: auto;
+}
+
+@media (max-width: 480px) {
+  .products-grid,
+  .testimonials-grid {
+    grid-template-columns: 1fr;
   }
-  
-  .description {
-    max-width: 600px;
-    font-size: 18px;
-    line-height: 1.6;
+
+  .section-title {
+    font-size: 28px;
   }
+}

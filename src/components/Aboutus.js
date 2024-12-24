@@ -1,136 +1,190 @@
-import React from 'react';
-import '../styles/Aboutus.css'
-import visit from '../images/visit.jfif'
-import expo from '../images/expo.jfif'
-import training from '../images/training.jfif'
+// AboutUs.js
+import React, { useEffect } from 'react';
+import '../styles/aboutStyles.css';
 
-const Aboutus = () => {
-  const events = [
-    {
-      title: "Fire Safety Training Programs",
-      description: "Our specialized Fire Safety Training programs cover comprehensive chemical safety protocols, mock drills, and evacuation procedures. We believe in practical, hands-on training that ensures your team is well-prepared for any emergency situation.",
-      date: "Ongoing",
-      location: "Pan India",
-      imagePosition: "right",
-      image: training
-    },
-    {
-      title: "Industrial Solutions Showcase",
-      description: "We regularly showcase our complete range of industrial safety solutions, from material handling equipment to advanced protective coatings. These events provide hands-on experience with our products and direct interaction with our technical experts.",
-      date: "Monthly",
-      location: "Multiple Locations",
-      imagePosition: "left",
-      image: expo
-    }
-  ];
+const AboutUs = () => {
+  useEffect(() => {
+    const observerOptions = {
+      threshold: 0.2
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('about-animate');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.about-cards-container, .about-timeline-item, .about-team-grid, .about-stats-grid, .about-contact-content').forEach(element => {
+      observer.observe(element);
+    });
+  }, []);
 
   return (
-    <div className="about-us-container">
-      {/* Header Section */}
-      <header className="header">
-        <h1>NAAM Industrial Solutions</h1>
-        <p>19 Years of Excellence in Industrial Safety Products and Solutions</p>
-      </header>
-
-      {/* Who We Are Section */}
-      <section className="who-we-are">
-        <div className="content">
-          <div className="text-content">
-            <h2>Who We Are</h2>
-            <p>At NAAM Industrial Solutions, we are dedicated to being your complete solution provider for industrial safety needs. Our approach is defined by our name: we find your NEEDS, ANALYSE requirements, and ARRANGE MATERIAL for all your industrial demands. With 19 years of expertise, we've established ourselves as a trusted partner in industrial safety and solutions.</p>
-          </div>
-          <div className="image-content">
-            <img 
-              src={visit} 
-              alt="NAAM Industrial Team" 
-              className="team-image"
-            />
-          </div>
-        </div>
-      </section>
-
-      {/* Our Journey Timeline */}
-      <section className="journey-timeline">
-        <h2>Our Journey of Excellence</h2>
-        <div className="timeline-container">
-          {[
-            { 
-              year: 2005, 
-              title: "Foundation", 
-              description: "Started our journey in industrial safety products with a vision to become a comprehensive solution provider.",
-              icon: "🚀"
-            },
-            { 
-              year: 2015, 
-              title: "Service Expansion", 
-              description: "Expanded our portfolio to include specialized training programs and comprehensive industrial solutions.",
-              icon: "🏆"
-            },
-            { 
-              year: 2024, 
-              title: "Market Leadership", 
-              description: "Achieved 19 years of excellence in providing industrial safety solutions across various sectors.",
-              icon: "🌍"
-            }
-          ].map((milestone, index) => (
-            <div 
-              key={milestone.year} 
-              className={`timeline-item ${index % 2 === 0 ? 'left' : 'right'}`}
-            >
-              <div className="timeline-icon">{milestone.icon}</div>
-              <div className="timeline-content">
-                <h3>{milestone.year}: {milestone.title}</h3>
-                <p>{milestone.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
-      </section>
-
-      {/* Events Section */}
-      <div className="events-container">
-        <h2 className="events-title">Our Solutions & Services</h2>
-        
-        {events.map((event) => (
-          <div 
-            key={event.title} 
-            className={`event-wrapper ${event.imagePosition === 'right' ? 'image-right' : 'image-left'}`}
-          >
-            <div className={`event-image ${event.imagePosition === 'right' ? 'order-2' : ''}`}>
-              <img 
-                src={event.image} 
-                alt={event.title} 
-                className="event-photo"
-              />
-            </div>
-            <div className={`event-content ${event.imagePosition === 'right' ? 'order-1 pr-8' : 'pl-8'}`}>
-              <h3 className="event-name">{event.title}</h3>
-              <p className="event-description">{event.description}</p>
-              <div className="event-details">
-                <span className="event-date-location">
-                  {event.date} | {event.location}
-                </span>
-              </div>
-            </div>
-          </div>
-        ))}
-
-        {/* <div className="event-wrapper image-right">
-          <div className="event-content order-1 pr-8">
-            <h3 className="event-name">Contact Us</h3>
-            <p className="event-description">
-              We're here to help with all your industrial safety needs. Get in touch with us for professional consultation and solutions.
-            </p>
-            <div className="event-details">
-              <span className="event-date-location">
-                Email: Naamuser21@gmail.com, naamsales1@gmail.com | Phone: +91 9566888290
-              </span>
-            </div>
-          </div>
-        </div> */}
-      </div>
+    <div className="about-container">
+      <AboutHero />
+      <AboutMainContent />
+      <AboutTimelineSection />
+      <AboutTeamSection />
+      <AboutStatsSection />
+      <AboutContactSection />
     </div>
   );
 };
 
-export default Aboutus;
+const AboutHero = () => (
+  <section className="about-hero">
+    <div className="about-hero-content">
+      <h1>Innovation Tech</h1>
+      <p>Transforming ideas into reality through innovative technology solutions</p>
+    </div>
+  </section>
+);
+
+const AboutMainContent = () => (
+  <section className="about-main-content">
+    <h2 className="about-section-title">Who We Are</h2>
+    <div className="about-cards-container">
+      <div className="about-card">
+        <h2>Our Mission</h2>
+        <p>We strive to deliver cutting-edge solutions that empower businesses to thrive in the digital age. Through innovation and expertise, we help our clients achieve their goals and stay ahead of the competition.</p>
+      </div>
+      <div className="about-card">
+        <h2>Our Vision</h2>
+        <p>To be the leading force in technological innovation, creating solutions that positively impact businesses and communities worldwide while maintaining our commitment to excellence and sustainability.</p>
+      </div>
+      <div className="about-card">
+        <h2>Our Values</h2>
+        <p>Innovation, integrity, collaboration, and excellence form the cornerstone of our company culture. We believe in fostering an environment where creativity thrives and challenges become opportunities.</p>
+      </div>
+    </div>
+  </section>
+);
+
+const AboutTimelineSection = () => (
+  <section className="about-timeline-section">
+    <h2 className="about-section-title">Our Journey</h2>
+    <div className="about-timeline">
+      <div className="about-timeline-item">
+        <div className="about-timeline-content">
+          <h3>2014</h3>
+          <p>Founded with a vision to transform the technology landscape</p>
+        </div>
+      </div>
+      <div className="about-timeline-item">
+        <div className="about-timeline-content">
+          <h3>2016</h3>
+          <p>Expanded operations to international markets</p>
+        </div>
+      </div>
+      <div className="about-timeline-item">
+        <div className="about-timeline-content">
+          <h3>2018</h3>
+          <p>Launched our innovative cloud solutions platform</p>
+        </div>
+      </div>
+      <div className="about-timeline-item">
+        <div className="about-timeline-content">
+          <h3>2020</h3>
+          <p>Achieved industry leadership in AI and machine learning solutions</p>
+        </div>
+      </div>
+      <div className="about-timeline-item">
+        <div className="about-timeline-content">
+          <h3>2024</h3>
+          <p>Revolutionizing the future with cutting-edge technologies</p>
+        </div>
+      </div>
+    </div>
+  </section>
+);
+
+const AboutTeamSection = () => {
+  const teamMembers = [
+    {
+      name: "Sarah Johnson",
+      role: "CEO & Founder",
+      description: "Visionary leader with 15+ years in tech innovation",
+      image: "https://png.pngtree.com/png-vector/20230831/ourmid/pngtree-man-avatar-image-for-profile-png-image_9197908.png" // Replace with your image path
+    },
+    {
+      name: "David Chen",
+      role: "CTO",
+      description: "Technical genius behind our groundbreaking solutions",
+      image: "https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-user-profile-avatar-png-image_10211467.png" // Replace with your image path
+    },
+    {
+      name: "Emily Rodriguez",
+      role: "COO",
+      description: "Operations expert ensuring seamless delivery",
+      image: "https://png.pngtree.com/png-clipart/20231019/original/pngtree-user-profile-avatar-png-image_13369990.png" // Replace with your image path
+    },
+    {
+      name: "Michael Kim",
+      role: "Head of Innovation",
+      description: "Leading our R&D initiatives into the future",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQTV7zNI3SMqTFg6_L_3veUQrrAFJz_Utwf-L_wuW8vw1n9r35kPDvyQ9TiPuLgqWhFeI&usqp=CAU" // Replace with your image path
+    }
+  ];
+
+  return (
+    <section className="about-team-section">
+      <h2 className="about-section-title">Our Leadership</h2>
+      <div className="about-team-grid">
+        {teamMembers.map((member, index) => (
+          <div key={index} className="about-team-member">
+            <div className="about-member-image">
+              <img 
+                src={member.image} 
+                alt={member.name}
+                className="member-img"
+              />
+            </div>
+            <h3>{member.name}</h3>
+            <p className="member-role">{member.role}</p>
+            <p className="member-description">{member.description}</p>
+          </div>
+        ))}
+      </div>
+    </section>
+  );
+};
+
+const AboutStatsSection = () => (
+  <section className="about-stats-section">
+    <h2 className="about-section-title" style={{ color: 'white' }}>Our Impact</h2>
+    <div className="about-stats-grid">
+      <div className="about-stat-item">
+        <div className="about-stat-number">10+</div>
+        <p className='text-white'>Years of Experience</p>
+      </div>
+      <div className="about-stat-item">
+        <div className="about-stat-number">500+</div>
+        <p className='text-white'>Projects Completed</p>
+      </div>
+      <div className="about-stat-item">
+        <div className="about-stat-number">100+</div>
+        <p className='text-white'>Team Members</p>
+      </div>
+      <div className="about-stat-item">
+        <div className="about-stat-number">50+</div>
+        <p className='text-white'>Countries Served</p>
+      </div>
+    </div>
+  </section>
+);
+
+const AboutContactSection = () => (
+  <section className="about-contact-section">
+    <div className="about-contact-content">
+      <h2 className="about-section-title">Get In Touch</h2>
+      <p>Ready to transform your business with innovative technology solutions? We're here to help you succeed.</p>
+      <p>Email: contact@innovationtech.com</p>
+      <p>Phone: (555) 123-4567</p>
+      <p>Location: Silicon Valley, CA</p>
+    </div>
+  </section>
+);
+
+export default AboutUs;

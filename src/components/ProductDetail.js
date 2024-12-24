@@ -738,7 +738,7 @@ const ProductDetail = () => {
       },
       {
         id: 22,
-        name: "AC Automatic Boom Barrier",
+        name: "Examination Table",
         price: 1499.99,
         description: "AC Automatic Boom Barrier is a motorized gate system designed to control vehicle access with automated opening and closing functionality.",
         image: "https://www.unisurg.com/wp-content/uploads/2023/03/1666006046_cc2584bebfc260526b57-300x196.png",
@@ -1188,10 +1188,10 @@ const ProductDetail = () => {
           
           <p className="product-detail-description">{product.description}</p>
           
-          <div className="product-detail-price-section">
+          {/* <div className="product-detail-price-section">
             <span className="product-detail-price">${product.price.toFixed(2)}</span>
             <button className="buy-now-btn">Buy Now</button>
-          </div>
+          </div> */}
           
           <div className="product-detail-features">
             <h3>Key Features</h3>

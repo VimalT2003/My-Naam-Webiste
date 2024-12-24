@@ -14,23 +14,27 @@
 
 .filter-wrapper {
   position: relative;
-  display: flex;
-  align-items: center;
   width: 100%;
   padding: 10px 0;
 }
 
 .filter-container {
-  flex: 1;
-  overflow-x: hidden;
-  margin: 0 40px;
-  position: relative;
+  width: 100%;
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.filter-container::-webkit-scrollbar {
+  display: none;
 }
 
 .filter-buttons {
   display: inline-flex;
   gap: 10px;
   padding: 0 10px;
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
 }
 
 .filter-btn {
@@ -140,7 +144,7 @@
   color: white;
 }
 
-.product-grid {
+.product-grids {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 20px;
@@ -301,7 +305,7 @@
     margin: 4px;
   }
 
-  .product-grid {
+  .product-grids {
     grid-template-columns: 1fr;
   }
 }
