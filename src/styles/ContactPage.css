@@ -111,6 +111,16 @@
     font-size: 2rem;
     margin-bottom: 1rem;
   }
+
+  .status-message {
+    margin: 10px 0;
+    padding: 10px;
+    color: green;
+  }
+  
+  .status-message.error {
+    color: red;
+  }
   
   /* Contact Form */
   .contact-form {

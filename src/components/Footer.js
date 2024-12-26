@@ -39,9 +39,10 @@ const Footer = () => {
         <div className="footer-section ms-md-5">
           <h3>Contact Info</h3>
           <ul>
-            <li>📍 123 Business Street</li>
-            <li>📧 Naamuser21@gmail.com</li>
-            <li>📞 9566888290</li>
+            <li>📍 2/268 A, Annai Vellankanni Nagar, 3rd Street East, Saravanampatty Post, Vilankurichi Road, Coimbatore - 641 035.</li>
+            <li>📧 naamuser21@gmail.com</li>
+            <li>📧 naamsales1@gmail.com</li>
+            <li>📞 95668 88208</li>
           </ul>
         </div>
 
@@ -61,7 +62,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p className='text-white'>&copy; 2024 Your Company. All rights reserved.</p>
+        <p className='text-white'>&copy; 2024 NAAM Industrial Solutions. All rights reserved.</p>
       </div>
     </footer>
   );

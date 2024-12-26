@@ -42,12 +42,14 @@
   transform: translateY(-50%);
   max-width: 32rem; /* equivalent to max-w-lg in Tailwind */
   color: white;
+  animation: fadeIn 0.7s ease-out forwards;
 }
 
 .carousel-title {
   font-size: 3rem; /* 48px */
   font-weight: bold;
   margin-bottom: 1rem;
+  animation: slideFromLeft 0.5s ease-out 0.1s both;
 }
 
 .carousel-subtitle {
@@ -55,6 +57,7 @@
   margin-bottom: 2rem;
   line-height: 1.6;
   color:white;
+  animation: slideFromRight 0.5s ease-out 0.2s both;
 }
 
 .carousel-button {
@@ -66,10 +69,56 @@
   transition: background-color 0.3s ease;
   border: none;
   cursor: pointer;
+  animation: slideFromBottom 0.5s ease-out 0.3s both;
 }
 
 .carousel-button:hover {
   background-color: #1d4ed8; /* blue-700 */
+}
+
+/* Keyframe animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(2rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 /* Optional: Add responsive design */

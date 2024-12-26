@@ -1,6 +1,9 @@
 // AboutUs.js
 import React, { useEffect } from 'react';
 import '../styles/aboutStyles.css';
+import { MapPinHouse, Phone, MailOpenIcon } from 'lucide-react';
+import naambanner from '../images/naambanner.webp' 
+import { motion } from 'framer-motion';
 
 const AboutUs = () => {
   useEffect(() => {
@@ -25,6 +28,7 @@ const AboutUs = () => {
     <div className="about-container">
       <AboutHero />
       <AboutMainContent />
+      <ProductsServicesSection /> 
       <AboutTimelineSection />
       <AboutTeamSection />
       <AboutStatsSection />
@@ -33,13 +37,24 @@ const AboutUs = () => {
   );
 };
 
+
+
 const AboutHero = () => (
   <section className="about-hero">
-    <div className="about-hero-content">
-      <h1>Innovation Tech</h1>
-      <p>Transforming ideas into reality through innovative technology solutions</p>
-    </div>
-  </section>
+      <div className="shape shape-1"></div>
+      <div className="shape shape-2"></div>
+      
+      <div className="hero-container">
+        <div className="hero-content">
+          <h1>NAAM Industrial Solutions</h1>
+          <p>With 19 years of experience in Industrial Safety Products, NAAM Industrial Solutions is emerging as a leading solution provider. We take immense pleasure in introducing ourselves as your trusted partner, dedicated to fulfilling all your industrial requirements.</p>
+        </div>
+        
+        <div className="hero-image">
+          <img src={naambanner} alt="Innovation Tech" />
+        </div>
+      </div>
+    </section>
 );
 
 const AboutMainContent = () => (
@@ -48,19 +63,103 @@ const AboutMainContent = () => (
     <div className="about-cards-container">
       <div className="about-card">
         <h2>Our Mission</h2>
-        <p>We strive to deliver cutting-edge solutions that empower businesses to thrive in the digital age. Through innovation and expertise, we help our clients achieve their goals and stay ahead of the competition.</p>
+        <p>To provide comprehensive industrial solutions that address safety, security, and environmental challenges while continuously improving quality standards through training and collaboration.</p>
       </div>
       <div className="about-card">
         <h2>Our Vision</h2>
-        <p>To be the leading force in technological innovation, creating solutions that positively impact businesses and communities worldwide while maintaining our commitment to excellence and sustainability.</p>
+        <p>To become a globally recognized leader in industrial safety solutions by aligning customer needs with innovative and reliable products and services, ensuring sustainable growth and safety excellence.</p>
       </div>
       <div className="about-card">
-        <h2>Our Values</h2>
-        <p>Innovation, integrity, collaboration, and excellence form the cornerstone of our company culture. We believe in fostering an environment where creativity thrives and challenges become opportunities.</p>
+      <section id="our-values">
+    <h2>Our Values</h2>
+    <p>We are committed to meeting and exceeding customer expectations through dedication and innovation. Integrity is at the core of our operations, ensuring honesty and transparency in all our dealings.</p>
+  </section>
       </div>
     </div>
   </section>
 );
+
+const ProductsServicesSection = () => {
+  const productservice = [
+    {
+      title: "Fire Safety Trainings",
+      description: "Chemical Safety, Mock and Evacuation Drills",
+      icon: "🔥"
+    },
+    {
+      title: "Security Products",
+      description: "Face Recognition Attendance",
+      icon: "🔒"
+    },
+    {
+      title: "Environmental Products",
+      description: "Dustbins, Entry Mats",
+      icon: "🌱"
+    },
+    {
+      title: "Material Handling Equipment",
+      description: "Professional grade equipment",
+      icon: "🏗️"
+    },
+    {
+      title: "FRP Ladders",
+      description: "Durable and safe access solutions",
+      icon: "🪜"
+    },
+    {
+      title: "Traffic Safety Products",
+      description: "Comprehensive traffic management",
+      icon: "🚦"
+    },
+    {
+      title: "Industrial Water Tanks",
+      description: "Reliable storage solutions",
+      icon: "💧"
+    },
+    {
+      title: "Health Center Furniture",
+      description: "Professional medical furniture",
+      icon: "🏥"
+    },
+    {
+      title: "Industrial Tapes and Adhesives",
+      description: "High-performance bonding solutions",
+      icon: "🔧"
+    },
+    {
+      title: "Industrial Coatings",
+      description: "Specialized protective coatings",
+      icon: "🎨"
+    }
+  ];
+
+  return (
+    <section className="naam-products-section">
+      <div className="naam-products-wrapper">
+        <h2 className="about-section-title">Our Products and Services</h2>
+        <div className="naam-products-grid">
+          {productservice.map((product, index) => (
+            <motion.div
+              key={index}
+              className="naam-product-item"
+              initial={{ opacity: 0, y: 20 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.1 }}
+              whileHover={{ 
+                scale: 1.05,
+                boxShadow: "0 10px 20px rgba(0,0,0,0.1)"
+              }}
+            >
+              <div className="naam-product-icon">{product.icon}</div>
+              <h3>{product.title}</h3>
+              <p>{product.description}</p>
+            </motion.div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+};
 
 const AboutTimelineSection = () => (
   <section className="about-timeline-section">
@@ -156,12 +255,12 @@ const AboutStatsSection = () => (
     <h2 className="about-section-title" style={{ color: 'white' }}>Our Impact</h2>
     <div className="about-stats-grid">
       <div className="about-stat-item">
-        <div className="about-stat-number">10+</div>
+        <div className="about-stat-number">15+</div>
         <p className='text-white'>Years of Experience</p>
       </div>
       <div className="about-stat-item">
-        <div className="about-stat-number">500+</div>
-        <p className='text-white'>Projects Completed</p>
+        <div className="about-stat-number">50+</div>
+        <p className='text-white'>Products Avaliable</p>
       </div>
       <div className="about-stat-item">
         <div className="about-stat-number">100+</div>
@@ -179,10 +278,10 @@ const AboutContactSection = () => (
   <section className="about-contact-section">
     <div className="about-contact-content">
       <h2 className="about-section-title">Get In Touch</h2>
-      <p>Ready to transform your business with innovative technology solutions? We're here to help you succeed.</p>
-      <p>Email: contact@innovationtech.com</p>
-      <p>Phone: (555) 123-4567</p>
-      <p>Location: Silicon Valley, CA</p>
+      <p>Ready to transform your business with NAAM Industrial solutions? We're here to help you.</p>
+      <p><MailOpenIcon size={20} color="blue" /> Email: naamsales1@gmail.com , naamuser21@gmail.com</p>
+      <p><Phone size={20} color="blue" /> Phone: 95668 88208</p>
+      <p><MapPinHouse size={28} color="blue" /> Location: 2/268 A, Annai Vellankanni Nagar, 3rd Street East, Saravanampatty Post, Vilankurichi Road, Coimbatore - 641 035.</p>
     </div>
   </section>
 );

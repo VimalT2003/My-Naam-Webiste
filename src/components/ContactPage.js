@@ -1,11 +1,17 @@
 import React, { useState, useEffect } from 'react';
 import '../styles/ContactPage.css';
 import { MapPinHouse, Phone, MailOpenIcon } from 'lucide-react';
+import emailjs from '@emailjs/browser';
+import { toast } from 'react-hot-toast';
 
 const ContactPage = () => {
+
+  const adminEmail = 'naamuser21@gmail.com'; 
+  
   const [formData, setFormData] = useState({
     name: '',
     email: '',
+    phone: '',
     subject: '',
     message: ''
   });
@@ -53,9 +59,60 @@ const ContactPage = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    try {
+      const response = await fetch('http://localhost:5000/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      if (response.ok) {
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: ''
+        });
+        toast.success('Form submitted successfully');
+        // Sending email using EmailJS
+        emailjs.send(
+          'YOUR_SERVICE_ID',
+          'YOUR_TEMPLATE_ID',
+          {
+            to_email: adminEmail,
+            from_name: formData.name,
+            from_email: formData.email,
+            phone_number: formData.phone,
+            subject: formData.subject,
+            message: formData.message
+          },
+          'YOUR_PUBLIC_KEY'
+        )
+        .then((response) => {
+          console.log('Email sent to admin:', response);
+        })
+        .catch((error) => {
+          console.error('Failed to send email:', error);
+        });
+      } else {
+        toast.error('Form data not submitted, try again');
+        setFormData({
+          name: '',
+          email: '',
+          phone: '',
+          subject: '',
+          message: ''
+        });
+        throw new Error('Failed to submit form data.');
+      }
+    } catch (error) {
+      console.error('Submission Error:', error);
+    }
   };
 
   const handleChange = (e) => {
@@ -71,33 +128,9 @@ const ContactPage = () => {
       <div className="hero">
         <div className="hero-content mt-5">
           <h1>Contact Us</h1>
-          <p className='text-white'>Get in touch with our team</p>
+          <p className="text-white">Get in touch with our team</p>
         </div>
       </div>
-
-      {/* <div className={`image-gallery ${isVisible.gallery ? 'visible' : ''}`}>
-        <div className="gallery-item">
-          <img src={training} alt="Office" />
-          <div className="overlay">
-            <h3>Our Office</h3>
-            <p>Where innovation happens</p>
-          </div>
-        </div>
-        <div className="gallery-item">
-          <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=" alt="Team" />
-          <div className="overlay">
-            <h3>Our Team</h3>
-            <p>Dedicated professionals</p>
-          </div>
-        </div>
-        <div className="gallery-item">
-          <img src="https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=612x612&w=0&k=20&c=A63koPKaCyIwQWOTFBRWXj_PwCrR4cEoOw2S9Q7yVl8=" alt="Projects" />
-          <div className="overlay">
-            <h3>Our Projects</h3>
-            <p>Success stories</p>
-          </div>
-        </div>
-      </div> */}
 
       <div className={`contact-info ${isVisible.info ? 'visible' : ''}`}>
         <div className="info-card">
@@ -108,12 +141,13 @@ const ContactPage = () => {
         <div className="info-card">
           <div className="icon"><MailOpenIcon size={28} color="blue" /></div>
           <h3>Email</h3>
-          <p>Naamuser21@gmail.com</p>
+          <p>naamuser21@gmail.com</p>
+          <p>naamsales1@gmail.com</p>
         </div>
         <div className="info-card">
           <div className="icon"><MapPinHouse size={28} color="blue" /></div>
           <h3>Address</h3>
-          <p>123 Street, City, Country</p>
+          <p>2/268 A, Annai Vellankanni Nagar, 3rd Street East, Saravanampatty Post, Vilankurichi Road, Coimbatore - 641 035.</p>
         </div>
       </div>
 
@@ -145,6 +179,17 @@ const ContactPage = () => {
             </div>
           </div>
           <div className="form-group">
+            <label htmlFor="subject">Phone no.</label>
+            <input
+              type="text"
+              id="phone"
+              name="phone"
+              value={formData.phone}
+              onChange={handleChange}
+              required
+            />
+          </div>
+          <div className="form-group">
             <label htmlFor="subject">Subject</label>
             <input
               type="text"
@@ -166,7 +211,7 @@ const ContactPage = () => {
               required
             ></textarea>
           </div>
-          <button className='contactBtn' type="submit">Send Message</button>
+          <button className="contactBtn" type="submit">Send Message</button>
         </form>
       </div>
     </div>

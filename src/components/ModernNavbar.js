@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Home, User, ShoppingCart, Phone, Menu, X } from 'lucide-react';
-import naamlogo from '../images/naamlogo.jfif'
+import naamlogo from '../images/naamlogo.jpg'
 import '../styles/ModernNavbar.css';
 
 const ModernNavbar = () => {
@@ -33,7 +33,7 @@ const ModernNavbar = () => {
       {/* Logo */}
       <div className="logo">
         <span className={`logo-text ${scrolled ? 'scrolled' : ''}`}>
-         NAAM
+         <img src={naamlogo} style={{height:"70px",width:"100%",background:"transparent"}} alt="naam"/>
         </span>
       </div>
 

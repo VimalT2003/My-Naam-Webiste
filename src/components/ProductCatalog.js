@@ -1,6 +1,16 @@
 import React, { useRef, useState } from "react";
 import "../styles/ProductCatalog.css";
 import { useNavigate } from "react-router-dom";
+import mat1 from '../images/mat1.jpg';
+import mat2 from '../images/mat2.jfif'
+import mat3 from '../images/mat3.jpg';
+import mat4 from '../images/mat4.jpg';
+import mat5 from '../images/mat5.webp';
+import mat6 from '../images/mat6.jpg';
+import hyg1 from '../images/hyg1.webp';
+import hyg2 from '../images/hyg2.jpg'
+import hyg3 from '../images/hyg3.webp';
+import hyg4 from '../images/hyg4.webp'
 
 const ProductCatalog = () => {
   const navigate = useNavigate();
@@ -16,8 +26,7 @@ const ProductCatalog = () => {
       price: 1499.99,
       description:
         "Ramp Mats are Anti-slip rubber mats with a​ raised circular surface.",
-      image:
-        "https://geckotred.co.nz/wp-content/uploads/2020/08/Safety-Cushion-150-x-90-Black-scaled-600x400.jpg",
+      image: mat1,
       category: "MAT",
       rating: 4.6,
       features: ["DRH 110 J​", "90 X 150 CM​", "16 mm​"],
@@ -28,8 +37,7 @@ const ProductCatalog = () => {
       price: 1499.99,
       description:
         "Scraper Entrance Mats are designed to stop mud and larger particles of dirt from being tracked inside​.",
-      image:
-        "https://th.bing.com/th/id/OIP.yJta_OPAb_LLufFXOLXjrgHaE6?rs=1&pid=ImgDetMain",
+      image: mat2,
       category: "MAT",
       rating: 4.6,
       features: ["DRS 684​J​", "87 x 154 cm​​", "9 mm​​"],
@@ -40,8 +48,7 @@ const ProductCatalog = () => {
       price: 1499.99,
       description:
         "Scraper Entrance Mats are designed to stop mud and larger particles of dirt from being tracked inside​.Easy to clean with hose or brush.",
-      image:
-        "https://www.vikasrubbermats.com/uploads_vik/big-091023123307ridge-scrapper-mat.jpg",
+      image: mat3,
       category: "MAT",
       rating: 4.6,
       features: ["DRS 631 C​​", "90 x 150 cm​​", "8 mm​​​"],
@@ -52,8 +59,7 @@ const ProductCatalog = () => {
       price: 1499.99,
       description:
         "Excellent scrapper qualities coupled with superior anti-slippery property can be used in high foot traffic areas & wet surfaces.​",
-      image:
-        "https://static.wixstatic.com/media/b42d49_78a64fe1e2064ae8b99599091cc1e527~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+      image: mat4,
       category: "MAT",
       rating: 4.6,
       features: ["DRH 124 B​​​", "100 x 150 cm​​​", "13 mm​​"],
@@ -64,8 +70,7 @@ const ProductCatalog = () => {
       price: 1499.99,
       description:
         "Rubber Waves Mat are ideal work station mat in front of machines in factories, kitchens in restaurants and in areas subject to oil and debris. It is extremely heavy duty, and has slots for debris to fall through for easy cleaning.​​",
-      image:
-        "https://5.imimg.com/data5/SELLER/Default/2023/11/359669209/TM/EL/BX/14294248/industrial-waves-mat-500x500.jpg",
+      image: mat5,
       category: "MAT",
       rating: 4.6,
       features: ["DRH 123​​​​", "90 x 150 cm​​​​", "12 mm​"],
@@ -76,8 +81,7 @@ const ProductCatalog = () => {
       price: 1499.99,
       description:
         "Tough and resilient. Several air pockets to enhance anti-fatigue property.​.​​",
-      image:
-        "https://cpimg.tistatic.com/06104026/b/4/Dolphin-Bubble-Roll-Yellow-Border.jpg",
+      image: mat6,
       category: "MAT",
       rating: 4.6,
       features: ["DRS 622 DYR​​​​​", "0.9 x 9.3 m​​​​​", "15 mm​​"],
@@ -88,8 +92,7 @@ const ProductCatalog = () => {
       price: 1999.99,
       description:
         "The ES83AC Auto Soap Dispenser ensures touch-free, hygienic soap dispensing with a sleek, modern design.",
-      image:
-        "https://euronics.co.in/wp-content/uploads/2024/04/ES83AC-IMG1-1-jpg.webp",
+      image : hyg1,
       category: "Hygiene",
       rating: 4.7,
       features: [
@@ -105,8 +108,7 @@ const ProductCatalog = () => {
       price: 1999.99,
       description:
         "The ESM3 provides a quick, automatic shine with soft brushes. Its compact design makes it easy to use anywhere.",
-      image:
-        "https://euronics.co.in/wp-content/uploads/2022/06/Shoe-Shining-Machine-ESM3.jpg",
+      image: hyg2,
       category: "Hygiene",
       rating: 4.7,
       features: [
@@ -122,8 +124,7 @@ const ProductCatalog = () => {
       price: 399.99,
       description:
         "Manufacturer of a wide range of products which include insect killer with glue board, glue pad fly catcher machine, glue board fly catcher machine-linnea fl warrior 30, linnea glue board fly catcher machine, glue board fly catcher machine - linnea fl warrior 45 and linnea glue board fly trap machine.",
-      image:
-        "https://5.imimg.com/data5/SELLER/Default/2023/5/306792205/HQ/SR/KM/1924592/glue-board-fly-catcher-machine-linnea-fl-warrior-30-500x500.jpg",
+      image: hyg3,
       category: "Hygiene",
       rating: 4.9,
       features: [
@@ -139,8 +140,7 @@ const ProductCatalog = () => {
       price: 1199.99,
       description:
         "Portable Foam Equipment offers quick fire control with lightweight, easy-to-deploy design.",
-      image:
-        "https://aaagindia.in/public-images/PORTABLE-FOAM-EQUIPMENT_1587410104.png",
+      image: hyg4,
       category: "Fire Safety Products",
       rating: 4.8,
       features: [
@@ -322,38 +322,53 @@ const ProductCatalog = () => {
     },
     {
       id: 21,
-      name: "AC AUTOMATIC BOOM BARRIER",
-      price: 1499.99,
-      description:
-        "AC Automatic Boom Barrier is a motorized gate system designed to control vehicle access with automated opening and closing functionality.",
-      image:
-        "https://www.unisurg.com/wp-content/uploads/2023/03/thumb_1666008522_bf1284472c1b751de200-300x313.png",
+      name: "Comfort Plus Wheelchair",
+      price: 299.99,
+      description: "The Comfort Plus Wheelchair is designed for enhanced mobility and comfort, offering reliable support for individuals with limited mobility. It features a lightweight frame and adjustable seating to ensure both ease of movement and comfort during extended use.",
+      image: "https://www.unisurg.com/wp-content/uploads/2023/03/thumb_1666008522_bf1284472c1b751de200-300x313.png",
       category: "First Aid Center",
-      rating: 4.6,
+      rating: 4.7,
       features: [
-        "Automated vehicle access control",
-        "Smooth and quick operation",
-        "Durable and weather-resistant design",
-        "Supports remote control and sensor integration",
-      ],
+        "Lightweight and easy to maneuver",
+        "Adjustable armrests and footrests for personalized comfort",
+        "Durable and rust-resistant frame",
+        "Pneumatic tires for smooth ride over various terrains",
+        "Foldable for easy storage and transport"
+      ]
     },
     {
       id: 22,
       name: "Examination Table",
-      price: 1499.99,
-      description:
-        "AC Automatic Boom Barrier is a motorized gate system designed to control vehicle access with automated opening and closing functionality.",
-      image:
-        "https://www.unisurg.com/wp-content/uploads/2023/03/1666006046_cc2584bebfc260526b57-300x196.png",
+      price: 499.99,
+      description: "The Examination Table is designed to provide comfort and support for patients during medical evaluations. It features a sturdy frame, adjustable backrest, and cushioned upholstery, making it ideal for clinics and hospitals.",
+      image: "https://www.unisurg.com/wp-content/uploads/2023/03/1666006046_cc2584bebfc260526b57-300x196.png",
       category: "First Aid Center",
-      rating: 4.6,
+      rating: 4.8,
       features: [
-        "Automated vehicle access control",
-        "Smooth and quick operation",
-        "Durable and weather-resistant design",
-        "Supports remote control and sensor integration",
-      ],
+        "Adjustable backrest for optimal positioning",
+        "High-quality cushioned upholstery for patient comfort",
+        "Durable and stable frame with anti-slip feet",
+        "Built-in paper roll holder for convenience",
+        "Easy to clean and maintain surfaces"
+      ]
     },
+    // {
+    //   id: 22,
+    //   name: "Examination Table",
+    //   price: 1499.99,
+    //   description:
+    //     "AC Automatic Boom Barrier is a motorized gate system designed to control vehicle access with automated opening and closing functionality.",
+    //   image:
+    //     "https://www.unisurg.com/wp-content/uploads/2023/03/1666006046_cc2584bebfc260526b57-300x196.png",
+    //   category: "First Aid Center",
+    //   rating: 4.6,
+    //   features: [
+    //     "Automated vehicle access control",
+    //     "Smooth and quick operation",
+    //     "Durable and weather-resistant design",
+    //     "Supports remote control and sensor integration",
+    //   ],
+    // },
     {
       id: 23,
       name: "BED SIDE LOCKER",
@@ -407,20 +422,21 @@ const ProductCatalog = () => {
     },
     {
       id: 26,
-      name: "AC AUTOMATIC BOOM BARRIER",
+      name: "Hand Held Metal Detector",
       price: 1499.99,
       description:
-        "AC Automatic Boom Barrier is a motorized gate system designed to control vehicle access with automated opening and closing functionality.",
+        "The Hand Held Metal Detector is a compact and reliable device designed for security screening and detecting metallic objects. It offers high sensitivity and easy operation, making it ideal for security personnel and inspection purposes.",
       image:
         "https://www.staticsystems.in/assets/img/products/weapon-scanner.jpg",
       category: "Entrance Automation Product",
       rating: 4.6,
       features: [
-        "Automated vehicle access control",
-        "Smooth and quick operation",
-        "Durable and weather-resistant design",
-        "Supports remote control and sensor integration",
-      ],
+          "High sensitivity detection",
+          "Lightweight design",
+          "Audible and vibration alerts",
+          "Rechargeable battery",
+          "Durable and sturdy build"
+        ]
     },
     {
       id: 27,
