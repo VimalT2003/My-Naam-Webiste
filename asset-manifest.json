@@ -1,17 +1,36 @@
 {
   "files": {
-    "main.css": "/My-Naam-Webiste/static/css/main.514438f2.css",
-    "main.js": "/My-Naam-Webiste/static/js/main.8fcc2f3b.js",
+    "main.css": "/My-Naam-Webiste/static/css/main.f5709ce1.css",
+    "main.js": "/My-Naam-Webiste/static/js/main.78fb99a0.js",
     "static/media/matnaam.webp": "/My-Naam-Webiste/static/media/matnaam.d5ca4fd37bbc0f24b08a.webp",
+    "static/media/naambanner.webp": "/My-Naam-Webiste/static/media/naambanner.1dbf85c057e0dc8ba939.webp",
     "static/media/Naam.png": "/My-Naam-Webiste/static/media/Naam.f0336d7d1e2f3da0e739.png",
+    "static/media/event3.jpeg": "/My-Naam-Webiste/static/media/event3.f0cfbfaefc2b352a903a.jpeg",
     "static/media/barrier.webp": "/My-Naam-Webiste/static/media/barrier.3fbd0e182d810d534ceb.webp",
-    "static/media/naamlogo.jfif": "/My-Naam-Webiste/static/media/naamlogo.014ba3dc877304a3480c.jfif",
+    "static/media/mat3.jpg": "/My-Naam-Webiste/static/media/mat3.102ee23056489d16ec75.jpg",
+    "static/media/mat6.jpg": "/My-Naam-Webiste/static/media/mat6.2de188417c562b08142d.jpg",
+    "static/media/event5.jpeg": "/My-Naam-Webiste/static/media/event5.c70a18c1a34954e0f784.jpeg",
+    "static/media/event2.jpeg": "/My-Naam-Webiste/static/media/event2.b4203baf47eb92dbbf88.jpeg",
+    "static/media/event4.jpeg": "/My-Naam-Webiste/static/media/event4.6fbde71fd119178646ec.jpeg",
+    "static/media/blood1.jpeg": "/My-Naam-Webiste/static/media/blood1.1a7fc05f1d1313d4865f.jpeg",
+    "static/media/event1.jpeg": "/My-Naam-Webiste/static/media/event1.27f36a5663df7f1f5398.jpeg",
+    "static/media/blood2.jpeg": "/My-Naam-Webiste/static/media/blood2.affd71e788f98e687ded.jpeg",
+    "static/media/vivega.jpeg": "/My-Naam-Webiste/static/media/vivega.e3ddc44bbcc7de6eda35.jpeg",
+    "static/media/mat4.jpg": "/My-Naam-Webiste/static/media/mat4.3cbfed60b294be755696.jpg",
+    "static/media/naamlogo.jpg": "/My-Naam-Webiste/static/media/naamlogo.1454806188bf222e881f.jpg",
+    "static/media/hyg2.jpg": "/My-Naam-Webiste/static/media/hyg2.49c8fb375a9a82a62641.jpg",
+    "static/media/mat1.jpg": "/My-Naam-Webiste/static/media/mat1.dbb3edec81a4beb74c93.jpg",
+    "static/media/mat5.webp": "/My-Naam-Webiste/static/media/mat5.b468c228de1ba4a368f8.webp",
+    "static/media/hyg3.webp": "/My-Naam-Webiste/static/media/hyg3.88de16a126464f8a25df.webp",
+    "static/media/mat2.jfif": "/My-Naam-Webiste/static/media/mat2.347feaf53dc0d012e1cb.jfif",
+    "static/media/hyg4.webp": "/My-Naam-Webiste/static/media/hyg4.d198cf7bcf6d508da8f7.webp",
+    "static/media/hyg1.webp": "/My-Naam-Webiste/static/media/hyg1.4286d3ebe84a14a71c7d.webp",
     "index.html": "/My-Naam-Webiste/index.html",
-    "main.514438f2.css.map": "/My-Naam-Webiste/static/css/main.514438f2.css.map",
-    "main.8fcc2f3b.js.map": "/My-Naam-Webiste/static/js/main.8fcc2f3b.js.map"
+    "main.f5709ce1.css.map": "/My-Naam-Webiste/static/css/main.f5709ce1.css.map",
+    "main.78fb99a0.js.map": "/My-Naam-Webiste/static/js/main.78fb99a0.js.map"
   },
   "entrypoints": [
-    "static/css/main.514438f2.css",
-    "static/js/main.8fcc2f3b.js"
+    "static/css/main.f5709ce1.css",
+    "static/js/main.78fb99a0.js"
   ]
 }
