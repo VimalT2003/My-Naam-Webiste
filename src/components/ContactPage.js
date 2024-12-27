@@ -81,8 +81,8 @@ const ContactPage = () => {
         toast.success('Form submitted successfully');
         // Sending email using EmailJS
         emailjs.send(
-          'YOUR_SERVICE_ID',
-          'YOUR_TEMPLATE_ID',
+          'service_8g6la6o',
+          'template_vp3ylni',
           {
             to_email: adminEmail,
             from_name: formData.name,
@@ -91,7 +91,7 @@ const ContactPage = () => {
             subject: formData.subject,
             message: formData.message
           },
-          'YOUR_PUBLIC_KEY'
+          'zsqpZoT5yn5i1ZHt9'
         )
         .then((response) => {
           console.log('Email sent to admin:', response);

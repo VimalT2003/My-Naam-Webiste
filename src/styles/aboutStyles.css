@@ -517,7 +517,6 @@
   }
 }
 
-/* Updated Gallery Section Styles */
 .gallery-section {
   padding: 4rem 1rem;
   background-color: #f8f9fa;
@@ -534,13 +533,12 @@
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
-  scrollbar-width: none; /* Firefox */
-  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   padding: 2rem 1rem;
   gap: 2rem;
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
 .gallery-scroll::-webkit-scrollbar {
   display: none;
 }
@@ -548,7 +546,6 @@
 .gallery-item {
   flex: 0 0 auto;
   width: 300px;
-  perspective: 1000px;
 }
 
 .gallery-image-container {
@@ -557,21 +554,19 @@
   height: 300px;
   border-radius: 15px;
   overflow: hidden;
-  transform-style: preserve-3d;
-  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.gallery-item:hover .gallery-image-container {
-  transform: rotateY(180deg);
+  transition: all 0.3s ease;
 }
 
 .gallery-image-container img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  backface-visibility: hidden;
   border-radius: 15px;
-  transform: rotateY(0deg);
+  transition: all 0.3s ease;
+}
+
+.gallery-item:hover .gallery-image-container img {
+  filter: blur(5px);
 }
 
 .gallery-overlay {
@@ -582,24 +577,30 @@
   height: 100%;
   background: linear-gradient(
     135deg,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0.7) 100%
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0.5) 100%
   );
   display: flex;
   align-items: center;
   justify-content: center;
-  backface-visibility: hidden;
-  transform: rotateY(180deg);
   padding: 2rem;
   color: white;
   text-align: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.gallery-item:hover .gallery-overlay {
+  opacity: 1;
 }
 
 .overlay-content {
-  transform: translateZ(50px);
-  opacity: 0;
-  animation: fadeIn 0.5s ease forwards;
-  animation-delay: 0.3s;
+  transform: translateY(20px);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover .overlay-content {
+  transform: translateY(0);
 }
 
 .overlay-content h3 {
@@ -650,17 +651,6 @@
 
 .scroll-button.right {
   right: 1rem;
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: translateY(20px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
 }
 
 /* Responsive Adjustments */
@@ -752,7 +742,7 @@
 
 .event-image {
   width: 100%;
-  height: 200px;
+  height: 400px;
   overflow: hidden;
 }
 
@@ -803,6 +793,6 @@
   }
   
   .event-image {
-    height: 180px;
+    height: 220px;
   }
 }

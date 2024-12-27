@@ -305,7 +305,7 @@ const ProductCatalog = () => {
     },
     {
       id: 20,
-      name: "AC AUTOMATIC BOOM BARRIER",
+      name: "AUTOMATIC BOOM BARRIER",
       price: 1499.99,
       description:
         "AC Automatic Boom Barrier is a motorized gate system designed to control vehicle access with automated opening and closing functionality.",
@@ -503,6 +503,22 @@ const ProductCatalog = () => {
         "Lightweight and comfortable fit",
         "Adjustable headband for a secure fit",
         "Meets industrial safety and quality standards",
+      ],
+    },
+    {
+      id: 31,
+      name: "Ft 31 Flameproof",
+      price: 1499.99,
+      description:
+        "Ft 31 Flameproof Lights are specialized lighting solutions designed to operate safely in hazardous environments where flammable gases, vapors, or dust are present.",
+      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7_kQLEJinA_evM388CkbH6eXSiVh97uHQa4NuhLWD3p-p1mLOvpZ6usvt4x7aGVWdWYE&usqp=CAU",
+      category: "Flame Proff Products",
+      rating: 4.6,
+      features: [
+        "Flameproof design for hazardous areas",
+        "High durability and impact resistance",
+        "Energy-efficient lighting solution",
+        "Compliant with safety and industrial standards",
       ],
     },
     // {

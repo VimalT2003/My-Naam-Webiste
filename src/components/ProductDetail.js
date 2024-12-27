@@ -676,7 +676,7 @@ const ProductDetail = () => {
       },
       {
         id: 20,
-        name: "AC Automatic Boom Barrier",
+        name: "Automatic Boom Barrier",
         price: 1499.99,
         description: "AC Automatic Boom Barrier is a motorized gate system designed to control vehicle access with automated opening and closing functionality.",
         image: "https://image.made-in-china.com/226f3j00kUjtdMiGORzp/AC-Automatic-Boom-Barrier-Factory.webp",

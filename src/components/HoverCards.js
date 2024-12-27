@@ -15,7 +15,7 @@ const HoverCards = () => {
         "The ES83AC Auto Soap Dispenser is a cutting-edge hygiene solution designed...",
       badge:
         "https://dt-multispare.myshopify.com/cdn/shop/files/slider_quote_image.png?v=1665378595&width=1500",
-      isPopular: true,
+      // isPopular: true,
       ProductId: 7,
     },
     {
@@ -37,7 +37,7 @@ const HoverCards = () => {
         "The FRP Single Side Self Supporting Ladder is lightweight and sturdy, offering stability for safe....",
       badge:
         "https://dt-multispare.myshopify.com/cdn/shop/files/slider_quote_image.png?v=1665378595&width=1500",
-      isPopular: true,
+      // isPopular: true,
       ProductId: 15
     },
     {

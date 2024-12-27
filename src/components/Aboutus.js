@@ -4,6 +4,14 @@ import "../styles/aboutStyles.css";
 import { MapPinHouse, Phone, MailOpenIcon,ChevronLeft, ChevronRight } from "lucide-react";
 import naambanner from "../images/naambanner.webp";
 import { motion } from "framer-motion";
+import blood1 from '../images/blood1.jpeg'
+import blood2 from '../images/blood2.jpeg'
+import event1 from '../images/event1.jpeg'
+import event2 from '../images/event2.jpeg'
+import event3 from '../images/event3.jpeg'
+import event4 from '../images/event4.jpeg'
+import event5 from '../images/event5.jpeg'
+import vivega from '../images/vivega.jpeg'
 
 const AboutUs = () => {
   useEffect(() => {
@@ -318,7 +326,7 @@ const ImageGallerySection = () => {
   const galleryImages = [
     {
       id: 1,
-      src: "https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=1024x1024&w=0&k=20&c=z8_rWaI8x4zApNEEG9DnWlGXyDIXe-OmsAyQ5fGPVV8=",
+      src: event1,
       alt: "Industrial Safety Equipment",
       title: "Safety First",
       description: "State-of-the-art safety equipment for industrial use",
@@ -326,7 +334,7 @@ const ImageGallerySection = () => {
     },
     {
       id: 2,
-      src: "https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg",
+      src: event2,
       alt: "Training Session",
       title: "Professional Training",
       description: "Expert-led training sessions for industrial safety",
@@ -334,7 +342,7 @@ const ImageGallerySection = () => {
     },
     {
       id: 3,
-      src: "https://img.freepik.com/premium-photo/wide-angle-shot-single-tree-growing-clouded-sky-sunset-surrounded-by-grass_181624-22807.jpg?semt=ais_hybrid",
+      src: event3,
       alt: "Product Display",
       title: "Quality Products",
       description: "Premium quality industrial safety products",
@@ -342,7 +350,7 @@ const ImageGallerySection = () => {
     },
     {
       id: 4,
-      src: "https://t3.ftcdn.net/jpg/02/70/35/00/360_F_270350073_WO6yQAdptEnAhYKM5GuA9035wbRnVJSr.jpg",
+      src: event4,
       alt: "Team Meeting",
       title: "Collaborative Approach",
       description: "Team discussions for better solutions",
@@ -350,20 +358,20 @@ const ImageGallerySection = () => {
     },
     {
       id: 5,
-      src: "https://img.freepik.com/premium-photo/fantastic-autumn-sunny-day-hintersee-lake_761071-2130.jpg?semt=ais_hybrid",
+      src: event5,
       alt: "Warehouse",
       title: "State-of-art Facility",
       description: "Modern warehouse facility for efficient operations",
       date: "November 2023"
     },
-    {
-      id: 6,
-      src: "https://img.freepik.com/premium-photo/lake-strbske-pleso-high-tatras-mountain-slovakia_146671-5856.jpg?semt=ais_hybrid",
-      alt: "Client Meeting",
-      title: "Customer Focus",
-      description: "Dedicated customer service and support",
-      date: "October 2023"
-    }
+    // {
+    //   id: 6,
+    //   src: vivega,
+    //   alt: "Client Meeting",
+    //   title: "Customer Focus",
+    //   description: "Dedicated customer service and support",
+    //   date: "October 2023"
+    // }
   ];
 
   const scroll = (direction) => {
@@ -423,7 +431,7 @@ const BloodDonationSection = () => {
       date: "March 15, 2024",
       location: "NAAM Community Center",
       donors: 45,
-      image: "https://img.freepik.com/free-photo/green-trees-near-lake-mountain-blue-sky-daytime_395237-89.jpg",
+      image: blood1,
       description: "Annual Blood Donation Camp"
     },
     {
@@ -431,17 +439,17 @@ const BloodDonationSection = () => {
       date: "December 10, 2023",
       location: "City Hospital",
       donors: 32,
-      image: "https://media.istockphoto.com/id/1415405974/photo/blood-donor-at-donation-with-bouncy-ball-holding-in-hand.jpg?s=612x612&w=0&k=20&c=j0nkmkJxIP6U6TsI3yTq8iuc0Ufhq6xoW4FSMlKaG6A=",
+      image: blood2,
       description: "Emergency Blood Drive"
     },
-    {
-      id: 3,
-      date: "August 20, 2023",
-      location: "Industrial Park",
-      donors: 28,
-      image: "https://mmhrc.in/file/wp-content/uploads/2022/03/blood-donation.jpg",
-      description: "Corporate Social Responsibility Initiative"
-    }
+    // {
+    //   id: 3,
+    //   date: "August 20, 2023",
+    //   location: "Industrial Park",
+    //   donors: 28,
+    //   image: "https://mmhrc.in/file/wp-content/uploads/2022/03/blood-donation.jpg",
+    //   description: "Corporate Social Responsibility Initiative"
+    // }
   ];
 
   return (
