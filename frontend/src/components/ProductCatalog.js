@@ -1,16 +1,17 @@
 import React, { useRef, useState } from "react";
 import "../styles/ProductCatalog.css";
 import { useNavigate } from "react-router-dom";
-import mat1 from '../images/mat1.jpg';
-import mat2 from '../images/mat2.jfif'
-import mat3 from '../images/mat3.jpg';
-import mat4 from '../images/mat4.jpg';
-import mat5 from '../images/mat5.webp';
-import mat6 from '../images/mat6.jpg';
-import hyg1 from '../images/hyg1.webp';
-import hyg2 from '../images/hyg2.jpg'
-import hyg3 from '../images/hyg3.webp';
-import hyg4 from '../images/hyg4.webp'
+import mat1 from "../images/mat1.jpg";
+import mat2 from "../images/mat2.jfif";
+import mat3 from "../images/mat3.jpg";
+import mat4 from "../images/mat4.jpg";
+import mat5 from "../images/mat5.webp";
+import mat6 from "../images/mat6.jpg";
+import hyg1 from "../images/hyg1.webp";
+import hyg2 from "../images/hyg2.jpg";
+import hyg3 from "../images/hyg3.webp";
+import hyg4 from "../images/hyg4.webp";
+import fan1 from '../images/indusfan.jpeg'
 
 const ProductCatalog = () => {
   const navigate = useNavigate();
@@ -92,7 +93,7 @@ const ProductCatalog = () => {
       price: 1999.99,
       description:
         "The ES83AC Auto Soap Dispenser ensures touch-free, hygienic soap dispensing with a sleek, modern design.",
-      image : hyg1,
+      image: hyg1,
       category: "Hygiene",
       rating: 4.7,
       features: [
@@ -324,8 +325,10 @@ const ProductCatalog = () => {
       id: 21,
       name: "Comfort Plus Wheelchair",
       price: 299.99,
-      description: "The Comfort Plus Wheelchair is designed for enhanced mobility and comfort, offering reliable support for individuals with limited mobility. It features a lightweight frame and adjustable seating to ensure both ease of movement and comfort during extended use.",
-      image: "https://www.unisurg.com/wp-content/uploads/2023/03/thumb_1666008522_bf1284472c1b751de200-300x313.png",
+      description:
+        "The Comfort Plus Wheelchair is designed for enhanced mobility and comfort, offering reliable support for individuals with limited mobility. It features a lightweight frame and adjustable seating to ensure both ease of movement and comfort during extended use.",
+      image:
+        "https://www.unisurg.com/wp-content/uploads/2023/03/thumb_1666008522_bf1284472c1b751de200-300x313.png",
       category: "First Aid Center",
       rating: 4.7,
       features: [
@@ -333,15 +336,17 @@ const ProductCatalog = () => {
         "Adjustable armrests and footrests for personalized comfort",
         "Durable and rust-resistant frame",
         "Pneumatic tires for smooth ride over various terrains",
-        "Foldable for easy storage and transport"
-      ]
+        "Foldable for easy storage and transport",
+      ],
     },
     {
       id: 22,
       name: "Examination Table",
       price: 499.99,
-      description: "The Examination Table is designed to provide comfort and support for patients during medical evaluations. It features a sturdy frame, adjustable backrest, and cushioned upholstery, making it ideal for clinics and hospitals.",
-      image: "https://www.unisurg.com/wp-content/uploads/2023/03/1666006046_cc2584bebfc260526b57-300x196.png",
+      description:
+        "The Examination Table is designed to provide comfort and support for patients during medical evaluations. It features a sturdy frame, adjustable backrest, and cushioned upholstery, making it ideal for clinics and hospitals.",
+      image:
+        "https://www.unisurg.com/wp-content/uploads/2023/03/1666006046_cc2584bebfc260526b57-300x196.png",
       category: "First Aid Center",
       rating: 4.8,
       features: [
@@ -349,26 +354,9 @@ const ProductCatalog = () => {
         "High-quality cushioned upholstery for patient comfort",
         "Durable and stable frame with anti-slip feet",
         "Built-in paper roll holder for convenience",
-        "Easy to clean and maintain surfaces"
-      ]
+        "Easy to clean and maintain surfaces",
+      ],
     },
-    // {
-    //   id: 22,
-    //   name: "Examination Table",
-    //   price: 1499.99,
-    //   description:
-    //     "AC Automatic Boom Barrier is a motorized gate system designed to control vehicle access with automated opening and closing functionality.",
-    //   image:
-    //     "https://www.unisurg.com/wp-content/uploads/2023/03/1666006046_cc2584bebfc260526b57-300x196.png",
-    //   category: "First Aid Center",
-    //   rating: 4.6,
-    //   features: [
-    //     "Automated vehicle access control",
-    //     "Smooth and quick operation",
-    //     "Durable and weather-resistant design",
-    //     "Supports remote control and sensor integration",
-    //   ],
-    // },
     {
       id: 23,
       name: "BED SIDE LOCKER",
@@ -431,12 +419,12 @@ const ProductCatalog = () => {
       category: "Entrance Automation Product",
       rating: 4.6,
       features: [
-          "High sensitivity detection",
-          "Lightweight design",
-          "Audible and vibration alerts",
-          "Rechargeable battery",
-          "Durable and sturdy build"
-        ]
+        "High sensitivity detection",
+        "Lightweight design",
+        "Audible and vibration alerts",
+        "Rechargeable battery",
+        "Durable and sturdy build",
+      ],
     },
     {
       id: 27,
@@ -511,7 +499,8 @@ const ProductCatalog = () => {
       price: 1499.99,
       description:
         "Ft 31 Flameproof Lights are specialized lighting solutions designed to operate safely in hazardous environments where flammable gases, vapors, or dust are present.",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7_kQLEJinA_evM388CkbH6eXSiVh97uHQa4NuhLWD3p-p1mLOvpZ6usvt4x7aGVWdWYE&usqp=CAU",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7_kQLEJinA_evM388CkbH6eXSiVh97uHQa4NuhLWD3p-p1mLOvpZ6usvt4x7aGVWdWYE&usqp=CAU",
       category: "Flame Proff Products",
       rating: 4.6,
       features: [
@@ -521,74 +510,192 @@ const ProductCatalog = () => {
         "Compliant with safety and industrial standards",
       ],
     },
-    // {
-    //   id: 31,
-    //   name: "Safety SS 03",
-    //   price: 1499.99,
-    //   description:
-    //     "Safety SS 03 is a high-performance industrial safety designed to provide superior eye protection and comfort in challenging work environments.",
-    //   image:
-    //     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzKIu35U7Uf1UpJBS8p9tXSZbLDiQ-G-y26g&s",
-    //   category: "Emergency Lighting System",
-    //   rating: 4.6,
-    //   features: [
-    //     "Superior eye protection with impact resistance",
-    //     "Ergonomic design for all-day comfort",
-    //     "Adjustable straps for a secure and customized fit",
-    //     "Complies with industry safety and quality standards",
-    //   ],
-    // },
-    // {
-    //   id: 32,
-    //   name: "Safety SS 04",
-    //   price: 1499.99,
-    //   description:
-    //     "Safety SS 04 is a safety signage designed to indicate the location of an emergency telephone for quick communication during critical situations.",
-    //   image:
-    //     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSYfn0y4X1AnDpL_QFJ5If-fYwmiO5E83azw&s",
-    //   category: "Emergency Lighting System",
-    //   rating: 4.6,
-    //   features: [
-    //     "Indicates the presence of an emergency telephone",
-    //     "Clear and recognizable symbol",
-    //     "Available in multiple sizes (150x150mm, 200x200mm)",
-    //     "Made with durable and weather-resistant materials",
-    //   ],
-    // },
-    // {
-    //   id: 33,
-    //   name: "Safety SS 05",
-    //   price: 1499.99,
-    //   description:
-    //     "Safety SS 05 is a safety signage designed to indicate the location or availability of foot protection measures in industrial and workplace settings.",
-    //   image:
-    //     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSM_YMyjfwB0dcmV-kj1zr_rZEt7PZIyvsYjw&s",
-    //   category: "Emergency Lighting System",
-    //   rating: 4.6,
-    //   features: [
-    //     "Clear and easy-to-read safety signage",
-    //     "Indicates foot protection requirements",
-    //     "Available in multiple sizes (150x150mm, 200x200mm)",
-    //     "Durable and weather-resistant material",
-    //   ],
-    // },
-    // {
-    //   id: 34,
-    //   name: "Safety SS 06",
-    //   price: 1499.99,
-    //   description:
-    //     "Safety SS 06 is a safety signage designed to indicate the availability of Thermal Protection Aid (TPA) for use in environments requiring heat resistance and protection.",
-    //   image:
-    //     "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQXMnmaAcfoXgiErCX9KjN_R19GVdT9-Aup-w&s",
-    //   category: "Emergency Lighting System",
-    //   rating: 4.6,
-    //   features: [
-    //     "Highlights the presence of Thermal Protection Aid",
-    //     "Clear and easy-to-read design",
-    //     "Available in multiple sizes (150x150mm, 200x200mm)",
-    //     "Durable and weather-resistant material",
-    //   ],
-    // },
+    {
+      id: 32,
+      name: "Emergency Lighting System",
+      price: 1299.99,
+      description:
+        "Emergency Lighting Systems provide reliable illumination during power outages or emergencies, ensuring safety and compliance with emergency preparedness standards.",
+      image:
+        "https://studyelectrical.com/wp-content/uploads/2021/09/emergency-lighting-system.jpg",
+      category: "Emergency Lighting System",
+      rating: 4.8,
+      features: [
+        "Automatic activation during power failure",
+        "Energy-efficient LED lights",
+        "Durable and weather-resistant design",
+        "Compliant with safety and emergency standards",
+      ],
+    },
+    {
+      id: 33,
+      name: "Emergency Lighting System 2",
+      price: 1299.99,
+      description:
+        "Emergency Lighting Systems provide reliable illumination during power outages or emergencies, ensuring safety and compliance with emergency preparedness standards.",
+      image:
+        "https://www.asco.uk.com/wp-content/uploads/2020/10/Pixabay-emergency-exit-4168808_1920-720x320-c-center.jpg",
+      category: "Emergency Lighting System",
+      rating: 4.8,
+      features: [
+        "Automatic activation during power failure",
+        "Energy-efficient LED lights",
+        "Durable and weather-resistant design",
+        "Compliant with safety and emergency standards",
+      ],
+    },
+    {
+      id: 34,
+      name: "SS Eye Wash Shower 1",
+      price: 899.99,
+      description:
+        "SS Eye Wash Showers are essential safety equipment designed to provide immediate flushing of eyes and body in case of chemical spills or hazardous exposure, ensuring workplace safety compliance.",
+      image:
+        "https://thadhanisafety.com/wp-content/uploads/2020/11/999s-300x300.jpg",
+      category: "SS Eye Wash Shower",
+      rating: 4.7,
+      features: [
+        "Stainless steel construction for durability",
+        "Corrosion-resistant and easy to clean",
+        "Dual-purpose design for eye wash and body shower",
+        "Meets ANSI and OSHA safety standards",
+      ],
+    },
+    {
+      id: 35,
+      name: "SS Eye Wash Shower 2",
+      price: 899.99,
+      description:
+        "SS Eye Wash Showers are essential safety equipment designed to provide immediate flushing of eyes and body in case of chemical spills or hazardous exposure, ensuring workplace safety compliance.",
+      image:
+        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhGSp6JZrgLgEQfu84elCcjenonnK3LcFc_cK7-vLbohUge3I3",
+      category: "SS Eye Wash Shower",
+      rating: 4.7,
+      features: [
+        "Stainless steel construction for durability",
+        "Corrosion-resistant and easy to clean",
+        "Dual-purpose design for eye wash and body shower",
+        "Meets ANSI and OSHA safety standards",
+      ],
+    },
+    {
+      id: 36,
+      name: "SS Eye Wash Shower 3",
+      price: 899.99,
+      description:
+        "SS Eye Wash Showers are essential safety equipment designed to provide immediate flushing of eyes and body in case of chemical spills or hazardous exposure, ensuring workplace safety compliance.",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHLmERim9-KaFucNUAoukXBWF-h68AB5zkYA&s",
+      category: "SS Eye Wash Shower",
+      rating: 4.7,
+      features: [
+        "Stainless steel construction for durability",
+        "Corrosion-resistant and easy to clean",
+        "Dual-purpose design for eye wash and body shower",
+        "Meets ANSI and OSHA safety standards",
+      ],
+    },
+    {
+      id: 37,
+      name: "Stainless Steel Eye Wash Foot",
+      price: 899.99,
+      description:
+        "Stainless Steel Eye Wash Foot are essential safety equipment designed to provide immediate flushing of eyes and body in case of chemical spills or hazardous exposure, ensuring workplace safety compliance.",
+      image:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ35h81IYSvLc7t6fei3cvKpi-CLiKpqB-pkQ&s",
+      category: "SS Eye Wash Shower",
+      rating: 4.7,
+      features: [
+        "Stainless steel construction for durability",
+        "Corrosion-resistant and easy to clean",
+        "Dual-purpose design for eye wash and body shower",
+        "Meets ANSI and OSHA safety standards",
+      ],
+    },
+    {
+      id: 38,
+      name: "Online Gas Detector",
+      price: 499.99,
+      description:
+        "The Online Gas Detector is a cutting-edge device designed to continuously monitor the presence of harmful gases in the environment, providing real-time alerts to ensure safety in hazardous areas.",
+      image:
+        "https://5.imimg.com/data5/SELLER/Default/2021/12/OU/HR/JF/11766654/online-gas-detector-500x500.jpg",
+      category: "Online Gas Detector",
+      rating: 4.9,
+      features: [
+        "Real-time gas concentration monitoring",
+        "Multiple gas sensors for diverse environments",
+        "Remote alert notifications for hazardous gas levels",
+        "Durable design for industrial and commercial use",
+      ],
+    },
+    {
+      id: 39,
+      name: "Portable Gas Detector",
+      price: 499.99,
+      description:
+        "The Portable Gas Detector is a cutting-edge device designed to continuously monitor the presence of harmful gases in the environment, providing real-time alerts to ensure safety in hazardous areas.",
+      image:
+        "https://i5.walmartimages.com/seo/Portable-Gas-Detector-0-100-LEL-0-5000PPM-Industrial-Fixed-Multi-Gas-Detector-CH4-O2-CO-H2S-Coal-Mines-Use-Gas-Analyzer-Accurate-Detection_974580c4-4fdd-4c8d-8cb3-017d0c44b764.59df45ec61dfad8468f8adc743955009.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
+      category: "Online Gas Detector",
+      rating: 4.9,
+      features: [
+        "Real-time gas concentration monitoring",
+        "Multiple gas sensors for diverse environments",
+        "Remote alert notifications for hazardous gas levels",
+        "Durable design for industrial and commercial use",
+      ],
+    },
+    {
+      id: 40,
+      name: "Industrial Fan Wireness",
+      price: 799.99,
+      description:
+        "The Industrial Fan Wireness is a powerful, energy-efficient solution designed to provide optimal air circulation in large industrial spaces, ensuring improved ventilation and a comfortable working environment.",
+      image: fan1,
+      category: "Industrial Fan Wireness",
+      rating: 4.5,
+      features: [
+        "High-efficiency motor for long-lasting performance",
+        "Robust and corrosion-resistant materials",
+        "Adjustable fan speeds for customizable air circulation",
+        "Ideal for large factories, warehouses, and industrial spaces",
+      ],
+    },
+    {
+      id: 41,
+      name: "Tools",
+      price: 299.99,
+      description:
+        "Non-Sparking Tools are specially designed for use in hazardous environments where sparks could ignite flammable materials. Made from non-ferrous metals, these tools provide maximum safety during maintenance and repair work.",
+      image: "https://www.csunitec.com/sites/default/files/styles/teaser_550/public/images/product_category/striking-tools.jpg?itok=t_WtF9cK",
+      category: "Electrical and Non-Sparking Products",
+      rating: 4.8,
+      features: [
+        "Made from non-ferrous metals like brass and bronze",
+        "Prevents accidental sparks in explosive environments",
+        "Durable and corrosion-resistant design",
+        "Compliant with industry safety standards for hazardous areas",
+      ],
+    },
+    {
+      id: 42,
+      name: "Non Sparking Insulated Tools Manufacturers & Suppliers",
+      price: 299.99,
+      description:
+        "Non-Sparking Tools are specially designed for use in hazardous environments where sparks could ignite flammable materials. Made from non-ferrous metals, these tools provide maximum safety during maintenance and repair work.",
+      image: "https://deneerstools.com/wp-content/uploads/2020/10/non-sparking-insulated-tools-pro.png",
+      category: "Electrical and Non-Sparking Products",
+      rating: 4.8,
+      features: [
+        "Made from non-ferrous metals like brass and bronze",
+        "Prevents accidental sparks in explosive environments",
+        "Durable and corrosion-resistant design",
+        "Compliant with industry safety standards for hazardous areas",
+      ],
+    }
+    
+    
   ]);
   const scrollContainerRef = useRef(null);
   const [showLeftArrow, setShowLeftArrow] = useState(false);
@@ -606,6 +713,9 @@ const ProductCatalog = () => {
     "Electrical and Non-Sparking Products",
     "Flame Proff Products",
     "Emergency Lighting System",
+    "SS Eye Wash Shower",
+    "Online Gas Detector",
+    "Industrial Fan Wireness"
   ];
 
   const handleScroll = () => {
@@ -645,20 +755,22 @@ const ProductCatalog = () => {
       <div className="catalog-header">
         <h1 className="mb-4">Product Catalog</h1>
         <div className="filter-wrapper">
-  <div className="filter-container">
-    <div className="filter-buttons">
-      {categories.map((category) => (
-        <button
-          key={category}
-          className={`filter-btn ${filter === category ? 'active' : ''}`}
-          onClick={() => setFilter(category)}
-        >
-          {category}
-        </button>
-      ))}
-    </div>
-  </div>
-</div>
+          <div className="filter-container">
+            <div className="filter-buttons">
+              {categories.map((category) => (
+                <button
+                  key={category}
+                  className={`filter-btn ${
+                    filter === category ? "active" : ""
+                  }`}
+                  onClick={() => setFilter(category)}
+                >
+                  {category}
+                </button>
+              ))}
+            </div>
+          </div>
+        </div>
       </div>
 
       <div className="product-grids">

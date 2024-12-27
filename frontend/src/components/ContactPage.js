@@ -79,7 +79,6 @@ const ContactPage = () => {
           message: ''
         });
         toast.success('Form submitted successfully');
-        // Sending email using EmailJS
         emailjs.send(
           'service_8g6la6o',
           'template_vp3ylni',
