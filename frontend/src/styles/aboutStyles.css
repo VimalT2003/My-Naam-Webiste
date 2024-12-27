@@ -775,6 +775,30 @@
   border-top: 1px solid #eee;
 }
 
+.appreciation-message {
+  text-align: center;
+  background: linear-gradient(90deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 1250px;
+  font-size: 1.5em;
+  font-weight: bold;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  transition: transform 0.3s ease;
+}
+
+/* .appreciation-message:hover {
+  transform: scale(1.05);
+} */
+
+.appreciation-message p {
+  margin: 0;
+  line-height: 1.5;
+}
+
+
 .donor-number {
   display: block;
   font-size: 2rem;
@@ -795,4 +819,109 @@
   .event-image {
     height: 220px;
   }
+}
+
+/* EventCards.css */
+.events-container {
+  padding: 1rem;
+  margin: 0 auto;
+  max-width: 1280px;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+}
+
+.event-card {
+  background-color: white;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+.event-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.event-content {
+  padding: 1rem;
+}
+
+.event-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.event-detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.5rem;
+  color: #666;
+}
+
+.icon {
+  width: 1rem;
+  height: 1rem;
+  margin-right: 0.5rem;
+}
+
+.event-description {
+  margin-bottom: 1rem;
+  color: #444;
+}
+
+.register-button {
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+  color: white;
+  background-color: #3b82f6;
+  border: none;
+  border-radius: 0.25rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #2563eb;
+}
+
+/* Responsive Design */
+@media (min-width: 768px) {
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .events-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+/* Animation for card entrance */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.event-card {
+  animation: fadeIn 0.5s ease-out forwards;
 }

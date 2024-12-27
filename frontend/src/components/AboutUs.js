@@ -1,7 +1,7 @@
 // AboutUs.js
 import React, { useEffect, useRef } from "react";
 import "../styles/aboutStyles.css";
-import { MapPinHouse, Phone, MailOpenIcon,ChevronLeft, ChevronRight } from "lucide-react";
+import { MapPinHouse, Phone, MailOpenIcon,ChevronLeft, ChevronRight,Calendar, Clock, MapPin } from "lucide-react";
 import naambanner from "../images/naambanner.webp";
 import { motion } from "framer-motion";
 import blood1 from '../images/blood1.jpeg'
@@ -11,7 +11,10 @@ import event2 from '../images/event2.jpeg'
 import event3 from '../images/event3.jpeg'
 import event4 from '../images/event4.jpeg'
 import event5 from '../images/event5.jpeg'
-import vivega from '../images/vivega.jpeg'
+import warehouse from "../images/warehouse.jpeg";
+import event11 from '../images/event11.jpeg'
+import blood3 from '../images/blood3.jpeg'
+import group from '../images/group.jpeg'
 
 const AboutUs = () => {
   useEffect(() => {
@@ -46,7 +49,9 @@ const AboutUs = () => {
       <AboutStatsSection />
       <ImageGallerySection/>
       <BloodDonationSection/>
+      <EventCards/>
       <AboutContactSection />
+      <LastSection/>
     </div>
   );
 };
@@ -59,7 +64,7 @@ const AboutHero = () => (
     <div className="hero-container mt-md-4">
       <div className="hero-content">
         <h1>NAAM Industrial Solutions</h1>
-        <h3>(NEEDS, ANALYSE, and ARRANGE THE MATERIAL)</h3>{" "}
+        <h3 style={{color:"#FFFF00"}}>( NEEDS, ANALYSE, and ARRANGE THE MATERIAL )</h3>{" "}
         {/* Added abbreviation */}
         <p>
           With 19 years of experience in Industrial Safety Products, NAAM
@@ -67,7 +72,7 @@ const AboutHero = () => (
           take immense pleasure in introducing ourselves as your trusted
           partner, dedicated to fulfilling all your industrial requirements.
         </p>
-        <p className="client-message">We are responsible for your smile 😃!</p>{" "}
+        <p className="client-message">We are responsible for your <strong style={{color:"#FFFF00"}}>Happy smile</strong>  😃!</p>{" "}
         {/* Added client message */}
       </div>
 
@@ -429,7 +434,7 @@ const BloodDonationSection = () => {
     {
       id: 1,
       date: "March 15, 2024",
-      location: "NAAM Community Center",
+      location: "Shanthi Social Services.",
       donors: 45,
       image: blood1,
       description: "Annual Blood Donation Camp"
@@ -437,19 +442,19 @@ const BloodDonationSection = () => {
     {
       id: 2,
       date: "December 10, 2023",
-      location: "City Hospital",
+      location: "Royal care hospital...",
       donors: 32,
       image: blood2,
       description: "Emergency Blood Drive"
     },
-    // {
-    //   id: 3,
-    //   date: "August 20, 2023",
-    //   location: "Industrial Park",
-    //   donors: 28,
-    //   image: "https://mmhrc.in/file/wp-content/uploads/2022/03/blood-donation.jpg",
-    //   description: "Corporate Social Responsibility Initiative"
-    // }
+    {
+      id: 3,
+      date: "August 20, 2023",
+      location: "Marathon",
+      donors: 20,
+      image: blood3,
+      description: "Corporate Social Responsibility Initiative"
+    }
   ];
 
   return (
@@ -469,7 +474,9 @@ const BloodDonationSection = () => {
               <p className="event-location">Location: {event.location}</p>
               <div className="donor-count">
                 <span className="donor-number">{event.donors}</span>
-                <span className="donor-label">Donors</span>
+                <span className="donor-label">
+                  {event.donors !== 20 ? "Donor" : "KM"}
+                </span>
               </div>
             </div>
           </div>
@@ -478,6 +485,71 @@ const BloodDonationSection = () => {
     </section>
   );
 };
+
+const EventCards = () => {
+  const events = [
+    {
+      id: 1,
+      title: "Warehouse inauguration",
+      description: "We are thrilled to announce the grand inauguration of our new warehouse, marking a significant milestone in our journey. Join us in celebrating this step towards enhanced efficiency and growth!",
+      image: warehouse
+    },
+    {
+      id: 2,
+      title: "Ergonomics Program",
+      description: "An Ergonomics Program focuses on designing work environments and tasks to improve comfort, safety, and efficiency, reducing the risk of work-related injuries. It includes workstation assessments, training, equipment adjustments, and regular monitoring to ensure employee well-being.",
+      image: group
+    },
+    {
+      id: 3,
+      title: "Ergonomics Program",
+      description: "An Ergonomics Program focuses on designing work environments and tasks to improve comfort, safety, and efficiency, reducing the risk of work-related injuries. It includes workstation assessments, training, equipment adjustments, and regular monitoring to ensure employee well-being.",
+      image: event11
+    }
+  ];
+
+  return (
+    <div className="events-container">
+      <h1 className="text-center mb-5">Our Programs</h1>
+      <div className="events-grid">
+        {events.map((event) => (
+          <div key={event.id} className="event-card">
+            <img
+              src={event.image}
+              alt={event.title}
+              className="event-image"
+            />
+            <div className="event-content">
+              <h3 className="event-title">{event.title}</h3>
+              
+              {/* <div className="event-detail">
+                <Calendar className="icon" />
+                <span>{event.date}</span>
+              </div> */}
+              
+              {/* <div className="event-detail">
+                <Clock className="icon" />
+                <span>{event.time}</span>
+              </div> */}
+{/*               
+              <div className="event-detail">
+                <MapPin className="icon" />
+                <span>{event.location}</span>
+              </div> */}
+              
+              <p className="event-description">{event.description}</p>
+              
+              {/* <button className="register-button">
+                Register Now
+              </button> */}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+};
+
 
 const AboutContactSection = () => (
   <section className="about-contact-section">
@@ -502,5 +574,11 @@ const AboutContactSection = () => (
     </div>
   </section>
 );
+
+const LastSection = () => (
+<div class="appreciation-message mb-5">
+  <p>Thank you for being a part of our journey. Your trust and support are the driving force behind our success—without you, we wouldn't be where we are today. Together, we can achieve great things!</p>
+</div>
+)
 
 export default AboutUs;
