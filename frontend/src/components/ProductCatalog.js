@@ -12,6 +12,14 @@ import hyg2 from "../images/hyg2.jpg";
 import hyg3 from "../images/hyg3.webp";
 import hyg4 from "../images/hyg4.webp";
 import fan1 from '../images/indusfan.jpeg'
+import rubberbump from '../images/rubberbump.jfif'
+import bumpers from '../images/bumpers.webp'
+import cable from '../images/cable.webp'
+import dtype from '../images/dtype.jpg'
+import flapdel from '../images/flapdel.jfif'
+import mirror from '../images/mirror.webp'
+import vest from '../images/vest.webp'
+import wall from '../images/wall.jfif'
 
 const ProductCatalog = () => {
   const navigate = useNavigate();
@@ -141,7 +149,7 @@ const ProductCatalog = () => {
       price: 1199.99,
       description:
         "Portable Foam Equipment offers quick fire control with lightweight, easy-to-deploy design.",
-      image: hyg4,
+      image: "https://aaagindia.in/public-images/PORTABLE-FOAM-EQUIPMENT_1587410104.png",
       category: "Fire Safety Products",
       rating: 4.8,
       features: [
@@ -693,9 +701,135 @@ const ProductCatalog = () => {
         "Durable and corrosion-resistant design",
         "Compliant with industry safety standards for hazardous areas",
       ],
+    },
+    {
+      id: 43,
+      name: "Rubber Speed Bump",
+      price: 149.99,
+      description:
+        "Rubber Speed Bumps are designed to reduce vehicle speeds and enhance safety in residential, commercial, and industrial areas. Made from high-quality rubber, these speed bumps are durable, weather-resistant, and easy to install.",
+      image: rubberbump,
+      category: "Traffic Safety Products",
+      rating: 4.7,
+      features: [
+        "Constructed from premium-grade rubber for durability",
+        "Highly visible reflective strips for enhanced nighttime visibility",
+        "Resistant to UV, moisture, oil, and chemicals",
+        "Easy to install and maintain with pre-drilled mounting holes",
+      ],
+    },
+    {
+      id: 44,
+      name: "Convex Mirror",
+      price: 89.99,
+      description:
+        "Convex Mirrors are designed to provide a wide-angle view, improving safety and visibility in parking lots, warehouses, roads, and blind spots. Made with durable materials, these mirrors are weather-resistant and easy to mount.",
+      image: mirror,
+      category: "Traffic Safety Products",
+      rating: 4.6,
+      features: [
+        "Wide-angle view for enhanced visibility and safety",
+        "Impact-resistant and weatherproof construction",
+        "Ideal for both indoor and outdoor use",
+        "Easy mounting with adjustable brackets included",
+      ],
+    },
+    {
+      id: 45,
+      name: "Cable Protector",
+      price: 119.99,
+      description:
+        "Cable Protectors are designed to safeguard cables and wires from damage while ensuring pedestrian and vehicular safety. Made from high-quality, durable materials, these protectors are ideal for indoor and outdoor use.",
+      image: cable,
+      category: "Traffic Safety Products",
+      rating: 4.7,
+      features: [
+        "Constructed from heavy-duty, impact-resistant materials",
+        "Non-slip surface for added safety",
+        "Easy interlocking design for quick installation and expansion",
+        "Ideal for protecting cables and hoses in high-traffic areas",
+      ],
+    },
+    {
+      id: 46,
+      name: "Wall Protector",
+      price: 74.99,
+      description:
+        "Wall Protectors are designed to shield walls from damage caused by impacts, scrapes, and abrasions in high-traffic areas. Made from durable materials, they are ideal for warehouses, parking garages, and commercial spaces.",
+      image: wall,
+      category: "Traffic Safety Products",
+      rating: 4.8,
+      features: [
+        "Made from high-impact, durable materials for long-lasting protection",
+        "Easy to install and maintain",
+        "Resistant to scratches, dents, and chemicals",
+        "Suitable for indoor and outdoor applications",
+      ],
+    },
+    {
+      id: 47,
+      name: "Flap Delineator",
+      price: 54.99,
+      description:
+        "Flap Delineators are designed for traffic management and road safety, providing high visibility to guide vehicles and pedestrians. Made from flexible and durable materials, they are ideal for highways, parking lots, and construction zones.",
+      image: flapdel,
+      category: "Traffic Safety Products",
+      rating: 4.6,
+      features: [
+        "Highly flexible design to withstand vehicle impacts",
+        "UV-resistant and weatherproof materials for outdoor use",
+        "High-visibility reflective strips for enhanced night-time visibility",
+        "Easy installation with pre-drilled mounting holes",
+      ],
+    },
+    {
+      id: 48,
+      name: "Reflective Safety Vests",
+      price: 19.99,
+      description:
+        "Reflective Safety Vests are designed to enhance visibility and safety in low-light conditions. Ideal for construction workers, traffic controllers, and emergency responders, these vests ensure maximum visibility with reflective strips.",
+      image: vest,
+      category: "Traffic Safety Products",
+      rating: 4.9,
+      features: [
+        "High-visibility fluorescent fabric with reflective strips",
+        "Lightweight, breathable, and comfortable design",
+        "Adjustable fit with Velcro or zipper closures",
+        "Complies with ANSI/ISEA safety standards for high visibility",
+      ],
+    },
+    {
+      id: 49,
+      name: "Rectangular Dock Bumpers",
+      price: 129.99,
+      description:
+        "Rectangular Dock Bumpers are designed to protect docks, trucks, and cargo from damage during loading and unloading operations. Made from heavy-duty rubber, these bumpers provide excellent impact resistance and durability.",
+      image: bumpers,
+      category: "Traffic Safety Products",
+      rating: 4.8,
+      features: [
+        "Constructed from high-quality, impact-resistant rubber",
+        "Designed to absorb shocks and prevent damage to docks and vehicles",
+        "Weatherproof and UV-resistant for long-lasting performance",
+        "Easy installation with pre-drilled mounting holes",
+      ],
+    },
+    {
+      id: 50,
+      name: "D-Type Dock Bumpers",
+      price: 139.99,
+      description:
+        "D-Type Dock Bumpers are designed to protect loading docks, trucks, and cargo from damage during loading and unloading operations. Their unique 'D' shape provides superior impact resistance and durability.",
+      image: dtype,
+      category: "Traffic Safety Products",
+      rating: 4.7,
+      features: [
+        "Made from high-quality, impact-resistant rubber for maximum protection",
+        "Durable and weather-resistant design for indoor and outdoor use",
+        "Ideal for absorbing shocks and reducing damage to docks and vehicles",
+        "Easy installation with pre-drilled mounting holes",
+      ],
     }
-    
-    
   ]);
   const scrollContainerRef = useRef(null);
   const [showLeftArrow, setShowLeftArrow] = useState(false);
@@ -715,7 +849,8 @@ const ProductCatalog = () => {
     "Emergency Lighting System",
     "SS Eye Wash Shower",
     "Online Gas Detector",
-    "Industrial Fan Wireness"
+    "Industrial Fan Wireness",
+    "Traffic Safety Products"
   ];
 
   const handleScroll = () => {

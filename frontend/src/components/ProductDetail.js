@@ -3,6 +3,14 @@ import React, { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
 import "../styles/ProductDetails.css";
 import fan1 from '../images/indusfan.jpeg'
+import rubberbump from '../images/rubberbump.jfif'
+import bumpers from '../images/bumpers.webp'
+import cable from '../images/cable.webp'
+import dtype from '../images/dtype.jpg'
+import flapdel from '../images/flapdel.jfif'
+import mirror from '../images/mirror.webp'
+import vest from '../images/vest.webp'
+import wall from '../images/wall.jfif'
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -1471,9 +1479,271 @@ const ProductDetail = () => {
     "Warranty: 1 Year Limited"
   ]
 },
+{
+  id: 43,
+  name: "Rubber Speed Bump",
+  price: 79.99,
+  description: "Rubber Speed Bumps are durable traffic calming devices designed to slow down vehicles in parking lots, driveways, and residential areas, ensuring pedestrian and vehicular safety.",
+  image: rubberbump,
+  category: "Traffic Safety Products",
+  rating: 4.7,
+  features: [
+    "Made from high-quality recycled rubber for durability and sustainability",
+    "Weather-resistant and UV-stabilized to withstand outdoor conditions",
+    "Reflective strips for enhanced visibility, even at night",
+    "Modular design for easy installation and customization",
+    "Slip-resistant surface for added safety"
+  ],
+  fullDescription: `
+    Rubber Speed Bumps are designed to effectively reduce vehicle speeds in areas requiring enhanced safety measures. Manufactured from durable, recycled rubber, these speed bumps offer long-lasting performance and environmental benefits.
 
+    Key Specifications:
+    - Material: High-quality recycled rubber for durability
+    - Visibility: Reflective strips for nighttime visibility
+    - Design: Modular sections for flexible installation
+    - Weatherproof: Resistant to harsh weather and UV rays
+    - Safety: Slip-resistant surface to prevent accidents
+  `,
+  additionalDetails: [
+    "Material: Recycled rubber",
+    "Dimensions: Customizable sizes available",
+    "Visibility: Built-in reflective strips for enhanced safety",
+    "Installation: Easy installation with pre-drilled holes",
+    "Warranty: 1 Year Limited"
+  ]
+},
+{
+  id: 44,
+  name: "Convex Mirror",
+  price: 59.99,
+  description: "Convex Mirrors are essential safety devices designed to provide a wide-angle view, reducing blind spots and enhancing visibility in parking lots, driveways, warehouses, and roads.",
+  image: mirror,
+  category: "Traffic Safety Products",
+  rating: 4.8,
+  features: [
+    "Wide-angle viewing to eliminate blind spots",
+    "Durable and weather-resistant construction for outdoor and indoor use",
+    "Shatterproof and impact-resistant polycarbonate mirror lens",
+    "Adjustable mounting brackets for flexible installation",
+    "UV-resistant coating for long-lasting performance"
+  ],
+  fullDescription: `
+    Convex Mirrors are designed to enhance visibility and safety by providing a wide-angle view in areas with limited sightlines. Ideal for use in parking garages, driveways, warehouses, and road intersections, these mirrors reduce blind spots and prevent accidents.
 
+    Key Specifications:
+    - Material: Shatterproof polycarbonate lens with weather-resistant housing
+    - Visibility: Wide-angle view for increased coverage
+    - Installation: Adjustable brackets for versatile mounting options
+    - Durability: UV and impact-resistant for long-term outdoor use
+    - Safety: Reduces blind spots to enhance safety in high-traffic areas
+  `,
+  additionalDetails: [
+    "Material: Polycarbonate lens with durable housing",
+    "Sizes: Available in multiple diameters (18, 24, 32)",
+    "Mounting: Adjustable brackets included for easy installation",
+    "Weather Resistance: UV-stabilized and impact-resistant",
+    "Warranty: 1 Year Limited"
+  ]
+},
+{
+  id: 45,
+  name: "Cable Protector",
+  price: 29.99,
+  description: "Cable Protectors are designed to prevent trip hazards and protect cables from damage in high-traffic areas such as offices, warehouses, and construction sites.",
+  image: cable,
+  category: "Cable Management",
+  rating: 4.6,
+  features: [
+    "Durable and non-slip surface for enhanced safety",
+    "High weight capacity to withstand heavy vehicles and foot traffic",
+    "Multiple channels for organizing and protecting cables",
+    "Interlocking design for easy extension and customization",
+    "Weather-resistant material suitable for indoor and outdoor use"
+  ],
+  fullDescription: `
+    Cable Protectors are essential for safeguarding cables and minimizing trip hazards in busy environments. Designed with durability and safety in mind, these protectors are ideal for use in offices, warehouses, construction sites, and event venues.
 
+    Key Specifications:
+    - Material: Heavy-duty polyurethane construction for long-term use
+    - Design: Multiple channels for organizing and separating cables
+    - Load Capacity: High strength to handle vehicle and pedestrian traffic
+    - Installation: Interlocking design for seamless extension
+    - Safety: Non-slip surface and bright colors for high visibility
+  `,
+  additionalDetails: [
+    "Material: Heavy-duty polyurethane with anti-slip surface",
+    "Channel Options: Available in single, dual, or multi-channel configurations",
+    "Load Capacity: Supports up to 10,000 lbs per axle",
+    "Weather Resistance: UV-stabilized and waterproof for outdoor use",
+    "Warranty: 1 Year Limited"
+  ]
+},
+{
+  id: 46,
+  name: "Wall Protector",
+  price: 39.99,
+  description: "Wall Protectors are designed to safeguard walls from damage caused by impacts, scrapes, and wear, making them ideal for high-traffic areas in homes, offices, and industrial settings.",
+  image: wall,
+  category: "Wall Protection",
+  rating: 4.7,
+  features: [
+    "Durable construction to absorb impacts and prevent wall damage",
+    "Easy-to-install design with adhesive backing or screw mounts",
+    "Resistant to scratches, dents, and wear over time",
+    "Available in various sizes and finishes to match interiors",
+    "Low-maintenance and easy-to-clean surface"
+  ],
+  fullDescription: `
+    Wall Protectors are engineered to prevent damage to walls caused by furniture, equipment, or daily wear and tear. Ideal for both residential and commercial spaces, these protectors ensure walls stay in excellent condition while maintaining a clean and professional appearance.
+
+    Key Specifications:
+    - Material: High-impact resistant plastic or rubber for durability
+    - Installation: Adhesive backing or screw mounts for secure placement
+    - Versatility: Suitable for corners, flat walls, or edges
+    - Maintenance: Scratch-resistant and easy-to-clean surface
+    - Applications: Perfect for hallways, garages, parking spaces, and warehouses
+  `,
+  additionalDetails: [
+    "Material: High-impact resistant rubber or plastic",
+    "Sizes: Available in custom lengths and widths",
+    "Colors: Multiple color options to blend with interiors",
+    "Installation: Adhesive strips or hardware included for mounting",
+    "Warranty: 1 Year Limited"
+  ]
+},
+{
+  id: 47,
+  name: "Flap Delineator",
+  price: 24.99,
+  description: "Flap Delineators are flexible and durable road safety devices designed to guide and alert drivers, enhancing visibility and reducing the risk of accidents in construction zones, parking lots, and other traffic areas.",
+  image: flapdel,
+  category: "Traffic Management",
+  rating: 4.5,
+  features: [
+    "Flexible design to withstand vehicle impacts and return to its original position",
+    "High-visibility reflective strips for clear guidance in low light",
+    "Durable materials resistant to weather and UV exposure",
+    "Easy installation with mounting options for various surfaces",
+    "Lightweight and portable for versatile usage"
+  ],
+  fullDescription: `
+    Flap Delineators are ideal for traffic control and safety applications, providing clear and visible guidance for vehicles and pedestrians. Their flexible design ensures durability even under high-impact conditions, making them suitable for use in high-traffic areas.
+
+    Key Specifications:
+    - Material: High-grade rubber or plastic for flexibility and durability
+    - Visibility: Reflective strips for enhanced visibility in all lighting conditions
+    - Installation: Simple mounting options with bolts or adhesive bases
+    - Durability: UV-resistant and weatherproof for outdoor use
+    - Applications: Perfect for construction sites, parking lots, and roadworks
+  `,
+  additionalDetails: [
+    "Material: Flexible rubber or plastic construction",
+    "Sizes: Available in multiple heights (18”, 24”, 36”)",
+    "Reflective: High-intensity reflective tape for 360° visibility",
+    "Installation: Includes hardware for secure mounting",
+    "Warranty: 1 Year Limited"
+  ]
+},
+
+{
+  id: 48,
+  name: "Reflective Safety Vests",
+  price: 14.99,
+  description: "Reflective Safety Vests are essential for ensuring high visibility and safety in low-light and high-traffic environments, making them ideal for construction workers, traffic controllers, and outdoor enthusiasts.",
+  image: vest,
+  category: "Personal Safety Equipment",
+  rating: 4.9,
+  features: [
+    "High-visibility fluorescent fabric for daytime visibility",
+    "Reflective strips for enhanced visibility in low-light conditions",
+    "Lightweight and breathable material for comfort during extended wear",
+    "Adjustable sizing with secure closures for a customized fit",
+    "Multiple pockets for storing tools and personal items"
+  ],
+  fullDescription: `
+    Reflective Safety Vests are designed to provide maximum visibility and safety in various working and outdoor environments. Whether you're working on a construction site or participating in nighttime activities, these vests ensure you remain visible and protected.
+
+    Key Specifications:
+    - Material: Lightweight polyester fabric with reflective tape
+    - Visibility: Fluorescent color with 360° reflective coverage
+    - Comfort: Breathable and lightweight for all-day use
+    - Sizing: Adjustable straps for a universal fit
+    - Applications: Suitable for construction, roadwork, cycling, and running
+  `,
+  additionalDetails: [
+    "Material: Durable polyester fabric with reflective tape",
+    "Sizes: Available in multiple sizes (S, M, L, XL)",
+    "Color Options: Neon yellow, orange, and green",
+    "Certifications: ANSI/ISEA 107 compliant for high-visibility apparel",
+    "Warranty: 6 Months Limited"
+  ]
+},
+{
+  id: 49,
+  name: "Rectangular Dock Bumpers",
+  price: 74.99,
+  description: "Rectangular Dock Bumpers are heavy-duty protective devices designed to absorb impacts and prevent damage to docks, vehicles, and loading equipment in high-traffic industrial and commercial areas.",
+  image: bumpers,
+  category: "Dock Equipment",
+  rating: 4.8,
+  features: [
+    "Heavy-duty construction for maximum impact absorption",
+    "Resistant to wear, weather, and UV exposure for outdoor durability",
+    "Pre-drilled mounting holes for easy installation",
+    "Rectangular design for maximum coverage and protection",
+    "Low-maintenance material for long-lasting performance"
+  ],
+  fullDescription: `
+    Rectangular Dock Bumpers are engineered to safeguard loading docks, vehicles, and equipment from accidental collisions and wear. Built with durable materials, these bumpers are ideal for protecting assets in warehouses, shipping facilities, and industrial docks.
+
+    Key Specifications:
+    - Material: High-density rubber for excellent impact resistance
+    - Design: Rectangular shape for optimal coverage
+    - Installation: Pre-drilled holes for secure and easy mounting
+    - Durability: Weatherproof and UV-resistant for outdoor use
+    - Applications: Ideal for loading docks, warehouses, and parking areas
+  `,
+  additionalDetails: [
+    "Material: Reinforced rubber with steel support options",
+    "Sizes: Available in various dimensions (e.g., 12” x 18”, 12” x 24”)",
+    "Mounting: Includes pre-drilled holes for bolt installation",
+    "Weather Resistance: Resistant to extreme temperatures and UV exposure",
+    "Warranty: 1 Year Limited"
+  ]
+},
+{
+  id: 50,
+  name: "D-Type Dock Bumpers Manufacturers & Suppliers",
+  price: 89.99,
+  description: "D-Type Dock Bumpers are robust and versatile protective solutions designed to shield docks, vehicles, and equipment from impact damage, ensuring safety and durability in industrial and commercial settings.",
+  image: dtype,
+  category: "Dock Equipment",
+  rating: 4.7,
+  features: [
+    "D-shaped profile for enhanced impact absorption",
+    "High-density rubber construction for durability and reliability",
+    "Weather and UV-resistant material for long-term outdoor use",
+    "Pre-drilled mounting holes for quick and secure installation",
+    "Suitable for various applications including docks, trucks, and warehouses"
+  ],
+  fullDescription: `
+    D-Type Dock Bumpers are specifically designed to provide superior protection against vehicle impacts, reducing the risk of damage to docks and loading equipment. Their unique D-shaped profile enhances energy absorption and ensures long-lasting performance even in high-traffic environments.
+
+    Key Specifications:
+    - Material: High-grade rubber for maximum durability
+    - Design: D-shaped profile for effective impact mitigation
+    - Installation: Pre-drilled holes for straightforward mounting
+    - Resistance: Weatherproof and UV-resistant for outdoor applications
+    - Applications: Ideal for use in loading docks, truck stops, and industrial facilities
+  `,
+  additionalDetails: [
+    "Material: Reinforced rubber with excellent elasticity",
+    "Sizes: Available in multiple dimensions (e.g., 4” x 4”, 6” x 6”)",
+    "Mounting: Pre-drilled holes and mounting hardware included",
+    "Durability: Resistant to cracking, abrasion, and environmental stress",
+    "Warranty: 1 Year Limited"
+  ]
+}
   ];
 
   useEffect(() => {
