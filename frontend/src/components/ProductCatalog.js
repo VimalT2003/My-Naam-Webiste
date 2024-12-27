@@ -20,6 +20,7 @@ import flapdel from '../images/flapdel.jfif'
 import mirror from '../images/mirror.webp'
 import vest from '../images/vest.webp'
 import wall from '../images/wall.jfif'
+import fan4 from '../images/fan4.jpg'
 
 const ProductCatalog = () => {
   const navigate = useNavigate();
@@ -829,7 +830,23 @@ const ProductCatalog = () => {
         "Ideal for absorbing shocks and reducing damage to docks and vehicles",
         "Easy installation with pre-drilled mounting holes",
       ],
+    },
+    {
+      id: 51,
+      name: "RC Netting Solutions Industrial Fan Safety Net Cover for Finger Protection",
+      price: 89.99,
+      description: "RC Netting Solutions Industrial Fan Safety Net Cover is designed to provide finger protection and prevent accidents by covering fan blades in industrial settings. This safety net cover is ideal for workplaces with high-velocity fans, offering both safety and durability.",
+      image: fan4,
+      category: "Industrial Fan Wireness",
+      rating: 4.8,
+      features: [
+        "Made from durable, high-strength mesh material to prevent fingers from reaching the fan blades",
+        "Easy to install and secure with adjustable straps for a tight fit",
+        "Suitable for a wide range of industrial fans and ventilation systems",
+        "Helps maintain safety standards in environments with rotating machinery"
+      ]
     }
+    
   ]);
   const scrollContainerRef = useRef(null);
   const [showLeftArrow, setShowLeftArrow] = useState(false);

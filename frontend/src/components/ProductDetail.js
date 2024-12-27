@@ -11,6 +11,7 @@ import flapdel from '../images/flapdel.jfif'
 import mirror from '../images/mirror.webp'
 import vest from '../images/vest.webp'
 import wall from '../images/wall.jfif'
+import fan4 from '../images/fan4.jpg'
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -1742,6 +1743,39 @@ const ProductDetail = () => {
     "Mounting: Pre-drilled holes and mounting hardware included",
     "Durability: Resistant to cracking, abrasion, and environmental stress",
     "Warranty: 1 Year Limited"
+  ]
+},
+{
+  id: 51,
+  name: "RC Netting Solutions Industrial Fan Safety Net Cover for Finger Protection",
+  price: 19.99,
+  description: "Industrial Fan Safety Net Covers are designed to protect fingers and prevent debris from entering fan blades, ensuring safety and optimal performance in industrial and commercial environments.",
+  image: fan4,
+  category: "Industrial Fan Wireness",
+  rating: 4.6,
+  features: [
+    "High-strength netting to prevent accidental contact with fan blades",
+    "Durable, lightweight, and corrosion-resistant material",
+    "Easy-to-install design with adjustable fittings for various fan sizes",
+    "Allows unobstructed airflow while ensuring maximum safety",
+    "UV and weather-resistant for long-lasting use in tough environments"
+  ],
+  fullDescription: `
+    RC Netting Solutions Industrial Fan Safety Net Covers are essential for enhancing safety in workplaces where industrial fans are used. These net covers provide reliable protection against accidental finger injuries and block debris from interfering with fan operation, ensuring a safe and efficient environment.
+
+    Key Specifications:
+    - Material: High-strength nylon or polyester netting
+    - Design: Lightweight and flexible for compatibility with multiple fan sizes
+    - Installation: Adjustable ties or clips for quick and secure fitting
+    - Durability: UV-stabilized and resistant to wear and corrosion
+    - Applications: Ideal for factories, workshops, warehouses, and commercial spaces
+  `,
+  additionalDetails: [
+    "Material: Nylon or polyester netting with reinforced edges",
+    "Sizes: Compatible with fan diameters from 18” to 48”",
+    "Color Options: Available in black or white for visibility and aesthetics",
+    "Maintenance: Washable and easy to clean for extended usability",
+    "Warranty: 6 Months Limited"
   ]
 }
   ];
