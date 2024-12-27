@@ -2,6 +2,7 @@
 import React from 'react';
 import '../styles/Footer.css'
 import { Link } from 'react-router-dom';
+import CounterComponent from './CounterComponent';
 
 const Footer = () => {
   return (
@@ -61,6 +62,7 @@ const Footer = () => {
         </div>
       </div>
 
+      <CounterComponent/>
       <div className="footer-bottom">
         <p className='text-white'>&copy; 2024 NAAM Industrial Solutions. All rights reserved.</p>
       </div>

@@ -1,60 +1,73 @@
 // AboutUs.js
-import React, { useEffect } from 'react';
-import '../styles/aboutStyles.css';
-import { MapPinHouse, Phone, MailOpenIcon } from 'lucide-react';
-import naambanner from '../images/naambanner.webp' 
-import { motion } from 'framer-motion';
+import React, { useEffect, useRef } from "react";
+import "../styles/aboutStyles.css";
+import { MapPinHouse, Phone, MailOpenIcon,ChevronLeft, ChevronRight } from "lucide-react";
+import naambanner from "../images/naambanner.webp";
+import { motion } from "framer-motion";
 
 const AboutUs = () => {
   useEffect(() => {
     const observerOptions = {
-      threshold: 0.2
+      threshold: 0.2,
     };
 
     const observer = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
+      entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('about-animate');
+          entry.target.classList.add("about-animate");
         }
       });
     }, observerOptions);
 
-    document.querySelectorAll('.about-cards-container, .about-timeline-item, .about-team-grid, .about-stats-grid, .about-contact-content').forEach(element => {
-      observer.observe(element);
-    });
+    document
+      .querySelectorAll(
+        ".about-cards-container, .about-timeline-item, .about-team-grid, .about-stats-grid, .about-contact-content"
+      )
+      .forEach((element) => {
+        observer.observe(element);
+      });
   }, []);
 
   return (
     <div className="about-container">
       <AboutHero />
       <AboutMainContent />
-      <ProductsServicesSection /> 
+      <ProductsServicesSection />
       <AboutTimelineSection />
-      <AboutTeamSection />
+      {/* <AboutTeamSection /> */}
       <AboutStatsSection />
+      <ImageGallerySection/>
+      <BloodDonationSection/>
       <AboutContactSection />
     </div>
   );
 };
 
-
-
 const AboutHero = () => (
   <section className="about-hero">
-      <div className="shape shape-1"></div>
-      <div className="shape shape-2"></div>
-      
-      <div className="hero-container">
-        <div className="hero-content">
-          <h1>NAAM Industrial Solutions</h1>
-          <p>With 19 years of experience in Industrial Safety Products, NAAM Industrial Solutions is emerging as a leading solution provider. We take immense pleasure in introducing ourselves as your trusted partner, dedicated to fulfilling all your industrial requirements.</p>
-        </div>
-        
-        <div className="hero-image">
-          <img src={naambanner} alt="Innovation Tech" />
-        </div>
+    <div className="shape shape-1"></div>
+    <div className="shape shape-2"></div>
+
+    <div className="hero-container mt-md-4">
+      <div className="hero-content">
+        <h1>NAAM Industrial Solutions</h1>
+        <h3>(NEEDS, ANALYSE, and ARRANGE THE MATERIAL)</h3>{" "}
+        {/* Added abbreviation */}
+        <p>
+          With 19 years of experience in Industrial Safety Products, NAAM
+          Industrial Solutions is emerging as a leading solution provider. We
+          take immense pleasure in introducing ourselves as your trusted
+          partner, dedicated to fulfilling all your industrial requirements.
+        </p>
+        <p className="client-message">We are responsible for your smile 😃!</p>{" "}
+        {/* Added client message */}
       </div>
-    </section>
+
+      <div className="hero-image">
+        <img src={naambanner} alt="Innovation Tech" />
+      </div>
+    </div>
+  </section>
 );
 
 const AboutMainContent = () => (
@@ -63,17 +76,29 @@ const AboutMainContent = () => (
     <div className="about-cards-container">
       <div className="about-card">
         <h2>Our Mission</h2>
-        <p>To provide comprehensive industrial solutions that address safety, security, and environmental challenges while continuously improving quality standards through training and collaboration.</p>
+        <p>
+          To provide comprehensive industrial solutions that address safety,
+          security, and environmental challenges while continuously improving
+          quality standards through training and collaboration.
+        </p>
       </div>
       <div className="about-card">
         <h2>Our Vision</h2>
-        <p>To become a globally recognized leader in industrial safety solutions by aligning customer needs with innovative and reliable products and services, ensuring sustainable growth and safety excellence.</p>
+        <p>
+          To become a globally recognized leader in industrial safety solutions
+          by aligning customer needs with innovative and reliable products and
+          services, ensuring sustainable growth and safety excellence.
+        </p>
       </div>
       <div className="about-card">
-      <section id="our-values">
-    <h2>Our Values</h2>
-    <p>We are committed to meeting and exceeding customer expectations through dedication and innovation. Integrity is at the core of our operations, ensuring honesty and transparency in all our dealings.</p>
-  </section>
+        <section id="our-values">
+          <h2>Our Values</h2>
+          <p>
+            We are committed to meeting and exceeding customer expectations
+            through dedication and innovation. Integrity is at the core of our
+            operations, ensuring honesty and transparency in all our dealings.
+          </p>
+        </section>
       </div>
     </div>
   </section>
@@ -84,53 +109,53 @@ const ProductsServicesSection = () => {
     {
       title: "Fire Safety Trainings",
       description: "Chemical Safety, Mock and Evacuation Drills",
-      icon: "🔥"
+      icon: "🔥",
     },
     {
       title: "Security Products",
       description: "Face Recognition Attendance",
-      icon: "🔒"
+      icon: "🔒",
     },
     {
       title: "Environmental Products",
       description: "Dustbins, Entry Mats",
-      icon: "🌱"
+      icon: "🌱",
     },
     {
       title: "Material Handling Equipment",
       description: "Professional grade equipment",
-      icon: "🏗️"
+      icon: "🏗️",
     },
     {
       title: "FRP Ladders",
       description: "Durable and safe access solutions",
-      icon: "🪜"
+      icon: "🪜",
     },
     {
       title: "Traffic Safety Products",
       description: "Comprehensive traffic management",
-      icon: "🚦"
+      icon: "🚦",
     },
     {
       title: "Industrial Water Tanks",
       description: "Reliable storage solutions",
-      icon: "💧"
+      icon: "💧",
     },
     {
       title: "Health Center Furniture",
       description: "Professional medical furniture",
-      icon: "🏥"
+      icon: "🏥",
     },
     {
       title: "Industrial Tapes and Adhesives",
       description: "High-performance bonding solutions",
-      icon: "🔧"
+      icon: "🔧",
     },
     {
       title: "Industrial Coatings",
       description: "Specialized protective coatings",
-      icon: "🎨"
-    }
+      icon: "🎨",
+    },
   ];
 
   return (
@@ -145,9 +170,9 @@ const ProductsServicesSection = () => {
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              whileHover={{ 
+              whileHover={{
                 scale: 1.05,
-                boxShadow: "0 10px 20px rgba(0,0,0,0.1)"
+                boxShadow: "0 10px 20px rgba(0,0,0,0.1)",
               }}
             >
               <div className="naam-product-icon">{product.icon}</div>
@@ -167,82 +192,278 @@ const AboutTimelineSection = () => (
     <div className="about-timeline">
       <div className="about-timeline-item">
         <div className="about-timeline-content">
-          <h3>2014</h3>
-          <p>Founded with a vision to transform the technology landscape</p>
+          <h3>December 30, 2020 - Founded</h3>
+          <p>
+            NAAM Industrial Solutions was established, marking the beginning of
+            a journey toward excellence in industrial safety solutions.
+          </p>
         </div>
       </div>
       <div className="about-timeline-item">
         <div className="about-timeline-content">
-          <h3>2016</h3>
-          <p>Expanded operations to international markets</p>
+          <h3>July 2023 - Warehouse Inauguration</h3>
+          <p>
+            Celebrated the opening of our state-of-the-art warehouse, enhancing
+            our storage and distribution capabilities.
+          </p>
         </div>
       </div>
       <div className="about-timeline-item">
         <div className="about-timeline-content">
-          <h3>2018</h3>
-          <p>Launched our innovative cloud solutions platform</p>
+          <h3>September 2023 - First CTP</h3>
+          <p>
+            Successfully launched our first Certified Training Program (CTP) to
+            empower professionals with industry-leading safety practices.
+          </p>
         </div>
       </div>
       <div className="about-timeline-item">
         <div className="about-timeline-content">
-          <h3>2020</h3>
-          <p>Achieved industry leadership in AI and machine learning solutions</p>
+          <h3>2024 - NAAM Safety Professional Association Groups</h3>
+          <p>
+            Formed exclusive professional groups dedicated to promoting
+            industrial safety standards and collaboration within the community.
+          </p>
         </div>
       </div>
-      <div className="about-timeline-item">
+      {/* <div className="about-timeline-item">
         <div className="about-timeline-content">
           <h3>2024</h3>
           <p>Revolutionizing the future with cutting-edge technologies</p>
         </div>
+      </div> */}
+    </div>
+  </section>
+);
+
+// const AboutTeamSection = () => {
+//   const teamMembers = [
+//     {
+//       name: "Sarah Johnson",
+//       role: "CEO & Founder",
+//       description: "Visionary leader with 15+ years in tech innovation",
+//       image: "https://png.pngtree.com/png-vector/20230831/ourmid/pngtree-man-avatar-image-for-profile-png-image_9197908.png" // Replace with your image path
+//     },
+//     {
+//       name: "David Chen",
+//       role: "CTO",
+//       description: "Technical genius behind our groundbreaking solutions",
+//       image: "https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-user-profile-avatar-png-image_10211467.png" // Replace with your image path
+//     },
+//     {
+//       name: "Emily Rodriguez",
+//       role: "COO",
+//       description: "Operations expert ensuring seamless delivery",
+//       image: "https://png.pngtree.com/png-clipart/20231019/original/pngtree-user-profile-avatar-png-image_13369990.png" // Replace with your image path
+//     },
+//     {
+//       name: "Michael Kim",
+//       role: "Head of Innovation",
+//       description: "Leading our R&D initiatives into the future",
+//       image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQTV7zNI3SMqTFg6_L_3veUQrrAFJz_Utwf-L_wuW8vw1n9r35kPDvyQ9TiPuLgqWhFeI&usqp=CAU" // Replace with your image path
+//     }
+//   ];
+
+//   return (
+//     <section className="about-team-section">
+//       <h2 className="about-section-title">Our Leadership</h2>
+//       <div className="about-team-grid">
+//         {teamMembers.map((member, index) => (
+//           <div key={index} className="about-team-member">
+//             <div className="about-member-image">
+//               <img
+//                 src={member.image}
+//                 alt={member.name}
+//                 className="member-img"
+//               />
+//             </div>
+//             <h3>{member.name}</h3>
+//             <p className="member-role">{member.role}</p>
+//             <p className="member-description">{member.description}</p>
+//           </div>
+//         ))}
+//       </div>
+//     </section>
+//   );
+// };
+
+const AboutStatsSection = () => (
+  <section className="about-stats-section">
+    <h2 className="about-section-title" style={{ color: "white" }}>
+      Our Impact
+    </h2>
+    <div className="about-stats-grid">
+      <div className="about-stat-item">
+        <div className="about-stat-number">15+</div>
+        <p className="text-white">Years of Experience</p>
+      </div>
+      <div className="about-stat-item">
+        <div className="about-stat-number">50+</div>
+        <p className="text-white">Products Avaliable</p>
+      </div>
+      <div className="about-stat-item">
+        <div className="about-stat-number">5+</div>
+        <p className="text-white">Training Programs Provided</p>
+      </div>
+      <div className="about-stat-item">
+        <div className="about-stat-number">PAN India</div>
+        <p className="text-white">Service Available</p>
       </div>
     </div>
   </section>
 );
 
-const AboutTeamSection = () => {
-  const teamMembers = [
+const ImageGallerySection = () => {
+  const scrollRef = useRef(null);
+  const galleryImages = [
     {
-      name: "Sarah Johnson",
-      role: "CEO & Founder",
-      description: "Visionary leader with 15+ years in tech innovation",
-      image: "https://png.pngtree.com/png-vector/20230831/ourmid/pngtree-man-avatar-image-for-profile-png-image_9197908.png" // Replace with your image path
+      id: 1,
+      src: "https://media.istockphoto.com/id/517188688/photo/mountain-landscape.jpg?s=1024x1024&w=0&k=20&c=z8_rWaI8x4zApNEEG9DnWlGXyDIXe-OmsAyQ5fGPVV8=",
+      alt: "Industrial Safety Equipment",
+      title: "Safety First",
+      description: "State-of-the-art safety equipment for industrial use",
+      date: "March 2024"
     },
     {
-      name: "David Chen",
-      role: "CTO",
-      description: "Technical genius behind our groundbreaking solutions",
-      image: "https://png.pngtree.com/png-vector/20231019/ourmid/pngtree-user-profile-avatar-png-image_10211467.png" // Replace with your image path
+      id: 2,
+      src: "https://thumbs.dreamstime.com/b/environment-earth-day-hands-trees-growing-seedlings-bokeh-green-background-female-hand-holding-tree-nature-field-gra-130247647.jpg",
+      alt: "Training Session",
+      title: "Professional Training",
+      description: "Expert-led training sessions for industrial safety",
+      date: "February 2024"
     },
     {
-      name: "Emily Rodriguez",
-      role: "COO",
-      description: "Operations expert ensuring seamless delivery",
-      image: "https://png.pngtree.com/png-clipart/20231019/original/pngtree-user-profile-avatar-png-image_13369990.png" // Replace with your image path
+      id: 3,
+      src: "https://img.freepik.com/premium-photo/wide-angle-shot-single-tree-growing-clouded-sky-sunset-surrounded-by-grass_181624-22807.jpg?semt=ais_hybrid",
+      alt: "Product Display",
+      title: "Quality Products",
+      description: "Premium quality industrial safety products",
+      date: "January 2024"
     },
     {
-      name: "Michael Kim",
-      role: "Head of Innovation",
-      description: "Leading our R&D initiatives into the future",
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRQTV7zNI3SMqTFg6_L_3veUQrrAFJz_Utwf-L_wuW8vw1n9r35kPDvyQ9TiPuLgqWhFeI&usqp=CAU" // Replace with your image path
+      id: 4,
+      src: "https://t3.ftcdn.net/jpg/02/70/35/00/360_F_270350073_WO6yQAdptEnAhYKM5GuA9035wbRnVJSr.jpg",
+      alt: "Team Meeting",
+      title: "Collaborative Approach",
+      description: "Team discussions for better solutions",
+      date: "December 2023"
+    },
+    {
+      id: 5,
+      src: "https://img.freepik.com/premium-photo/fantastic-autumn-sunny-day-hintersee-lake_761071-2130.jpg?semt=ais_hybrid",
+      alt: "Warehouse",
+      title: "State-of-art Facility",
+      description: "Modern warehouse facility for efficient operations",
+      date: "November 2023"
+    },
+    {
+      id: 6,
+      src: "https://img.freepik.com/premium-photo/lake-strbske-pleso-high-tatras-mountain-slovakia_146671-5856.jpg?semt=ais_hybrid",
+      alt: "Client Meeting",
+      title: "Customer Focus",
+      description: "Dedicated customer service and support",
+      date: "October 2023"
+    }
+  ];
+
+  const scroll = (direction) => {
+    const { current } = scrollRef;
+    if (current) {
+      const scrollAmount = direction === 'left' ? -350 : 350;
+      current.scrollBy({
+        left: scrollAmount,
+        behavior: 'smooth'
+      });
+    }
+  };
+
+  return (
+    <section className="gallery-section">
+      <h2 className="about-section-title">Our Events</h2>
+      <div className="gallery-container">
+        <button 
+          className="scroll-button left" 
+          onClick={() => scroll('left')}
+        >
+          <ChevronLeft size={24} />
+        </button>
+        
+        <div className="gallery-scroll" ref={scrollRef}>
+          {galleryImages.map((image) => (
+            <div key={image.id} className="gallery-item">
+              <div className="gallery-image-container">
+                <img src={image.src} alt={image.alt} />
+                <div className="gallery-overlay">
+                  <div className="overlay-content">
+                    <h3>{image.title}</h3>
+                    <p className="image-description">{image.description}</p>
+                    <span className="image-date">{image.date}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
+
+        <button 
+          className="scroll-button right" 
+          onClick={() => scroll('right')}
+        >
+          <ChevronRight size={24} />
+        </button>
+      </div>
+    </section>
+  );
+};
+
+const BloodDonationSection = () => {
+  const donationEvents = [
+    {
+      id: 1,
+      date: "March 15, 2024",
+      location: "NAAM Community Center",
+      donors: 45,
+      image: "https://img.freepik.com/free-photo/green-trees-near-lake-mountain-blue-sky-daytime_395237-89.jpg",
+      description: "Annual Blood Donation Camp"
+    },
+    {
+      id: 2,
+      date: "December 10, 2023",
+      location: "City Hospital",
+      donors: 32,
+      image: "https://media.istockphoto.com/id/1415405974/photo/blood-donor-at-donation-with-bouncy-ball-holding-in-hand.jpg?s=612x612&w=0&k=20&c=j0nkmkJxIP6U6TsI3yTq8iuc0Ufhq6xoW4FSMlKaG6A=",
+      description: "Emergency Blood Drive"
+    },
+    {
+      id: 3,
+      date: "August 20, 2023",
+      location: "Industrial Park",
+      donors: 28,
+      image: "https://mmhrc.in/file/wp-content/uploads/2022/03/blood-donation.jpg",
+      description: "Corporate Social Responsibility Initiative"
     }
   ];
 
   return (
-    <section className="about-team-section">
-      <h2 className="about-section-title">Our Leadership</h2>
-      <div className="about-team-grid">
-        {teamMembers.map((member, index) => (
-          <div key={index} className="about-team-member">
-            <div className="about-member-image">
-              <img 
-                src={member.image} 
-                alt={member.name}
-                className="member-img"
-              />
+    <section className="blood-donation-section">
+      <h2 className="about-section-title">Blood Donation Initiatives (CSR)</h2>
+      <p className="donation-intro">Making a difference in our community through regular blood donation camps</p>
+      
+      <div className="donation-events-grid">
+        {donationEvents.map((event) => (
+          <div key={event.id} className="donation-event-card">
+            <div className="event-image">
+              <img src={event.image} alt={event.description} />
             </div>
-            <h3>{member.name}</h3>
-            <p className="member-role">{member.role}</p>
-            <p className="member-description">{member.description}</p>
+            <div className="event-details">
+              <h3>{event.description}</h3>
+              <p className="event-date">Date: {event.date}</p>
+              <p className="event-location">Location: {event.location}</p>
+              <div className="donor-count">
+                <span className="donor-number">{event.donors}</span>
+                <span className="donor-label">Donors</span>
+              </div>
+            </div>
           </div>
         ))}
       </div>
@@ -250,38 +471,26 @@ const AboutTeamSection = () => {
   );
 };
 
-const AboutStatsSection = () => (
-  <section className="about-stats-section">
-    <h2 className="about-section-title" style={{ color: 'white' }}>Our Impact</h2>
-    <div className="about-stats-grid">
-      <div className="about-stat-item">
-        <div className="about-stat-number">15+</div>
-        <p className='text-white'>Years of Experience</p>
-      </div>
-      <div className="about-stat-item">
-        <div className="about-stat-number">50+</div>
-        <p className='text-white'>Products Avaliable</p>
-      </div>
-      <div className="about-stat-item">
-        <div className="about-stat-number">100+</div>
-        <p className='text-white'>Team Members</p>
-      </div>
-      <div className="about-stat-item">
-        <div className="about-stat-number">50+</div>
-        <p className='text-white'>Countries Served</p>
-      </div>
-    </div>
-  </section>
-);
-
 const AboutContactSection = () => (
   <section className="about-contact-section">
     <div className="about-contact-content">
       <h2 className="about-section-title">Get In Touch</h2>
-      <p>Ready to transform your business with NAAM Industrial solutions? We're here to help you.</p>
-      <p><MailOpenIcon size={20} color="blue" /> Email: naamsales1@gmail.com , naamuser21@gmail.com</p>
-      <p><Phone size={20} color="blue" /> Phone: 95668 88208</p>
-      <p><MapPinHouse size={28} color="blue" /> Location: 2/268 A, Annai Vellankanni Nagar, 3rd Street East, Saravanampatty Post, Vilankurichi Road, Coimbatore - 641 035.</p>
+      <p>
+        Ready to transform your business with NAAM Industrial solutions? We're
+        here to help you.
+      </p>
+      <p>
+        <MailOpenIcon size={20} color="blue" /> Email: naamsales1@gmail.com ,
+        naamuser21@gmail.com
+      </p>
+      <p>
+        <Phone size={20} color="blue" /> Phone: 95668 88208
+      </p>
+      <p>
+        <MapPinHouse size={28} color="blue" /> Location: 2/268 A, Annai
+        Vellankanni Nagar, 3rd Street East, Saravanampatty Post, Vilankurichi
+        Road, Coimbatore - 641 035.
+      </p>
     </div>
   </section>
 );

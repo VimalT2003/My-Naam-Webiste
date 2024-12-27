@@ -8,6 +8,7 @@ import '../styles/Home.css'
 // import ProductGrid from './ProductGrid';
 import ProductCategories from './ProductCategories';
 import HoverCards from './HoverCards';
+// import CounterComponent from './CounterComponent';
 
 const Home = () => {
   const products = [
@@ -90,6 +91,7 @@ const Home = () => {
         </div> */}
         <TestimonialCard/>
       </section>
+      {/* <CounterComponent/> */}
     </div>
   );
 };
