@@ -47,6 +47,12 @@ import ss1 from '../images/ss1.jpg'
 import ss2 from '../images/ss2.jpg'
 import ss3 from '../images/ss3.jpg'
 import ss4 from '../images/ss4.jpg'
+import eye1 from '../images/eye1.webp'
+import eye2 from '../images/eye2.jfif'
+import eye3 from '../images/eye3.jfif'
+import eye4 from '../images/eye4.jfif'
+import gas1 from '../images/gas1.webp'
+import gas2 from '../images/gas2.avif'
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -1187,8 +1193,7 @@ const ProductDetail = () => {
       price: 299.99,
       description:
         "The SS Eye Wash Shower is a durable and reliable emergency safety equipment designed to provide immediate flushing of eyes and body in case of exposure to hazardous substances.",
-      image:
-        "https://thadhanisafety.com/wp-content/uploads/2020/11/999s-300x300.jpg",
+      image: eye1,
       category: "Safety Equipment",
       rating: 4.7,
       features: [
@@ -1222,8 +1227,7 @@ const ProductDetail = () => {
       price: 299.99,
       description:
         "The SS Eye Wash Shower is a durable and reliable emergency safety equipment designed to provide immediate flushing of eyes and body in case of exposure to hazardous substances.",
-      image:
-        "https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcRhGSp6JZrgLgEQfu84elCcjenonnK3LcFc_cK7-vLbohUge3I3",
+      image: eye2,
       rating: 4.7,
       features: [
         "Stainless steel construction for durability and corrosion resistance",
@@ -1256,8 +1260,7 @@ const ProductDetail = () => {
       price: 299.99,
       description:
         "The SS Eye Wash Shower is a durable and reliable emergency safety equipment designed to provide immediate flushing of eyes and body in case of exposure to hazardous substances.",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHLmERim9-KaFucNUAoukXBWF-h68AB5zkYA&s",
+      image: eye3,
       rating: 4.7,
       features: [
         "Stainless steel construction for durability and corrosion resistance",
@@ -1290,8 +1293,7 @@ const ProductDetail = () => {
       price: 299.99,
       description:
         "Stainless Steel Eye Wash Foot is a durable and reliable emergency safety equipment designed to provide immediate flushing of eyes and body in case of exposure to hazardous substances.",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ35h81IYSvLc7t6fei3cvKpi-CLiKpqB-pkQ&s",
+      image: eye4,
       rating: 4.7,
       features: [
         "Stainless steel construction for durability and corrosion resistance",
@@ -1323,7 +1325,7 @@ const ProductDetail = () => {
       name: "Online Gas Detector",
       price: 399.99,
       description: "The Online Gas Detector is an advanced safety device designed to continuously monitor and detect hazardous gases in real-time, ensuring workplace safety and environmental protection.",
-      image: "https://5.imimg.com/data5/SELLER/Default/2021/12/OU/HR/JF/11766654/online-gas-detector-500x500.jpg",
+      image: gas1,
       category: "Safety Equipment",
       rating: 4.6,
       features: [
@@ -1356,7 +1358,7 @@ const ProductDetail = () => {
   name: "Portable Gas Detector",
   price: 399.99,
   description: "The Portable Gas Detector is an advanced safety device designed to continuously monitor and detect hazardous gases in real-time, ensuring workplace safety and environmental protection.",
-  image: "https://i5.walmartimages.com/seo/Portable-Gas-Detector-0-100-LEL-0-5000PPM-Industrial-Fixed-Multi-Gas-Detector-CH4-O2-CO-H2S-Coal-Mines-Use-Gas-Analyzer-Accurate-Detection_974580c4-4fdd-4c8d-8cb3-017d0c44b764.59df45ec61dfad8468f8adc743955009.jpeg?odnHeight=768&odnWidth=768&odnBg=FFFFFF",
+  image: gas2,
   category: "Safety Equipment",
   rating: 4.6,
   features: [
