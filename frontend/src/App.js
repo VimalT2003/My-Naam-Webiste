@@ -9,10 +9,12 @@ import ProductDetail from './components/ProductDetail';
 import ModernNavbar from './components/ModernNavbar';
 import ContactPage from './components/ContactPage';
 import { Toaster } from 'react-hot-toast';
+import { Helmet } from 'react-helmet';
 
 function App() {
   return (
     <div className="App">
+      <Helmet/>
          <ModernNavbar/>  
          <Toaster />
             <Routes>

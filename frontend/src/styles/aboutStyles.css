@@ -762,11 +762,11 @@
   font-size: 1.2rem;
 }
 
-.event-date, .event-location {
+/* .event-date, .event-location {
   color: #666;
   margin: 0.5rem 0;
   font-size: 0.9rem;
-}
+} */
 
 .donor-count {
   margin-top: 1rem;
@@ -863,18 +863,18 @@
   margin-bottom: 0.5rem;
 }
 
-.event-detail {
+/* .event-detail {
   display: flex;
   align-items: center;
   margin-bottom: 0.5rem;
   color: #666;
-}
+} */
 
-.icon {
+/* .icon {
   width: 1rem;
   height: 1rem;
   margin-right: 0.5rem;
-}
+} */
 
 .event-description {
   margin-bottom: 1rem;
