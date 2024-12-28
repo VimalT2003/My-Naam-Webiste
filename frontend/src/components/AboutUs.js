@@ -1,20 +1,30 @@
 // AboutUs.js
 import React, { useEffect, useRef } from "react";
 import "../styles/aboutStyles.css";
-import { MapPinHouse, Phone, MailOpenIcon,ChevronLeft, ChevronRight,Calendar, Clock, MapPin } from "lucide-react";
+import {
+  MapPinHouse,
+  Phone,
+  MailOpenIcon,
+  ChevronLeft,
+  ChevronRight,
+  Calendar,
+  Clock,
+  MapPin,
+} from "lucide-react";
 import naambanner from "../images/naambanner.webp";
 import { motion } from "framer-motion";
-import blood1 from '../images/blood1.jpeg'
-import blood2 from '../images/blood2.jpeg'
-import event2 from '../images/event2.jpeg'
-import event3 from '../images/event3.jpeg'
-import event4 from '../images/event4.jpeg'
-import event5 from '../images/event5.jpeg'
+import blood1 from "../images/blood1.jpeg";
+import blood2 from "../images/blood2.jpeg";
+import event2 from "../images/event2.jpeg";
+import event3 from "../images/event3.jpeg";
+import event4 from "../images/event4.jpeg";
+import event5 from "../images/event5.jpeg";
 import warehouse from "../images/warehouse.jpeg";
-import event11 from '../images/event11.jpeg'
-import blood3 from '../images/blood3.jpeg'
-import group from '../images/group.jpeg'
-import mainimage from '../images/mainimage.jpeg'
+import event11 from "../images/event11.jpeg";
+import blood3 from "../images/blood3.jpeg";
+import group from "../images/group.jpeg";
+import mainimage from "../images/mainimage.jpeg";
+import { Helmet } from "react-helmet";
 
 const AboutUs = () => {
   useEffect(() => {
@@ -47,11 +57,11 @@ const AboutUs = () => {
       <AboutTimelineSection />
       {/* <AboutTeamSection /> */}
       <AboutStatsSection />
-      <ImageGallerySection/>
-      <BloodDonationSection/>
-      <EventCards/>
+      <ImageGallerySection />
+      <BloodDonationSection />
+      <EventCards />
       <AboutContactSection />
-      <LastSection/>
+      <LastSection />
     </div>
   );
 };
@@ -64,7 +74,9 @@ const AboutHero = () => (
     <div className="hero-container mt-md-4">
       <div className="hero-content">
         <h1>NAAM Industrial Solutions</h1>
-        <h3 style={{color:"#FFFF00"}}>( NEED, ANALYSE, and ARRANGE THE MATERIAL )</h3>{" "}
+        <h3 style={{ color: "#FFFF00" }}>
+          ( NEED, ANALYSE, and ARRANGE THE MATERIAL )
+        </h3>{" "}
         {/* Added abbreviation */}
         <p>
           With 19 years of experience in Industrial Safety Products, NAAM
@@ -72,7 +84,15 @@ const AboutHero = () => (
           take immense pleasure in introducing ourselves as your trusted
           partner, dedicated to fulfilling all your industrial requirements.
         </p>
-        <p className="client-message">We are responsible for your <strong style={{color:"#FFFF00"}}><span style={{fontSize:"37px"}}>H</span>appy <span style={{fontSize:"37px"}}>S</span>mil<span style={{fontSize:"37px"}}>E</span></strong>  😃!</p>{" "}
+        <p className="client-message">
+          We are responsible for your{" "}
+          <strong style={{ color: "#FFFF00" }}>
+            <span style={{ fontSize: "37px" }}>H</span>appy{" "}
+            <span style={{ fontSize: "37px" }}>S</span>mil
+            <span style={{ fontSize: "37px" }}>E</span>
+          </strong>{" "}
+          😃!
+        </p>{" "}
         {/* Added client message */}
       </div>
 
@@ -335,7 +355,7 @@ const ImageGallerySection = () => {
       alt: "Industrial Safety Equipment",
       title: "Safety First",
       description: "State-of-the-art safety equipment for industrial use",
-      date: "March 2024"
+      date: "March 2024",
     },
     {
       id: 2,
@@ -343,7 +363,7 @@ const ImageGallerySection = () => {
       alt: "Training Session",
       title: "Professional Training",
       description: "Expert-led training sessions for industrial safety",
-      date: "February 2024"
+      date: "February 2024",
     },
     {
       id: 3,
@@ -351,7 +371,7 @@ const ImageGallerySection = () => {
       alt: "Product Display",
       title: "Quality Products",
       description: "Premium quality industrial safety products",
-      date: "January 2024"
+      date: "January 2024",
     },
     {
       id: 4,
@@ -359,7 +379,7 @@ const ImageGallerySection = () => {
       alt: "Team Meeting",
       title: "Collaborative Approach",
       description: "Team discussions for better solutions",
-      date: "December 2023"
+      date: "December 2023",
     },
     {
       id: 5,
@@ -367,7 +387,7 @@ const ImageGallerySection = () => {
       alt: "Warehouse",
       title: "State-of-art Facility",
       description: "Modern warehouse facility for efficient operations",
-      date: "November 2023"
+      date: "November 2023",
     },
     // {
     //   id: 6,
@@ -382,10 +402,10 @@ const ImageGallerySection = () => {
   const scroll = (direction) => {
     const { current } = scrollRef;
     if (current) {
-      const scrollAmount = direction === 'left' ? -350 : 350;
+      const scrollAmount = direction === "left" ? -350 : 350;
       current.scrollBy({
         left: scrollAmount,
-        behavior: 'smooth'
+        behavior: "smooth",
       });
     }
   };
@@ -394,13 +414,10 @@ const ImageGallerySection = () => {
     <section className="gallery-section">
       <h2 className="about-section-title">Our Events</h2>
       <div className="gallery-container">
-        <button 
-          className="scroll-button left" 
-          onClick={() => scroll('left')}
-        >
+        <button className="scroll-button left" onClick={() => scroll("left")}>
           <ChevronLeft size={24} />
         </button>
-        
+
         <div className="gallery-scroll" ref={scrollRef}>
           {galleryImages.map((image) => (
             <div key={image.id} className="gallery-item">
@@ -418,10 +435,7 @@ const ImageGallerySection = () => {
           ))}
         </div>
 
-        <button 
-          className="scroll-button right" 
-          onClick={() => scroll('right')}
-        >
+        <button className="scroll-button right" onClick={() => scroll("right")}>
           <ChevronRight size={24} />
         </button>
       </div>
@@ -437,7 +451,7 @@ const BloodDonationSection = () => {
       location: "Shanthi Social Services.",
       donors: 45,
       image: blood1,
-      description: "Annual Blood Donation Camp"
+      description: "Annual Blood Donation Camp",
     },
     {
       id: 2,
@@ -445,7 +459,7 @@ const BloodDonationSection = () => {
       location: "Royal care hospital...",
       donors: 32,
       image: blood2,
-      description: "Emergency Blood Drive"
+      description: "Emergency Blood Drive",
     },
     {
       id: 3,
@@ -453,15 +467,33 @@ const BloodDonationSection = () => {
       location: "Marathon",
       donors: 20,
       image: blood3,
-      description: "Marathon"
-    }
+      description: "Marathon",
+    },
   ];
 
   return (
     <section className="blood-donation-section">
+      <Helmet>
+        <title>
+          About NAAM - Trusted Industrial Tools and Equipment Supplier in
+          Coimbatore
+        </title>
+        <meta
+          name="description"
+          content="NAAM is a leading supplier of industrial tools, safety products, and heavy equipment in Coimbatore. Learn more about our commitment to quality and customer service."
+        />
+        <meta
+          name="keywords"
+          content="NAAM Coimbatore, industrial tools supplier, about NAAM, equipment supplier Saravanampatty, safety equipment"
+        />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <h2 className="about-section-title">CSR Initiatives</h2>
-      <p className="donation-intro">Making a difference in our community through regular blood donation camps</p>
-      
+      <p className="donation-intro">
+        Making a difference in our community through regular blood donation
+        camps
+      </p>
+
       <div className="donation-events-grid">
         {donationEvents.map((event) => (
           <div key={event.id} className="donation-event-card">
@@ -491,21 +523,24 @@ const EventCards = () => {
     {
       id: 1,
       title: "Warehouse inauguration",
-      description: "We are thrilled to announce the grand inauguration of our new warehouse, marking a significant milestone in our journey. Join us in celebrating this step towards enhanced efficiency and growth!",
-      image: warehouse
+      description:
+        "We are thrilled to announce the grand inauguration of our new warehouse, marking a significant milestone in our journey. Join us in celebrating this step towards enhanced efficiency and growth!",
+      image: warehouse,
     },
     {
       id: 2,
       title: "Ergonomics Program",
-      description: "An Ergonomics Program focuses on designing work environments and tasks to improve comfort, safety, and efficiency, reducing the risk of work-related injuries. It includes workstation assessments, training, equipment adjustments, and regular monitoring to ensure employee well-being.",
-      image: group
+      description:
+        "An Ergonomics Program focuses on designing work environments and tasks to improve comfort, safety, and efficiency, reducing the risk of work-related injuries. It includes workstation assessments, training, equipment adjustments, and regular monitoring to ensure employee well-being.",
+      image: group,
     },
     {
       id: 3,
       title: "Ergonomics Program",
-      description: "An Ergonomics Program focuses on designing work environments and tasks to improve comfort, safety, and efficiency, reducing the risk of work-related injuries. It includes workstation assessments, training, equipment adjustments, and regular monitoring to ensure employee well-being.",
-      image: event11
-    }
+      description:
+        "An Ergonomics Program focuses on designing work environments and tasks to improve comfort, safety, and efficiency, reducing the risk of work-related injuries. It includes workstation assessments, training, equipment adjustments, and regular monitoring to ensure employee well-being.",
+      image: event11,
+    },
   ];
 
   return (
@@ -514,31 +549,27 @@ const EventCards = () => {
       <div className="events-grid">
         {events.map((event) => (
           <div key={event.id} className="event-card">
-            <img
-              src={event.image}
-              alt={event.title}
-              className="event-image"
-            />
+            <img src={event.image} alt={event.title} className="event-image" />
             <div className="event-content">
               <h3 className="event-title">{event.title}</h3>
-              
+
               {/* <div className="event-detail">
                 <Calendar className="icon" />
                 <span>{event.date}</span>
               </div> */}
-              
+
               {/* <div className="event-detail">
                 <Clock className="icon" />
                 <span>{event.time}</span>
               </div> */}
-{/*               
+              {/*               
               <div className="event-detail">
                 <MapPin className="icon" />
                 <span>{event.location}</span>
               </div> */}
-              
+
               <p className="event-description">{event.description}</p>
-              
+
               {/* <button className="register-button">
                 Register Now
               </button> */}
@@ -549,7 +580,6 @@ const EventCards = () => {
     </div>
   );
 };
-
 
 const AboutContactSection = () => (
   <section className="about-contact-section">
@@ -576,9 +606,13 @@ const AboutContactSection = () => (
 );
 
 const LastSection = () => (
-<div class="appreciation-message mb-5">
-  <p>Thank you for being a part of our journey. Your trust and support are the driving force behind our success—without you, we wouldn't be where we are today. Together, we can achieve great things!</p>
-</div>
-)
+  <div class="appreciation-message mb-5">
+    <p>
+      Thank you for being a part of our journey. Your trust and support are the
+      driving force behind our success—without you, we wouldn't be where we are
+      today. Together, we can achieve great things!
+    </p>
+  </div>
+);
 
 export default AboutUs;

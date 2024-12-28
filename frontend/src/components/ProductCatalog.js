@@ -11,48 +11,48 @@ import hyg1 from "../images/hyg1.webp";
 import hyg2 from "../images/hyg2.jpg";
 import hyg3 from "../images/hyg3.webp";
 import hyg4 from "../images/hyg4.webp";
-import fan1 from '../images/indusfan.jpeg'
-import rubberbump from '../images/rubberbump.jfif'
-import bumpers from '../images/bumpers.webp'
-import cable from '../images/cable.webp'
-import dtype from '../images/dtype.jpg'
-import flapdel from '../images/flapdel.jfif'
-import mirror from '../images/mirror.webp'
-import vest from '../images/vest.webp'
-import wall from '../images/wall.jfif'
-import fan4 from '../images/fan4.jpg'
-import safety1 from '../images/safety1.png'
-import safety2 from '../images/safety2.jpg'
-import safety3 from '../images/safety3.jpg'
-import lock1 from '../images/lock1.webp'
-import lock2 from '../images/lock2.webp'
-import dust1 from '../images/dust1.webp'
-import dust2 from '../images/dust2.png'
-import dust3 from '../images/dust3.jpg'
-import lad1 from '../images/lad1.jpg'
-import lad2 from '../images/lad2.png'
-import aid1 from '../images/aid1.png'
-import aid2 from '../images/aid2.png'
-import aid3 from '../images/aid3.jfif'
-import auto1 from '../images/auto1.jpg'
-import auto2 from '../images/auto2.avif'
-import auto3 from '../images/auto3.jpg'
-import tool1 from '../images/tool1.avif'
-import tool2 from '../images/tool2.jpg'
-import tool3 from '../images/tool3.png'
-import light1 from '../images/light1.jpg'
-import light2 from '../images/light2.jfif'
-import ss1 from '../images/ss1.jpg'
-import ss2 from '../images/ss2.jpg'
-import ss3 from '../images/ss3.jpg'
-import ss4 from '../images/ss4.jpg'
-import eye1 from '../images/eye1.webp'
-import eye2 from '../images/eye2.jfif'
-import eye3 from '../images/eye3.jfif'
-import eye4 from '../images/eye4.jfif'
-import gas1 from '../images/gas1.webp'
-import gas2 from '../images/gas2.avif'
-
+import fan1 from "../images/indusfan.jpeg";
+import rubberbump from "../images/rubberbump.jfif";
+import bumpers from "../images/bumpers.webp";
+import cable from "../images/cable.webp";
+import dtype from "../images/dtype.jpg";
+import flapdel from "../images/flapdel.jfif";
+import mirror from "../images/mirror.webp";
+import vest from "../images/vest.webp";
+import wall from "../images/wall.jfif";
+import fan4 from "../images/fan4.jpg";
+import safety1 from "../images/safety1.png";
+import safety2 from "../images/safety2.jpg";
+import safety3 from "../images/safety3.jpg";
+import lock1 from "../images/lock1.webp";
+import lock2 from "../images/lock2.webp";
+import dust1 from "../images/dust1.webp";
+import dust2 from "../images/dust2.png";
+import dust3 from "../images/dust3.jpg";
+import lad1 from "../images/lad1.jpg";
+import lad2 from "../images/lad2.png";
+import aid1 from "../images/aid1.png";
+import aid2 from "../images/aid2.png";
+import aid3 from "../images/aid3.jfif";
+import auto1 from "../images/auto1.jpg";
+import auto2 from "../images/auto2.avif";
+import auto3 from "../images/auto3.jpg";
+import tool1 from "../images/tool1.avif";
+import tool2 from "../images/tool2.jpg";
+import tool3 from "../images/tool3.png";
+import light1 from "../images/light1.jpg";
+import light2 from "../images/light2.jfif";
+import ss1 from "../images/ss1.jpg";
+import ss2 from "../images/ss2.jpg";
+import ss3 from "../images/ss3.jpg";
+import ss4 from "../images/ss4.jpg";
+import eye1 from "../images/eye1.webp";
+import eye2 from "../images/eye2.jfif";
+import eye3 from "../images/eye3.jfif";
+import eye4 from "../images/eye4.jfif";
+import gas1 from "../images/gas1.webp";
+import gas2 from "../images/gas2.avif";
+import { Helmet } from "react-helmet";
 
 const ProductCatalog = () => {
   const navigate = useNavigate();
@@ -392,7 +392,7 @@ const ProductCatalog = () => {
       price: 1499.99,
       description:
         "AC Automatic Boom Barrier is a motorized gate system designed to control vehicle access with automated opening and closing functionality.",
-      image:aid3,
+      image: aid3,
       category: "First Aid Center",
       rating: 4.6,
       features: [
@@ -839,7 +839,8 @@ const ProductCatalog = () => {
       id: 51,
       name: "RC Netting Solutions Industrial Fan Safety Net Cover for Finger Protection",
       price: 89.99,
-      description: "RC Netting Solutions Industrial Fan Safety Net Cover is designed to provide finger protection and prevent accidents by covering fan blades in industrial settings. This safety net cover is ideal for workplaces with high-velocity fans, offering both safety and durability.",
+      description:
+        "RC Netting Solutions Industrial Fan Safety Net Cover is designed to provide finger protection and prevent accidents by covering fan blades in industrial settings. This safety net cover is ideal for workplaces with high-velocity fans, offering both safety and durability.",
       image: fan4,
       category: "Industrial Fan Wireness",
       rating: 4.8,
@@ -847,10 +848,9 @@ const ProductCatalog = () => {
         "Made from durable, high-strength mesh material to prevent fingers from reaching the fan blades",
         "Easy to install and secure with adjustable straps for a tight fit",
         "Suitable for a wide range of industrial fans and ventilation systems",
-        "Helps maintain safety standards in environments with rotating machinery"
-      ]
-    }
-    
+        "Helps maintain safety standards in environments with rotating machinery",
+      ],
+    },
   ]);
   const scrollContainerRef = useRef(null);
   const [showLeftArrow, setShowLeftArrow] = useState(false);
@@ -871,7 +871,7 @@ const ProductCatalog = () => {
     "SS Eye Wash Shower",
     "Online Gas Detector",
     "Industrial Fan Wireness",
-    "Traffic Safety Products"
+    "Traffic Safety Products",
   ];
 
   const handleScroll = () => {
@@ -908,6 +908,20 @@ const ProductCatalog = () => {
 
   return (
     <div className="product-catalog my-5">
+      <Helmet>
+        <title>
+          Industrial Tools and Safety Equipment Supplier in Coimbatore | NAAM
+        </title>
+        <meta
+          name="description"
+          content="Explore NAAM’s extensive range of industrial tools, heavy equipment, MAT, fire safety, lockout tagout, and entrance automation products in Coimbatore."
+        />
+        <meta
+          name="keywords"
+          content="industrial tools, fire safety products, lockout tagout devices, industrial ladders, Coimbatore tools supplier, non-sparking products"
+        />
+        <meta name="robots" content="index, follow" />
+      </Helmet>
       <div className="catalog-header">
         <h1 className="mb-4">Product Catalog</h1>
         <div className="filter-wrapper">
