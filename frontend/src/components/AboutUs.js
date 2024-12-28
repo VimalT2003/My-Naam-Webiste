@@ -6,7 +6,6 @@ import naambanner from "../images/naambanner.webp";
 import { motion } from "framer-motion";
 import blood1 from '../images/blood1.jpeg'
 import blood2 from '../images/blood2.jpeg'
-import event1 from '../images/event1.jpeg'
 import event2 from '../images/event2.jpeg'
 import event3 from '../images/event3.jpeg'
 import event4 from '../images/event4.jpeg'
@@ -15,6 +14,7 @@ import warehouse from "../images/warehouse.jpeg";
 import event11 from '../images/event11.jpeg'
 import blood3 from '../images/blood3.jpeg'
 import group from '../images/group.jpeg'
+import mainimage from '../images/mainimage.jpeg'
 
 const AboutUs = () => {
   useEffect(() => {
@@ -64,7 +64,7 @@ const AboutHero = () => (
     <div className="hero-container mt-md-4">
       <div className="hero-content">
         <h1>NAAM Industrial Solutions</h1>
-        <h3 style={{color:"#FFFF00"}}>( NEEDS, ANALYSE, and ARRANGE THE MATERIAL )</h3>{" "}
+        <h3 style={{color:"#FFFF00"}}>( NEED, ANALYSE, and ARRANGE THE MATERIAL )</h3>{" "}
         {/* Added abbreviation */}
         <p>
           With 19 years of experience in Industrial Safety Products, NAAM
@@ -72,7 +72,7 @@ const AboutHero = () => (
           take immense pleasure in introducing ourselves as your trusted
           partner, dedicated to fulfilling all your industrial requirements.
         </p>
-        <p className="client-message">We are responsible for your <strong style={{color:"#FFFF00"}}>Happy smile</strong>  😃!</p>{" "}
+        <p className="client-message">We are responsible for your <strong style={{color:"#FFFF00"}}><span style={{fontSize:"37px"}}>H</span>appy <span style={{fontSize:"37px"}}>S</span>mil<span style={{fontSize:"37px"}}>E</span></strong>  😃!</p>{" "}
         {/* Added client message */}
       </div>
 
@@ -331,7 +331,7 @@ const ImageGallerySection = () => {
   const galleryImages = [
     {
       id: 1,
-      src: event1,
+      src: mainimage,
       alt: "Industrial Safety Equipment",
       title: "Safety First",
       description: "State-of-the-art safety equipment for industrial use",
@@ -453,13 +453,13 @@ const BloodDonationSection = () => {
       location: "Marathon",
       donors: 20,
       image: blood3,
-      description: "Corporate Social Responsibility Initiative"
+      description: "Marathon"
     }
   ];
 
   return (
     <section className="blood-donation-section">
-      <h2 className="about-section-title">Blood Donation Initiatives (CSR)</h2>
+      <h2 className="about-section-title">CSR Initiatives</h2>
       <p className="donation-intro">Making a difference in our community through regular blood donation camps</p>
       
       <div className="donation-events-grid">

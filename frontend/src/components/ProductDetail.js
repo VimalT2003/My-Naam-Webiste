@@ -12,6 +12,41 @@ import mirror from '../images/mirror.webp'
 import vest from '../images/vest.webp'
 import wall from '../images/wall.jfif'
 import fan4 from '../images/fan4.jpg'
+import hyg4 from "../images/hyg4.webp";
+import mat1 from "../images/mat1.jpg";
+import mat2 from "../images/mat2.jfif";
+import mat3 from "../images/mat3.jpg";
+import mat4 from "../images/mat4.jpg";
+import mat5 from "../images/mat5.webp";
+import mat6 from "../images/mat6.jpg";
+import hyg1 from "../images/hyg1.webp";
+import hyg2 from "../images/hyg2.jpg";
+import hyg3 from "../images/hyg3.webp";
+import safety1 from '../images/safety1.png'
+import safety2 from '../images/safety2.jpg'
+import safety3 from '../images/safety3.jpg'
+import lock1 from '../images/lock1.webp'
+import lock2 from '../images/lock2.webp'
+import dust1 from '../images/dust1.webp'
+import dust2 from '../images/dust2.png'
+import dust3 from '../images/dust3.jpg'
+import lad1 from '../images/lad1.jpg'
+import lad2 from '../images/lad2.png'
+import aid1 from '../images/aid1.png'
+import aid2 from '../images/aid2.png'
+import aid3 from '../images/aid3.jfif'
+import auto1 from '../images/auto1.jpg'
+import auto2 from '../images/auto2.avif'
+import auto3 from '../images/auto3.jpg'
+import tool1 from '../images/tool1.avif'
+import tool2 from '../images/tool2.jpg'
+import tool3 from '../images/tool3.png'
+import light1 from '../images/light1.jpg'
+import light2 from '../images/light2.jfif'
+import ss1 from '../images/ss1.jpg'
+import ss2 from '../images/ss2.jpg'
+import ss3 from '../images/ss3.jpg'
+import ss4 from '../images/ss4.jpg'
 
 const ProductDetail = () => {
   const { id } = useParams();
@@ -25,8 +60,7 @@ const ProductDetail = () => {
       price: 1499.99,
       description:
         "Ramp Mats are Anti-slip rubber mats with a raised circular surface.",
-      image:
-        "https://geckotred.co.nz/wp-content/uploads/2020/08/Safety-Cushion-150-x-90-Black-scaled-600x400.jpg",
+      image: mat1,
       category: "MAT",
       rating: 4.6,
       features: ["DRH 110 J", "90 x 150 cm", "16 mm"],
@@ -53,8 +87,7 @@ const ProductDetail = () => {
       price: 1499.99,
       description:
         "Scraper Entrance Mats are designed to stop mud and larger particles of dirt from being tracked inside.",
-      image:
-        "https://th.bing.com/th/id/OIP.yJta_OPAb_LLufFXOLXjrgHaE6?rs=1&pid=ImgDetMain",
+      image: mat2,
       category: "MAT",
       rating: 4.6,
       features: ["DRS 684 J", "87 x 154 cm", "9 mm"],
@@ -81,8 +114,7 @@ const ProductDetail = () => {
       price: 1499.99,
       description:
         "Scraper Entrance Mats are designed to stop mud and larger particles of dirt from being tracked inside. Easy to clean with a hose or brush.",
-      image:
-        "https://www.vikasrubbermats.com/uploads_vik/big-091023123307ridge-scrapper-mat.jpg",
+      image: mat3,
       category: "MAT",
       rating: 4.6,
       features: ["DRS 631 C", "90 x 150 cm", "8 mm"],
@@ -109,8 +141,7 @@ const ProductDetail = () => {
       price: 1499.99,
       description:
         "Excellent scraper qualities coupled with superior anti-slip properties, suitable for high foot traffic areas and wet surfaces.",
-      image:
-        "https://static.wixstatic.com/media/b42d49_78a64fe1e2064ae8b99599091cc1e527~mv2.jpg/v1/fit/w_500,h_500,q_90/file.jpg",
+      image: mat4,
       category: "MAT",
       rating: 4.6,
       features: ["DRH 124 B", "100 x 150 cm", "13 mm"],
@@ -137,8 +168,7 @@ const ProductDetail = () => {
       price: 1499.99,
       description:
         "The Rubber Waves Mat is ideal for workstations, kitchens, and areas prone to oil and debris. It features slots for debris to fall through, ensuring a clean workspace.",
-      image:
-        "https://5.imimg.com/data5/SELLER/Default/2023/11/359669209/TM/EL/BX/14294248/industrial-waves-mat-500x500.jpg",
+      image:mat5,
       category: "MAT",
       rating: 4.6,
       features: ["DRH 123", "90 x 150 cm", "12 mm"],
@@ -165,8 +195,7 @@ const ProductDetail = () => {
       price: 1499.99,
       description:
         "Bubble Roll Mats are comfortable anti-fatigue mats with a cushioned surface, ideal for reducing strain during long standing hours.",
-      image:
-        "https://cpimg.tistatic.com/06104026/b/4/Dolphin-Bubble-Roll-Yellow-Border.jpg",
+      image: mat6,
       category: "MAT",
       rating: 4.6,
       features: ["DRH 785 G", "90 x 120 cm", "12 mm"],
@@ -193,8 +222,7 @@ const ProductDetail = () => {
       price: 1999.99,
       description:
         "The ES83AC Auto Soap Dispenser ensures touch-free, hygienic soap dispensing with a sleek, modern design.",
-      image:
-        "https://euronics.co.in/wp-content/uploads/2024/04/ES83AC-IMG1-1-jpg.webp",
+      image: hyg1,
       category: "Hygiene",
       rating: 4.7,
       features: [
@@ -229,8 +257,7 @@ const ProductDetail = () => {
       price: 1999.99,
       description:
         "The ESM3 provides a quick, automatic shine with soft brushes. Its compact design makes it easy to use anywhere.",
-      image:
-        "https://euronics.co.in/wp-content/uploads/2022/06/Shoe-Shining-Machine-ESM3.jpg",
+      image: hyg2,
       category: "Hygiene",
       rating: 4.7,
       features: [
@@ -265,8 +292,7 @@ const ProductDetail = () => {
       price: 399.99,
       description:
         "Manufacturer of a wide range of products which include insect killer with glue board, glue pad fly catcher machine, glue board fly catcher machine-linnea fl warrior 30, linnea glue board fly catcher machine, glue board fly catcher machine - linnea fl warrior 45 and linnea glue board fly trap machine.",
-      image:
-        "https://5.imimg.com/data5/SELLER/Default/2023/5/306792205/HQ/SR/KM/1924592/glue-board-fly-catcher-machine-linnea-fl-warrior-30-500x500.jpg",
+      image: hyg3,
       category: "Fly catcher",
       rating: 4.9,
       features: [
@@ -301,8 +327,7 @@ const ProductDetail = () => {
       price: 1199.99,
       description:
         "Portable Foam Equipment offers quick fire control with lightweight, easy-to-deploy design.",
-      image:
-        "https://aaagindia.in/public-images/PORTABLE-FOAM-EQUIPMENT_1587410104.png",
+      image: safety1,
       category: "Portable Foam Equipments",
       rating: 4.8,
       features: [
@@ -341,8 +366,7 @@ const ProductDetail = () => {
       price: 1199.99,
       description:
         "Branchpipes provide precise control and direction of water or foam flow for effective firefighting.",
-      image:
-        "https://www.firesupplies.in/wp-content/uploads/2023/03/Improfire-Short-branch-pipe-with-nozzle-SS-ISI.jpg",
+      image: safety2,
       category: "Portable Foam Equipments",
       rating: 4.8,
       features: [
@@ -382,8 +406,7 @@ const ProductDetail = () => {
       price: 1499.99,
       description:
         "Wheelie Bins offer easy waste collection and transport with a durable, mobile design.",
-      image:
-        "https://5.imimg.com/data5/ND/KL/MY-5315025/wheelie-bin-500x500.png",
+      image: dust1,
       category: "Dustbin",
       rating: 4.6,
       features: [
@@ -423,8 +446,7 @@ const ProductDetail = () => {
       price: 1499.99,
       description:
         "The Metal Detector quickly finds metal objects with high precision. It's lightweight and easy to use for various applications.",
-      image:
-        "https://www.staticsystems.in/assets/img/products/top/metal-detector/3.jpg",
+      image: auto1,
       category: "Metal Detector",
       rating: 4.6,
       features: [
@@ -465,8 +487,7 @@ const ProductDetail = () => {
       price: 1499.99,
       description:
         "The FRP-Trio is a durable and lightweight solution designed for various industrial applications. It offers excellent resistance and performance in challenging environments.",
-      image:
-        "https://5.imimg.com/data5/SELLER/Default/2023/4/298291564/HT/LL/SE/44662252/frp-trio-bins-500x500.png",
+      image: hyg4,
       category: "FRP-Trio",
       rating: 4.6,
       features: [
@@ -508,8 +529,7 @@ const ProductDetail = () => {
       price: 1499.99,
       description:
         "The FRP Single Side Self Supporting Ladder is lightweight and sturdy, offering stability for safe and easy access. Its non-conductive material makes it ideal for electrical work.",
-      image:
-        "https://www.ymfg.co.in/web/image/product.product/100885/image_1024/%5B8301%5D%20FRP%20Single%20Side%20Self%20Supporting%20Ladder%20%282%20Step%29?unique=bd177e7",
+      image: lad1,
       category: "Ladders",
       rating: 4.6,
       features: [
@@ -551,8 +571,7 @@ const ProductDetail = () => {
       price: 1499.99,
       description:
         "The FRP Wall Support Extension Ladder offers enhanced safety and stability with a fiberglass frame, ideal for reaching high places with ease and support.",
-      image:
-        "https://www.ymfg.co.in/web/image/product.product/101093/image_1024/%5B8196%5D%20FRP%20%28Fiberglass%29%20Wall%20Support%20Extension%20Ladder%20%2810%20x%202%20with%20J%20Hook%20%26%20Handrail%29?unique=1dcb38c",
+      image: lad2,
       category: "Ladders",
       rating: 4.6,
       features: [
@@ -595,8 +614,7 @@ const ProductDetail = () => {
       price: 1499.99,
       description:
         "FIRESSENSE is a low-pressure system for fast and efficient fire control with less water.",
-      image:
-        "https://swastiksynergy.com/images/direct-low-pressure-system-4.jpg",
+      image: safety3,
       category: "FireSense LowPressure",
       rating: 4.6,
       features: [
@@ -638,8 +656,7 @@ const ProductDetail = () => {
       price: 1499.99,
       description:
         "Lockout Tagout is a safety system designed to prevent accidental machine startup during maintenance or servicing.",
-      image:
-        "https://www.safetylock.net/wp-content/uploads/2023/08/standard-stations.png.webp",
+      image:lock1,
       category: "Lockout Tagout",
       rating: 4.6,
       features: [
@@ -671,8 +688,7 @@ const ProductDetail = () => {
       price: 1499.99,
       description:
         "LOTO Kit is a comprehensive set of tools and devices used to implement effective lockout tagout procedures for workplace safety.",
-      image:
-        "https://www.safetylock.net/wp-content/uploads/2023/09/mechanical-valve-loto-kits-category.png.webp",
+      image: lock2,
       category: "Lockout Tagout",
       rating: 4.6,
       features: [
@@ -704,8 +720,7 @@ const ProductDetail = () => {
       price: 1499.99,
       description:
         "AC Automatic Boom Barrier is a motorized gate system designed to control vehicle access with automated opening and closing functionality.",
-      image:
-        "https://image.made-in-china.com/226f3j00kUjtdMiGORzp/AC-Automatic-Boom-Barrier-Factory.webp",
+      image: auto2,
       category: "Entrance Automation Product",
       rating: 4.6,
       features: [
@@ -737,8 +752,7 @@ const ProductDetail = () => {
       price: 299.99,
       description:
         "The Comfort Plus Wheelchair is a lightweight, foldable mobility aid designed for ease of use, comfort, and portability.",
-      image:
-        "https://www.unisurg.com/wp-content/uploads/2023/03/thumb_1666008522_bf1284472c1b751de200-300x313.png",
+      image: aid1,
       category: "Mobility Aids",
       rating: 4.8,
       features: [
@@ -772,8 +786,7 @@ const ProductDetail = () => {
       price: 1499.99,
       description:
         "AC Automatic Boom Barrier is a motorized gate system designed to control vehicle access with automated opening and closing functionality.",
-      image:
-        "https://www.unisurg.com/wp-content/uploads/2023/03/1666006046_cc2584bebfc260526b57-300x196.png",
+      image: aid2,
       category: "First Aid Center",
       rating: 4.6,
       features: [
@@ -805,8 +818,7 @@ const ProductDetail = () => {
       price: 149.99,
       description:
         "The Bed Side Locker is a compact and durable storage unit designed for hospitals and clinics, providing convenient access to personal belongings and medical supplies.",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTEyf5nsRbD0EPIkIYlIFPeOx93N8Kidz70OZ_cVyKILUDRIgqOPBcglaQwI0hABAj0TxI&usqp=CAU",
+      image: aid3,
       category: "Hospital Furniture",
       rating: 4.7,
       features: [
@@ -840,8 +852,7 @@ const ProductDetail = () => {
       price: 1499.99,
       description:
         "Wheelie Bins offer easy waste collection and transport with a durable, mobile design.",
-      image:
-        "https://www.unisurg.com/wp-content/uploads/2023/03/thumb_1667121747_52f2a490a3a5329092e8.png",
+      image: dust2,
       category: "Dustbin",
       rating: 4.6,
       features: [
@@ -873,8 +884,7 @@ const ProductDetail = () => {
       price: 1499.99,
       description:
         "Wheelie Bins offer easy waste collection and transport with a durable, mobile design.",
-      image:
-        "https://www.indosurgicals.com/images/products/18028-waste-segregation-trolley-ss-60-liter-4.jpg",
+      image: dust3,
       category: "Dustbin",
       rating: 4.6,
       features: [
@@ -908,8 +918,7 @@ const ProductDetail = () => {
       price: 79.99,
       description:
         "The Hand Held Metal Detector is a portable security device designed for quick and accurate detection of metallic objects, ensuring safety and security in various environments.",
-      image:
-        "https://www.staticsystems.in/assets/img/products/weapon-scanner.jpg",
+      image: auto3,
       category: "Security Equipment",
       rating: 4.5,
       features: [
@@ -944,7 +953,7 @@ const ProductDetail = () => {
       price: 1499.99,
       description:
         "FCG Flameproof Lights are specialized lighting solutions designed to operate safely in hazardous environments where flammable gases, vapors, or dust are present.",
-      image: "https://fcghitech.com/wp-content/uploads/2021/10/LW-51200.jpg",
+      image: light1,
       category: "Flame Proof Products",
       rating: 4.6,
       features: [
@@ -977,8 +986,7 @@ const ProductDetail = () => {
       price: 1499.99,
       description:
         "Electrical and Non-Sparking Products are specialized tools and equipment designed to operate safely in explosive or flammable environments, preventing the risk of ignition.",
-      image:
-        "https://image.made-in-china.com/202f0j00NruRnotgOQpO/Non-Sparking-Pincers-End-Cutting-Pliers-End-Cutting-Nippers.webp",
+      image: tool1,
       category: "Electrical and Non-Sparking Products",
       rating: 4.6,
       features: [
@@ -1011,8 +1019,7 @@ const ProductDetail = () => {
       price: 1499.99,
       description:
         "Safety SS 01 is a personal protective equipment (PPE) designed to ensure worker safety by providing protection against workplace hazards.",
-      image:
-        "https://autolite-india.com/image/cache/catalog/Safety/ss-01-600x600.jpg",
+      image: ss1,
       category: "Emergency Lighting System",
       rating: 4.6,
       features: [
@@ -1045,8 +1052,7 @@ const ProductDetail = () => {
       price: 1499.99,
       description:
         "Safety SS 02 is a durable and robust industrial safety helmet designed to protect workers from head injuries in hazardous work environments.",
-      image:
-        "https://autolite-india.com/image/cache/catalog/Safety/ss-02-600x600.jpg",
+      image: ss2,
       category: "Emergency Lighting System",
       rating: 4.6,
       features: [
@@ -1079,8 +1085,7 @@ const ProductDetail = () => {
       price: 349.99,
       description:
         "The FT 31 Flameproof is a highly durable and explosion-proof device designed for hazardous environments, ensuring safety and reliability in industrial operations.",
-      image:
-        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7_kQLEJinA_evM388CkbH6eXSiVh97uHQa4NuhLWD3p-p1mLOvpZ6usvt4x7aGVWdWYE&usqp=CAU",
+      image: light2,
       category: "Industrial Safety Equipment",
       rating: 4.7,
       features: [
@@ -1114,8 +1119,7 @@ const ProductDetail = () => {
       price: 199.99,
       description:
         "The Emergency Lighting System is a reliable backup lighting solution designed to provide illumination during power outages, ensuring safety and visibility.",
-      image:
-        "https://studyelectrical.com/wp-content/uploads/2021/09/emergency-lighting-system.jpg",
+      image: ss3,
       category: "Safety Equipment",
       rating: 4.8,
       features: [
@@ -1149,8 +1153,7 @@ const ProductDetail = () => {
       price: 199.99,
       description:
         "The Emergency Lighting System is a reliable backup lighting solution designed to provide illumination during power outages, ensuring safety and visibility.",
-      image:
-        "https://www.asco.uk.com/wp-content/uploads/2020/10/Pixabay-emergency-exit-4168808_1920-720x320-c-center.jpg",
+      image: ss4,
       category: "Safety Equipment",
       rating: 4.8,
       features: [
@@ -1419,7 +1422,7 @@ const ProductDetail = () => {
   name: "Tools",
   price: 149.99,
   description: "Non-Sparking Tools are essential hand tools made from materials that do not produce sparks, making them ideal for use in hazardous environments where flammable gases or vapors may be present.",
-  image: "https://www.csunitec.com/sites/default/files/styles/teaser_550/public/images/product_category/striking-tools.jpg?itok=t_WtF9cK",
+  image: tool2,
   category: "Safety Equipment",
   rating: 4.8,
   features: [
@@ -1452,7 +1455,7 @@ const ProductDetail = () => {
   name: "Non Sparking Insulated Tools Manufacturers & Suppliers",
   price: 149.99,
   description: "Non-Sparking Tools are essential hand tools made from materials that do not produce sparks, making them ideal for use in hazardous environments where flammable gases or vapors may be present.",
-  image: "https://deneerstools.com/wp-content/uploads/2020/10/non-sparking-insulated-tools-pro.png",
+  image: tool3,
   category: "Safety Equipment",
   rating: 4.8,
   features: [
