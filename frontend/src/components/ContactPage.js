@@ -59,18 +59,95 @@ const ContactPage = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  // const handleSubmit = async (e) => {
+  //   e.preventDefault(); 
+  
+  //   try {
+  //     const scriptURL = "https://script.google.com/macros/s/AKfycbxp4vD0MT2kCXxRyct1q12zvR1SnpfBiS9dPSNN7GEV-bJewVaXR5FEKongqeiJTCfB/exec";
+  
+  //    const { name, email, phone, subject, message} = formEle 
+  
+  //     const response = await fetch(scriptURL, {
+  //       method: "POST",
+  //       body: (`Name=${name}&Email=${email}&Phone=${phone}&Subject=${subject}&Message=${message}`), 
+  //       headers: {
+  //         "Content-Type": "application/x-www-form-urlencoded", 
+  //       },
+  //     });
+  
+  //     if (response.ok) {
+  //       setFormData({
+  //         name: "",
+  //         email: "",
+  //         phone: "",
+  //         subject: "",
+  //         message: "",
+  //       });
+  
+  //       toast.success("Form submitted successfully");
+  
+  //       emailjs
+  //         .send(
+  //           "service_8g6la6o",
+  //           "template_vp3ylni", 
+  //           {
+  //             to_email: adminEmail, 
+  //             from_name: formEle.name,
+  //             from_email: formEle.email,
+  //             phone_number: formEle.phone,
+  //             subject: formEle.subject,
+  //             message: formEle.message,
+  //           },
+  //           "zsqpZoT5yn5i1ZHt9"
+  //         )
+  //         .then((response) => {
+  //           console.log("Email sent to admin:", response); 
+  //         })
+  //         .catch((error) => {
+  //           console.error("Failed to send email:", error); 
+  //         });
+  //     } else {
+  //       toast.error("Form data not submitted, try again");
+  //       setFormData({
+  //         name: "",
+  //         email: "",
+  //         phone: "",
+  //         subject: "",
+  //         message: "",
+  //       });
+  //       throw new Error("Failed to submit form data.");
+  //     }
+  //   } catch (error) {
+  //     console.error("Submission Error:", error);
+  //   }
+  // };
+
   const handleSubmit = async (e) => {
     e.preventDefault();
+  
     try {
-      const response = await fetch("http://localhost:5000/api/contact", {
+      const scriptURL =
+        "https://script.google.com/macros/s/AKfycbwifvl4AG4_6V6vPNj5-bVvsYHB_7GtFeSA52JMIV3Rrmq3jopWKVLlNKqqXTGyFhT1/exec";
+  
+      const { name, email, phone, subject, message } = formData;
+  
+      const formBody = new URLSearchParams();
+      formBody.append("Name", name);
+      formBody.append("Email", email);
+      formBody.append("Phone", phone);
+      formBody.append("Subject", subject);
+      formBody.append("Message", message);
+  
+      const response = await fetch(scriptURL, {
         method: "POST",
+        body: formBody.toString(), // Ensure it's URL-encoded
         headers: {
-          "Content-Type": "application/json",
+          "Content-Type": "application/x-www-form-urlencoded", // Important header
         },
-        body: JSON.stringify(formData),
       });
-
+  
       if (response.ok) {
+        // Reset form after successful submission
         setFormData({
           name: "",
           email: "",
@@ -78,20 +155,23 @@ const ContactPage = () => {
           subject: "",
           message: "",
         });
+  
         toast.success("Form submitted successfully");
+  
+        // Email notification
         emailjs
           .send(
-            "service_8g6la6o",
-            "template_vp3ylni",
+            "service_8g6la6o", // Replace with your EmailJS service ID
+            "template_vp3ylni", // Replace with your EmailJS template ID
             {
-              to_email: adminEmail,
-              from_name: formData.name,
-              from_email: formData.email,
-              phone_number: formData.phone,
-              subject: formData.subject,
-              message: formData.message,
+              to_email: adminEmail, // Replace with admin's email
+              from_name: name,
+              from_email: email,
+              phone_number: phone,
+              subject: subject,
+              message: message,
             },
-            "zsqpZoT5yn5i1ZHt9"
+            "zsqpZoT5yn5i1ZHt9" // Replace with your EmailJS public key
           )
           .then((response) => {
             console.log("Email sent to admin:", response);
@@ -100,20 +180,16 @@ const ContactPage = () => {
             console.error("Failed to send email:", error);
           });
       } else {
-        toast.error("Form data not submitted, try again");
-        setFormData({
-          name: "",
-          email: "",
-          phone: "",
-          subject: "",
-          message: "",
-        });
+        toast.error("Form data not submitted, try again.");
         throw new Error("Failed to submit form data.");
       }
     } catch (error) {
       console.error("Submission Error:", error);
+      toast.error("An error occurred. Please try again later.");
     }
   };
+  
+  
 
   const handleChange = (e) => {
     const { name, value } = e.target;

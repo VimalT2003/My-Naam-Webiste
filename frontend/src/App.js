@@ -9,6 +9,7 @@ import ProductDetail from './components/ProductDetail';
 import ModernNavbar from './components/ModernNavbar';
 import ContactPage from './components/ContactPage';
 import { Toaster } from 'react-hot-toast';
+import NewYearCountdown from './components/NewYearCountdown';
 // import { Helmet } from 'react-helmet';
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
     <div className="App">
       {/* <Helmet/> */}
          <ModernNavbar/>  
+         <NewYearCountdown/>
          <Toaster />
             <Routes>
                 <Route path="/" element={<Home />} />
