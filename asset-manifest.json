@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/My-Naam-Webiste/static/css/main.44be7392.css",
-    "main.js": "/My-Naam-Webiste/static/js/main.25eff479.js",
+    "main.css": "/My-Naam-Webiste/static/css/main.5c77c9c9.css",
+    "main.js": "/My-Naam-Webiste/static/js/main.d04223a2.js",
     "static/media/matnaam.webp": "/My-Naam-Webiste/static/media/matnaam.d5ca4fd37bbc0f24b08a.webp",
     "static/media/naambanner.webp": "/My-Naam-Webiste/static/media/naambanner.1dbf85c057e0dc8ba939.webp",
     "static/media/Naam.png": "/My-Naam-Webiste/static/media/Naam.f0336d7d1e2f3da0e739.png",
@@ -69,11 +69,11 @@
     "static/media/aid3.jfif": "/My-Naam-Webiste/static/media/aid3.c88c72889027c7c25134.jfif",
     "static/media/eye1.webp": "/My-Naam-Webiste/static/media/eye1.de71a141cf22216f6224.webp",
     "index.html": "/My-Naam-Webiste/index.html",
-    "main.44be7392.css.map": "/My-Naam-Webiste/static/css/main.44be7392.css.map",
-    "main.25eff479.js.map": "/My-Naam-Webiste/static/js/main.25eff479.js.map"
+    "main.5c77c9c9.css.map": "/My-Naam-Webiste/static/css/main.5c77c9c9.css.map",
+    "main.d04223a2.js.map": "/My-Naam-Webiste/static/js/main.d04223a2.js.map"
   },
   "entrypoints": [
-    "static/css/main.44be7392.css",
-    "static/js/main.25eff479.js"
+    "static/css/main.5c77c9c9.css",
+    "static/js/main.d04223a2.js"
   ]
 }
