@@ -66,7 +66,7 @@ const NewYearCountdown = () => {
                 {/* <Confetti className="icon confetti" size={24} /> */}
               </div>
               <p className="countdown-message">
-                Get ready for an amazing New Year!
+              Let's celebrate an amazing New Year together with NAAM!
               </p>
               <div className="celebration-icons">
                 {/* <Confetti className="icon confetti" size={24} /> */}
@@ -81,7 +81,7 @@ const NewYearCountdown = () => {
             <h2 className="celebration-title">Happy New Year 2025! 🎉</h2>
             <div className="fireworks">✨ 🎆 ✨</div>
             <p className="celebration-message">
-              "May this year bring new happiness, new goals, new achievements, and many new inspirations in your life!"
+            May this year bring new happiness, new goals, new achievements, and many new inspirations in your life—together with NAAM!
             </p>
           </div>
         )}
