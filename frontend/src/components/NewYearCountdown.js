@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { X, PartyPopper, Sparkles, Rocket } from 'lucide-react';
-import '../styles/NewYearCountdown.css'
+import '../styles/NewYearCountdown.css';
 
 const NewYearCountdown = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -38,14 +38,27 @@ const NewYearCountdown = () => {
     setIsVisible(false);
   };
 
+  // Handle click outside to close
+  const handleOverlayClick = (e) => {
+    if (e.target.className === 'popup-overlay') {
+      closePopup();
+    }
+  };
+
   if (!isVisible) return null;
 
   return (
-    <div className="popup-overlay">
+    <div className="popup-overlay" onClick={handleOverlayClick}>
       <div className="popup-content">
-        <button className="close-button" onClick={closePopup}>
-          <X size={24} />
-        </button>
+        <div className="close-button-wrapper">
+          <button 
+            className="close-button" 
+            onClick={closePopup}
+            aria-label="Close popup"
+          >
+            <X size={24} />
+          </button>
+        </div>
 
         {!isNewYear ? (
           <div className="countdown-container">
@@ -63,13 +76,11 @@ const NewYearCountdown = () => {
                 <Sparkles className="icon sparkle" size={24} />
                 <PartyPopper className="icon party" size={24} />
                 <Rocket className="icon rocket" size={24} />
-                {/* <Confetti className="icon confetti" size={24} /> */}
               </div>
               <p className="countdown-message">
-              Let's celebrate an amazing New Year together with NAAM!
+                Let's celebrate an amazing New Year together with NAAM!
               </p>
               <div className="celebration-icons">
-                {/* <Confetti className="icon confetti" size={24} /> */}
                 <Rocket className="icon rocket" size={24} />
                 <PartyPopper className="icon party" size={24} />
                 <Sparkles className="icon sparkle" size={24} />
@@ -81,7 +92,7 @@ const NewYearCountdown = () => {
             <h2 className="celebration-title">Happy New Year 2025! 🎉</h2>
             <div className="fireworks">✨ 🎆 ✨</div>
             <p className="celebration-message">
-            May this year bring new happiness, new goals, new achievements, and many new inspirations in your life—together with NAAM!
+              May this year bring new happiness, new goals, new achievements, and many new inspirations in your life—together with NAAM!
             </p>
           </div>
         )}

@@ -273,3 +273,50 @@
       height: 20px;
     }
   }
+
+  .close-button-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 15px;
+    z-index: 1001;
+  }
+  
+  .close-button {
+    position: relative;
+    top: auto;
+    right: auto;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    transition: all 0.2s ease;
+  }
+  
+  .close-button:hover {
+    background: rgba(255, 255, 255, 0.3);
+    transform: scale(1.1);
+  }
+  
+  /* Update media query for mobile devices */
+  @media (max-width: 480px) {
+    .close-button-wrapper {
+      padding: 10px;
+    }
+  
+    .close-button {
+      width: 44px;
+      height: 44px;
+    }
+  
+    /* Increase touch target size */
+    .close-button svg {
+      width: 28px;
+      height: 28px;
+    }
+  }
